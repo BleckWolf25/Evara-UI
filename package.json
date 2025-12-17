@@ -1,0 +1,20 @@
+{
+  "name": "evara-ui",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "turbo": "^2.6.3",
+    "typescript": "^5.4.0",
+    "vitest": "^2.0.0"
+  },
+  "packageManager": "pnpm@10.25.0"
+}
