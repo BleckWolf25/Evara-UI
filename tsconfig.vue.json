@@ -1,9 +1,0 @@
-{
-  "$schema": "https://json.schemastore.org/package",
-  "extends": "./tsconfig.base.json",
-  "compilerOptions": {
-    "jsx": "preserve",
-    "lib": ["ESNext", "DOM"],
-    "types": ["node"]
-  }
-}

@@ -1,3 +1,4 @@
+
 /**
  * @file eslint.config.ts
  *
@@ -24,6 +25,7 @@
  * - {@link https://www.npmjs.com/package/eslint-plugin-react-hooks | eslint-plugin-react-hooks}
  * - {@link https://www.npmjs.com/package/eslint-plugin-react-refresh | eslint-plugin-react-refresh}
  */
+/* eslint-disable @typescript-eslint/dot-notation */
 // ---------- IMPORTS
 import js from '@eslint/js';
 import globals from 'globals';
@@ -111,7 +113,7 @@ export default [
   // React configuration
   {
     files: ['**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'],
-    ...pluginReact.configs.flat.recommended,
+    ...pluginReact.configs.flat['recommended'],
     ...pluginReact.configs.flat['jsx-runtime'],
     settings: {
       react: {

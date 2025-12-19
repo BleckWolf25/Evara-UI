@@ -13,8 +13,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ### Unsure if this is a bug?
-        Please open a discussion instead:
+        ### Unsure if this is a bug? Please open a discussion instead:
         👉 [Start a Discussion](https://github.com/BleckWolf25/Evara-UI/discussions/new?category=general)
 
   - type: textarea
@@ -50,12 +49,10 @@ body:
   - type: input
     id: codesandbox-stackblitz
     attributes:
-      label: 🔗 Minimal reproduction link
-      description: |
-        Provide a link to a CodeSandbox or StackBlitz with a minimal reproduction.
+      label: "🔗 Minimal reproduction link: Provide a link to a CodeSandbox or StackBlitz with a minimal reproduction.
         If not possible, link to a GitHub repo we can easily run.
 
-        ⚠️ Reports without a reproduction may be closed.
+        ⚠️ Reports without a reproduction may be closed."
       placeholder: "https://codesandbox.io/s/your-example"
     validations:
       required: false
@@ -88,7 +85,7 @@ body:
     id: terms
     attributes:
       label: ✅ Before submitting
-      description: Confirm you’ve done the following:
+      description: "Confirm you’ve done the following:"
       options:
         - label: I’ve searched the documentation
           required: true

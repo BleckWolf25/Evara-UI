@@ -20,13 +20,20 @@
   ],
   "scripts": {
     "build": "turbo run build",
+    "clean": "node scripts/cleanup.js && pnpm install",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
     "test": "vitest",
-    "typecheck": "turbo run typecheck"
+    "typecheck": "turbo run typecheck",
+    "changeset": "changeset",
+    "changeset:add": "changeset add",
+    "release": "turbo run build && changeset publish",
+    "cleanup": "node scripts/cleanup.js"
   },
   "devDependencies": {
+    "@changesets/changelog-git": "^0.2.1",
+    "@changesets/cli": "^2.29.8",
     "@eslint/js": "^9.39.2",
     "@types/node": "^25.0.3",
     "@types/react": "^19.2.7",
