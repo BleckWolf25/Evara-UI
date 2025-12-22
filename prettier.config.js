@@ -9,10 +9,10 @@
  * @description
  * Prettier configuration for monorepo project.
  * Define rules and integrates plugins for code consistency, readability
- * and compatibility with ESLint, TypeScript and.
+ * and compatibility with ESLint & TypeScript.
  *
  * @since 2025-12-18
- * @updated 2025-12-18
+ * @updated 2025-12-19
  *
  * @see {@link https://prettier.io/docs/en/configuration.html | Prettier configuration }
  */
