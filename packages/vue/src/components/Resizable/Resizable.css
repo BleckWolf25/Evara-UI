@@ -1,0 +1,75 @@
+.ui-resizable {
+  position: relative;
+  overflow: hidden;
+}
+
+.ui-resizable__handle {
+  position: absolute;
+  background-color: var(--ui-color-primary);
+  border-radius: 0.25rem;
+  z-index: 10;
+}
+
+.ui-resizable__handle--n {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2rem;
+  height: 0.25rem;
+}
+
+.ui-resizable__handle--s {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2rem;
+  height: 0.25rem;
+}
+
+.ui-resizable__handle--e {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.25rem;
+  height: 2rem;
+}
+
+.ui-resizable__handle--w {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.25rem;
+  height: 2rem;
+}
+
+.ui-resizable__handle--ne {
+  top: 0;
+  right: 0;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 0 0.25rem 0 0;
+}
+
+.ui-resizable__handle--nw {
+  top: 0;
+  left: 0;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 0.25rem 0 0 0;
+}
+
+.ui-resizable__handle--se {
+  bottom: 0;
+  right: 0;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 0 0 0.25rem 0;
+}
+
+.ui-resizable__handle--sw {
+  bottom: 0;
+  left: 0;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 0 0 0 0.25rem;
+}

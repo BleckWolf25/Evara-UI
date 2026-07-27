@@ -1,0 +1,86 @@
+.ui-pagination {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.ui-pagination__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 0.25rem;
+}
+
+.ui-pagination__item {
+  display: flex;
+}
+
+.ui-pagination__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2rem;
+  height: 2rem;
+  padding: 0 0.5rem;
+  border: 1px solid var(--ui-color-border-primary);
+  border-radius: 0.25rem;
+  background-color: var(--ui-color-bg-primary);
+  color: var(--ui-color-text-primary);
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ui-pagination__link:hover:not(:disabled) {
+  background-color: var(--ui-color-bg-secondary);
+  border-color: var(--ui-color-primary);
+}
+
+.ui-pagination__item--active .ui-pagination__link {
+  background-color: var(--ui-color-primary);
+  border-color: var(--ui-color-primary);
+  color: white;
+}
+
+.ui-pagination__item--disabled .ui-pagination__link {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.ui-pagination__link:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.ui-pagination__info {
+  font-size: 0.875rem;
+  color: var(--ui-color-text-secondary);
+}
+
+/* Size variants */
+.ui-pagination--sm .ui-pagination__link {
+  min-width: 1.5rem;
+  height: 1.5rem;
+  font-size: 0.75rem;
+}
+
+.ui-pagination--md .ui-pagination__link {
+  min-width: 2rem;
+  height: 2rem;
+  font-size: 0.875rem;
+}
+
+.ui-pagination--lg .ui-pagination__link {
+  min-width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1rem;
+}
+
+.ui-pagination--xl .ui-pagination__link {
+  min-width: 3rem;
+  height: 3rem;
+  font-size: 1.125rem;
+}

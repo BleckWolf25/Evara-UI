@@ -1,0 +1,14 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Button Component > Snapshots > matches snapshot 1`] = `
+<div>
+  <button
+    class="ui-button ui-button--primary ui-button--md"
+    role="button"
+    tabindex="0"
+    type="button"
+  >
+    Click me
+  </button>
+</div>
+`;

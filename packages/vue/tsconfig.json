@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "jsxImportSource": "vue",
+    "composite": false,
+    "noPropertyAccessFromIndexSignature": false,
+    "types": ["vitest", "@testing-library/jest-dom"]
+  },
+  "include": ["src/**/*", "vitest.setup.ts"],
+  "exclude": ["dist", "node_modules"]
+}

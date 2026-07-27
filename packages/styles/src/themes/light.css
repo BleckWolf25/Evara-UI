@@ -1,0 +1,15 @@
+/**
+ * Light Theme
+ * Default light mode theme
+ */
+
+:root {
+  --ui-color-bg-primary: #f9fafb;
+  --ui-color-bg-secondary: white;
+  --ui-color-text-primary: #111827;
+  --ui-color-text-secondary: #4b5563;
+  --ui-color-text-muted: #6b7280;
+  --ui-color-text-disabled: #9ca3af;
+  --ui-color-border-primary: #e5e7eb;
+  --ui-color-border-secondary: #d1d5db;
+}

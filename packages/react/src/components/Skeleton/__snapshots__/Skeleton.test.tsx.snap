@@ -1,0 +1,12 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Skeleton Component > Snapshots > matches snapshot 1`] = `
+<div>
+  <div
+    aria-label="Loading..."
+    class="ui-skeleton ui-skeleton--text ui-skeleton--animated"
+    role="status"
+    style="width: 100px; height: 20px;"
+  />
+</div>
+`;

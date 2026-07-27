@@ -1,6 +1,6 @@
 # Prettier Style Guide
 
-This document defines the **code formatting rules** for the Evara UI monorepo. Prettier handles all stylistic concerns exclusively—ESLint only handles code quality and correctness.
+This document defines the **code formatting rules** for the Evara UI monorepo. Prettier handles all stylistic concerns exclusively, ESLint only handles code quality and correctness.
 
 ## Philosophy
 
@@ -50,11 +50,11 @@ export default {
 ```typescript
 // ✅ CORRECT
 const name = 'Button';
-function render() { }
+function render() {}
 
 // ❌ WRONG (Prettier will add semicolons)
-const name = 'Button'
-function render() { }
+const name = 'Button';
+function render() {}
 ```
 
 **Why**: Avoids Automatic Semicolon Insertion (ASI) bugs. Explicit is better than implicit.
@@ -63,12 +63,11 @@ function render() { }
 
 ```javascript
 // ❌ Without semicolons, this breaks:
-const x = 1
-[2, 3].forEach(n => console.log(n))  // Interprets as x[2]!
+const x = (1)[(2, 3)].forEach((n) => console.log(n)); // Interprets as x[2]!
 
 // ✅ With semicolons, clear intent:
 const x = 1;
-[2, 3].forEach(n => console.log(n));
+[2, 3].forEach((n) => console.log(n));
 ```
 
 ### Quotes: `singleQuote: true`
@@ -81,8 +80,8 @@ const message = 'Hello world';
 const selector = '.button';
 
 // ❌ WRONG (Prettier will convert)
-const message = "Hello world";
-const selector = ".button";
+const message = 'Hello world';
+const selector = '.button';
 ```
 
 **Exception**: JSX attributes use double quotes (built-in, can't change):
@@ -98,10 +97,10 @@ const selector = ".button";
 
 ```typescript
 // Single quotes: less escaping
-const text = 'It\'s working';
+const text = "It's working";
 
 // Double quotes: more escaping
-const text = "It's working";  // No escape needed, but inconsistent
+const text = "It's working"; // No escape needed, but inconsistent
 ```
 
 ### Trailing Commas: `trailingComma: 'all'`
@@ -113,14 +112,14 @@ const text = "It's working";  // No escape needed, but inconsistent
 const options = {
   variant: 'primary',
   size: 'md',
-  disabled: true,  // Trailing comma
+  disabled: true, // Trailing comma
 };
 
 // ❌ WRONG (Prettier will add comma)
 const options = {
   variant: 'primary',
   size: 'md',
-  disabled: true
+  disabled: true,
 };
 ```
 
@@ -128,41 +127,25 @@ const options = {
 
 ```typescript
 // ✅ CORRECT
-const items = [
-  'button',
-  'input',
-  'modal',
-];
+const items = ['button', 'input', 'modal'];
 
 // ❌ WRONG
-const items = [
-  'button',
-  'input',
-  'modal'
-];
+const items = ['button', 'input', 'modal'];
 ```
 
 **Function parameters**:
 
 ```typescript
 // ✅ CORRECT
-function render(
-  variant: string,
-  size: string,
-  disabled: boolean,
-) { }
+function render(variant: string, size: string, disabled: boolean) {}
 
 // ❌ WRONG
-function render(
-  variant: string,
-  size: string,
-  disabled: boolean
-) { }
+function render(variant: string, size: string, disabled: boolean) {}
 ```
 
 **Why**:
 
-- Cleaner diffs—adding an item only changes one line
+- Cleaner diffs, adding an item only changes one line
 - Reduces "forgot trailing comma" bugs
 - Modern JavaScript supports trailing commas everywhere
 
@@ -220,7 +203,7 @@ const props = {
 **Why 100 vs 80?**
 
 - 80: Common in enterprise (monitors from 2000s)
-- 100: Modern sweet spot—balances readability with screen space
+- 100: Modern sweet spot, balances readability with screen space
 - Fits in most split-screen editors
 - Mobile-friendly code review diffs
 
@@ -239,10 +222,10 @@ if (true) {
 
 // ❌ WRONG (4 spaces shown, Prettier converts to 2)
 if (true) {
-    const x = 1;
-    if (x === 1) {
-        console.log('nested');
-    }
+  const x = 1;
+  if (x === 1) {
+    console.log('nested');
+  }
 }
 ```
 
@@ -288,7 +271,7 @@ line1\r\n
 line2\r\n
 ```
 
-**Auto-detection**: Git respects `.gitattributes`. No need to worry locally—Prettier enforces on commit.
+**Auto-detection**: Git respects `.gitattributes`. No need to worry locally, Prettier enforces on commit.
 
 **Why LF?**
 
@@ -305,12 +288,12 @@ line2\r\n
 // ✅ CORRECT
 const add = (a, b) => a + b;
 const double = (x) => x * 2;
-const noop = () => { };
+const noop = () => {};
 
 // ❌ WRONG (Prettier adds parens)
 const add = (a, b) => a + b;
-const double = x => x * 2;
-const noop = () => { };
+const double = (x) => x * 2;
+const noop = () => {};
 ```
 
 **Why always parentheses?**
@@ -322,7 +305,7 @@ const noop = () => { };
 ```typescript
 // Easy to extend
 const double = (x) => x * 2;
-const add = (x, y) => x + y;  // Only content changed, syntax stays same
+const add = (x, y) => x + y; // Only content changed, syntax stays same
 ```
 
 ### Bracket Spacing: `bracketSpacing: true`
@@ -334,7 +317,7 @@ const add = (x, y) => x + y;  // Only content changed, syntax stays same
 const obj = { name: 'Button', variant: 'primary' };
 
 // ❌ WRONG (Prettier adds spaces)
-const obj = {name: 'Button', variant: 'primary'};
+const obj = { name: 'Button', variant: 'primary' };
 ```
 
 **Multi-line objects**:
@@ -367,12 +350,7 @@ const obj = {
 
 ```vue
 <!-- ✅ CORRECT -->
-<Button
-  variant="primary"
-  size="lg"
-  disabled
-  @click="handleClick"
-/>
+<Button variant="primary" size="lg" disabled @click="handleClick" />
 
 <!-- ❌ WRONG (Prettier will reformat) -->
 <Button variant="primary" size="lg" disabled @click="handleClick" />
@@ -496,9 +474,7 @@ Order matters because ESLint can introduce formatting that Prettier cleans up.
 
 ```typescript
 // ✅ Break long lines
-const message =
-  'This is a very long message that ' +
-  'exceeds the print width limit';
+const message = 'This is a very long message that ' + 'exceeds the print width limit';
 
 // ⚠️ Only if absolutely necessary
 // prettier-ignore
@@ -549,7 +525,7 @@ pnpm format      # Prettier formats
 # Stage the formatted changes and retry
 ```
 
-You don't need to run these manually—they run automatically.
+You don't need to run these manually, they run automatically.
 
 ## Exceptions
 
@@ -597,17 +573,17 @@ external/
 
 ## Summary
 
-| Rule | Value | Reasoning |
-|------|-------|-----------|
-| `semi` | `true` | Prevent ASI bugs |
-| `singleQuote` | `true` | Reduce escaping |
-| `trailingComma` | `all` | Cleaner diffs |
-| `printWidth` | `100` | Modern screen balance |
-| `tabWidth` | `2` | JS ecosystem standard |
-| `useTabs` | `false` | Consistent rendering |
-| `endOfLine` | `lf` | Unix standard |
-| `arrowParens` | `always` | Consistency & refactoring |
-| `bracketSpacing` | `true` | Readability |
-| Vue `singleAttributePerLine` | `true` | Vue readability |
+| Rule                         | Value    | Reasoning                 |
+| ---------------------------- | -------- | ------------------------- |
+| `semi`                       | `true`   | Prevent ASI bugs          |
+| `singleQuote`                | `true`   | Reduce escaping           |
+| `trailingComma`              | `all`    | Cleaner diffs             |
+| `printWidth`                 | `100`    | Modern screen balance     |
+| `tabWidth`                   | `2`      | JS ecosystem standard     |
+| `useTabs`                    | `false`  | Consistent rendering      |
+| `endOfLine`                  | `lf`     | Unix standard             |
+| `arrowParens`                | `always` | Consistency & refactoring |
+| `bracketSpacing`             | `true`   | Readability               |
+| Vue `singleAttributePerLine` | `true`   | Vue readability           |
 
 No debate. These are enforced. Move on to writing great code.

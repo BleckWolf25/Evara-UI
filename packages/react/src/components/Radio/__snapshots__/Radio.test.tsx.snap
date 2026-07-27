@@ -1,0 +1,29 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Radio & RadioGroup Components > Snapshots > matches snapshot 1`] = `
+<div>
+  <label
+    class="ui-radio-label-wrapper"
+  >
+    <div
+      class="ui-radio-container"
+    >
+      <input
+        aria-checked="false"
+        class="ui-radio-input"
+        role="radio"
+        type="radio"
+        value="option1"
+      />
+      <span
+        class="ui-radio-indicator"
+      />
+    </div>
+    <span
+      class="ui-radio-label-text"
+    >
+      Option 1
+    </span>
+  </label>
+</div>
+`;

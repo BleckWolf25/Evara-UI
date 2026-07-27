@@ -1,0 +1,59 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Carousel Component > Snapshots > matches snapshot 1`] = `
+<div>
+  <div
+    aria-label="Carousel"
+    class="ui-carousel"
+    role="region"
+  >
+    <div
+      class="ui-carousel__track"
+      style="transform: translateX(-0%); transition: transform 0.5s ease-in-out;"
+    >
+      <div
+        class="ui-carousel__slide"
+      >
+        <div>
+          Slide 1
+        </div>
+      </div>
+      <div
+        class="ui-carousel__slide"
+      >
+        <div>
+          Slide 2
+        </div>
+      </div>
+    </div>
+    <button
+      aria-label="Previous slide"
+      class="ui-carousel__arrow ui-carousel__arrow--prev"
+      type="button"
+    >
+      ‹
+    </button>
+    <button
+      aria-label="Next slide"
+      class="ui-carousel__arrow ui-carousel__arrow--next"
+      type="button"
+    >
+      ›
+    </button>
+    <div
+      class="ui-carousel__dots"
+    >
+      <button
+        aria-label="Go to slide 1"
+        class="ui-carousel__dot ui-carousel__dot--active"
+        type="button"
+      />
+      <button
+        aria-label="Go to slide 2"
+        class="ui-carousel__dot"
+        type="button"
+      />
+    </div>
+  </div>
+</div>
+`;

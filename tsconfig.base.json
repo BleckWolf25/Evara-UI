@@ -27,6 +27,13 @@
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
-    "composite": true
+    "composite": true,
+    "paths": {
+      "@evara-ui/core": ["./packages/core/src"],
+      "@evara-ui/react": ["./packages/react/src"],
+      "@evara-ui/vue": ["./packages/vue/src"],
+      "@evara-ui/styles": ["./packages/styles/src"],
+      "@/*": ["./src/*"]
+    }
   }
 }

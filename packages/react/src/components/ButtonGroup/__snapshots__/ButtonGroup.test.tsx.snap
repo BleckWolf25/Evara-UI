@@ -1,0 +1,27 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ButtonGroup Component > Snapshots > matches snapshot 1`] = `
+<div>
+  <div
+    class="ui-button-group ui-button-group--horizontal ui-button-group--md"
+    role="group"
+  >
+    <button
+      class="ui-button ui-button--primary ui-button--md"
+      role="button"
+      tabindex="0"
+      type="button"
+    >
+      First
+    </button>
+    <button
+      class="ui-button ui-button--primary ui-button--md"
+      role="button"
+      tabindex="0"
+      type="button"
+    >
+      Second
+    </button>
+  </div>
+</div>
+`;

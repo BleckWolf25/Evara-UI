@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Separator Component > Snapshots > matches snapshot 1`] = `
+<div>
+  <div
+    aria-orientation="horizontal"
+    class="ui-separator ui-separator--horizontal ui-separator--default"
+    role="separator"
+  />
+</div>
+`;

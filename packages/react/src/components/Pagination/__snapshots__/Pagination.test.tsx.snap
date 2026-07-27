@@ -1,0 +1,95 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Pagination Component > Snapshots > matches snapshot 1`] = `
+<div>
+  <nav
+    aria-label="Pagination"
+    class="ui-pagination ui-pagination--md"
+    role="navigation"
+  >
+    <ul
+      class="ui-pagination__list"
+    >
+      <li
+        class="ui-pagination__item ui-pagination__item--disabled"
+      >
+        <button
+          aria-label="Previous page"
+          class="ui-pagination__link"
+          disabled=""
+          type="button"
+        >
+          ‹
+        </button>
+      </li>
+      <li
+        class="ui-pagination__item ui-pagination__item--active"
+      >
+        <button
+          aria-current="page"
+          aria-label="Page 1"
+          class="ui-pagination__link"
+          type="button"
+        >
+          1
+        </button>
+      </li>
+      <li
+        class="ui-pagination__item"
+      >
+        <button
+          aria-label="Page 2"
+          class="ui-pagination__link"
+          type="button"
+        >
+          2
+        </button>
+      </li>
+      <li
+        class="ui-pagination__item"
+      >
+        <button
+          aria-label="Page 3"
+          class="ui-pagination__link"
+          type="button"
+        >
+          3
+        </button>
+      </li>
+      <li
+        class="ui-pagination__item"
+      >
+        <button
+          aria-label="Page 4"
+          class="ui-pagination__link"
+          type="button"
+        >
+          4
+        </button>
+      </li>
+      <li
+        class="ui-pagination__item"
+      >
+        <button
+          aria-label="Page 5"
+          class="ui-pagination__link"
+          type="button"
+        >
+          5
+        </button>
+      </li>
+      <li
+        class="ui-pagination__item"
+      >
+        <button
+          aria-label="Next page"
+          class="ui-pagination__link"
+          type="button"
+        >
+          ›
+        </button>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;

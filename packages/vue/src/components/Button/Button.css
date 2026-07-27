@@ -1,0 +1,136 @@
+/* packages/react/src/components/Button/Button.css */
+
+.ui-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--ui-space-2);
+  border-radius: var(--ui-radius-base);
+  border: 1px solid transparent;
+  font-family: var(--ui-font-family, inherit);
+  font-size: var(--ui-font-size-base, 1rem);
+  font-weight: var(--ui-font-weight-medium, 500);
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all var(--ui-duration-fast, 150ms) cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  outline: none;
+}
+
+.ui-button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: var(--ui-shadow-sm);
+}
+
+.ui-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+/* SIZES */
+.ui-button--sm {
+  padding: var(--ui-space-1) var(--ui-space-3);
+  font-size: var(--ui-font-size-sm, 0.875rem);
+}
+
+.ui-button--md {
+  padding: var(--ui-space-2) var(--ui-space-4);
+  font-size: var(--ui-font-size-base, 1rem);
+}
+
+.ui-button--lg {
+  padding: var(--ui-space-3) var(--ui-space-6);
+  font-size: var(--ui-font-size-lg, 1.125rem);
+}
+
+/* VARIANTS */
+/* Primary */
+.ui-button--primary {
+  background-color: var(--ui-color-primary);
+  color: white;
+}
+
+.ui-button--primary:hover:not(:disabled) {
+  background-color: var(--ui-color-primary-hover);
+}
+
+/* Secondary */
+.ui-button--secondary {
+  background-color: var(--ui-color-secondary);
+  color: white;
+}
+
+.ui-button--secondary:hover:not(:disabled) {
+  background-color: var(--ui-color-secondary-hover);
+}
+
+/* Outline */
+.ui-button--outline {
+  background-color: transparent;
+  border-color: var(--ui-color-border-secondary);
+  color: var(--ui-color-text-primary);
+}
+
+.ui-button--outline:hover:not(:disabled) {
+  background-color: var(--ui-color-bg-hover);
+  border-color: var(--ui-color-border-primary);
+}
+
+/* Ghost */
+.ui-button--ghost {
+  background-color: transparent;
+  color: var(--ui-color-text-primary);
+}
+
+.ui-button--ghost:hover:not(:disabled) {
+  background-color: var(--ui-color-bg-hover);
+}
+
+/* Danger */
+.ui-button--danger {
+  background-color: var(--ui-color-danger);
+  color: white;
+}
+
+.ui-button--danger:hover:not(:disabled) {
+  background-color: var(--ui-color-danger-hover);
+}
+
+/* STATES */
+/* Full Width */
+.ui-button--full-width {
+  display: flex;
+  width: 100%;
+}
+
+/* Disabled */
+.ui-button:disabled,
+.ui-button--disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Focus indicator */
+.ui-button:focus-visible {
+  outline: 2px solid var(--ui-color-border-focus);
+  outline-offset: 2px;
+}
+
+/* Loading Spinner */
+.ui-button__spinner {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: var(--ui-radius-full);
+  animation: ui-button-spin 0.6s linear infinite;
+  margin-right: var(--ui-space-1);
+}
+
+@keyframes ui-button-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

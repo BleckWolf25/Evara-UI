@@ -1,0 +1,10 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Avatar Component > Snapshots > matches snapshot 1`] = `
+<div>
+  <div
+    aria-label="User Avatar"
+    class="ui-avatar ui-avatar--md"
+  />
+</div>
+`;

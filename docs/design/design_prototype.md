@@ -2,13 +2,14 @@
 
 Summary:
 
-```md
+````md
 **User:**
 Shall I create my own UI element and components library? If so, I would like to support:
-* Typescript + ESM
-* Vue/Nuxt.js
-* Next.js
-This lib must allow a lot of customisation and be downloadable.
+
+- Typescript + ESM
+- Vue/Nuxt.js
+- Next.js
+  This lib must allow a lot of customisation and be downloadable.
 
 **AI:**
 This is a significant undertaking, so let me help you think through whether building your own component library is the right choice, and if so, how to approach it effectively.
@@ -25,7 +26,7 @@ Before diving in, I need to understand:
    - **shadcn/ui** (copy-paste, highly customizable)
    - **PrimeVue** / **Vuetify** (Vue)
    - **Chakra UI** / **Mantine** (React)
-   
+
    What specific gaps are these not filling for your needs?
 
 3. **Primary Use Case**: Is this for:
@@ -41,6 +42,7 @@ Before diving in, I need to understand:
 ## When Building Your Own Makes Sense
 
 **Do it if:**
+
 - You have highly specific design requirements that existing libraries can't accommodate
 - You need full control over bundle size and dependencies
 - You're building a design system for a large organization
@@ -48,6 +50,7 @@ Before diving in, I need to understand:
 - You have resources for long-term maintenance
 
 **Don't do it if:**
+
 - Time-to-market is critical
 - Team is small and needs to focus on business logic
 - You're solving already-solved problems
@@ -64,7 +67,7 @@ my-ui-library/
 ├── packages/
 │   ├── core/           # Shared utilities, types, composables
 │   ├── vue/            # Vue 3 components
-│   ├── react/          # React/Next.js components  
+│   ├── react/          # React/Next.js components
 │   └── styles/         # Shared CSS/design tokens
 ├── examples/
 │   ├── vue-demo/
@@ -72,6 +75,7 @@ my-ui-library/
 │   └── next-demo/
 └── docs/
 ```
+````
 
 ### 2. **Framework-Agnostic Core**
 
@@ -95,13 +99,13 @@ For "a lot of customisation," consider:
 
 ### 5. **Key Technical Decisions**
 
-| Aspect | Recommendation | Why |
-|--------|----------------|-----|
-| Build tool | tsup or Vite library mode | Fast, minimal config, ESM-first |
-| CSS approach | CSS Variables + optional Tailwind | Maximum flexibility without JS overhead |
-| Testing | Vitest + Testing Library | Framework-agnostic, fast |
-| Documentation | Storybook or VitePress | Interactive examples + MDX |
-| Versioning | Changesets | Multi-package release management |
+| Aspect        | Recommendation                    | Why                                     |
+| ------------- | --------------------------------- | --------------------------------------- |
+| Build tool    | tsup or Vite library mode         | Fast, minimal config, ESM-first         |
+| CSS approach  | CSS Variables + optional Tailwind | Maximum flexibility without JS overhead |
+| Testing       | Vitest + Testing Library          | Framework-agnostic, fast                |
+| Documentation | Storybook or VitePress            | Interactive examples + MDX              |
+| Versioning    | Changesets                        | Multi-package release management        |
 
 ## My Recommendation
 
@@ -156,7 +160,7 @@ This gives you 80% of benefits with 20% of the effort.
   - shadcn/ui (copy-paste, highly customizable)
   - PrimeVue / Vuetify (Vue)
   - Chakra UI / Mantine (React)
- What specific gaps are these not filling for your needs?
+    What specific gaps are these not filling for your needs?
   - They don't support all frameworks.
 - Primary Use Case: Is this for:
   - Internal company/team use across multiple projects?
@@ -170,7 +174,7 @@ This gives you 80% of benefits with 20% of the effort.
   - I will create
 
 **AI:**
-Excellent—this is a clear, well-scoped project with genuine value for both your workflow and portfolio. Building 10 components as an MVP for multi-framework support is ambitious but achievable as a solo maintainer if you architect smartly from day one.
+Excellent, this is a clear, well-scoped project with genuine value for both your workflow and portfolio. Building 10 components as an MVP for multi-framework support is ambitious but achievable as a solo maintainer if you architect smartly from day one.
 
 ## Strategic Reality Check
 
@@ -207,16 +211,16 @@ export interface ButtonState {
 // Pure TypeScript state machine - no framework code
 export class ButtonController {
   constructor(private props: ButtonProps) {}
-  
+
   getAriaAttributes() {
     return {
       'aria-disabled': this.props.disabled,
       'aria-busy': this.props.loading,
       role: 'button',
-      tabIndex: this.props.disabled ? -1 : 0
+      tabIndex: this.props.disabled ? -1 : 0,
     };
   }
-  
+
   getClassNames() {
     // Return array of class strings based on props
     // Framework wrappers will apply these
@@ -281,12 +285,12 @@ I recommend **CSS Variables + Optional Tailwind** approach:
   --ui-color-primary: #3b82f6;
   --ui-color-primary-hover: #2563eb;
   --ui-color-danger: #ef4444;
-  
+
   /* Component-specific tokens */
   --ui-button-radius: 0.375rem;
   --ui-button-padding-sm: 0.5rem 1rem;
   --ui-button-padding-md: 0.75rem 1.5rem;
-  
+
   /* Spacing scale */
   --ui-space-1: 0.25rem;
   --ui-space-2: 0.5rem;
@@ -327,7 +331,7 @@ I recommend **CSS Variables + Optional Tailwind** approach:
 
 ## MVP Component Priority
 
-Start with these 10 (ordered by complexity—easier first):
+Start with these 10 (ordered by complexity, easier first):
 
 1. **Button** - Foundation for patterns
 2. **Input** - Text, number, email variants
@@ -338,7 +342,7 @@ Start with these 10 (ordered by complexity—easier first):
 7. **Modal/Dialog** - Portal, focus trap, escape handling
 8. **Tooltip** - Positioning engine foundation
 9. **Dropdown Menu** - Combines positioning + keyboard nav
-10. **Card** - Layout primitive (easiest—good for docs)
+10. **Card** - Layout primitive (easiest, good for docs)
 
 **Rationale:** Components 1-6 teach you input patterns. 7-9 teach you overlay positioning and focus management (hardest parts). Card is a gimme for documentation.
 
@@ -354,10 +358,7 @@ pnpm init
 {
   "name": "your-ui-monorepo",
   "private": true,
-  "workspaces": [
-    "packages/*",
-    "examples/*"
-  ],
+  "workspaces": ["packages/*", "examples/*"],
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
@@ -440,7 +441,7 @@ import Button from '../Button.vue';
 describe('Button', () => {
   it('renders slot content', () => {
     const wrapper = mount(Button, {
-      slots: { default: 'Click me' }
+      slots: { default: 'Click me' },
     });
     expect(wrapper.text()).toBe('Click me');
   });
@@ -453,7 +454,7 @@ describe('Button', () => {
 
   it('does not emit click when disabled', async () => {
     const wrapper = mount(Button, {
-      props: { disabled: true }
+      props: { disabled: true },
     });
     await wrapper.trigger('click');
     expect(wrapper.emitted('click')).toBeUndefined();
@@ -461,7 +462,7 @@ describe('Button', () => {
 
   it('applies correct aria attributes', () => {
     const wrapper = mount(Button, {
-      props: { disabled: true, loading: true }
+      props: { disabled: true, loading: true },
     });
     expect(wrapper.attributes('aria-disabled')).toBe('true');
     expect(wrapper.attributes('aria-busy')).toBe('true');
@@ -473,7 +474,7 @@ describe('Button', () => {
 
 Use **VitePress** with live component demos:
 
-```markdown
+````markdown
 # Button
 
 <script setup>
@@ -487,6 +488,7 @@ import { Button } from '@yourlib/vue';
 ```vue
 <Button>Click me</Button>
 ```
+````
 
 ## Variants
 
@@ -558,6 +560,7 @@ Use **Changesets** from day 1. Your future self will thank you.
 Would you like me to create a starter template artifact with the monorepo structure, or dive deeper into any specific component's implementation?
 
 **User:**
+
 - Design aesthetic: Are you going modern/minimal (Vercel-like), vibrant/playful (Stripe-like), or enterprise/professional?
   - Modern, because by doing modern UI I can then add color palletes the developers can choose and for example, modern or minimal or enterprise/profissional, this is flexible.
 - Naming: Have you chosen a package scope? (e.g., `@yourname/ui-vue`)
@@ -568,7 +571,7 @@ Would you like me to create a starter template artifact with the monorepo struct
   - Yes.
 
 **AI:**
-Perfect—you've made smart decisions on all fronts. The "modern base with flexible theming" approach is exactly right, and SSR support from day one will save you from painful refactoring later.
+Perfect, you've made smart decisions on all fronts. The "modern base with flexible theming" approach is exactly right, and SSR support from day one will save you from painful refactoring later.
 
 Let me create a production-ready starter structure that addresses SSR concerns and sets you up for success.
 
@@ -655,16 +658,9 @@ Users can:
 2. **Input** - Text, email, number variants (reuse Button patterns)
 3. **Checkbox** - Boolean input (simpler than Button)
 
-**Week 3-4** (Input Collection)
-4. **Radio** - Single-choice (similar to Checkbox)
-5. **Select** - Start with native `<select>`, fancy dropdown later
-6. **Toggle** - Visual switch (Boolean like Checkbox)
-7. **Card** - Layout primitive (easiest - just slots + styling)
+**Week 3-4** (Input Collection) 4. **Radio** - Single-choice (similar to Checkbox) 5. **Select** - Start with native `<select>`, fancy dropdown later 6. **Toggle** - Visual switch (Boolean like Checkbox) 7. **Card** - Layout primitive (easiest - just slots + styling)
 
-**Week 5** (Complex Interactions)
-8. **Modal** - Portal, focus trap, escape handling
-9. **Tooltip** - Positioning engine (foundation for Dropdown)
-10. **Dropdown Menu** - Combines positioning + keyboard nav
+**Week 5** (Complex Interactions) 8. **Modal** - Portal, focus trap, escape handling 9. **Tooltip** - Positioning engine (foundation for Dropdown) 10. **Dropdown Menu** - Combines positioning + keyboard nav
 
 ### 🚀 Immediate Next Steps
 
@@ -710,20 +706,20 @@ const Component = {
   setup() {
     const width = window.innerWidth; // Crash on server
     const id = `id-${Math.random()}`; // Different on server/client
-  }
-}
+  },
+};
 
 // ✅ CORRECT - SSR-safe
 const Component = {
   setup() {
     const width = ref(0);
     const id = generateId(); // Deterministic counter
-    
+
     onMounted(() => {
       width.value = window.innerWidth; // Only runs on client
     });
-  }
-}
+  },
+};
 ```
 
 ### 🎨 For Your Portfolio
@@ -745,6 +741,8 @@ This demonstrates:
 - **Total for Button**: ~16KB gzipped (competitive with Headless UI)
 
 Tree-shaking means users only bundle what they import.
+
 ```
 
 This is our chat summary
+```

@@ -1,0 +1,71 @@
+@import '@evara-ui/styles';
+@import '@evara-ui/react/dist/index.css';
+
+/* Next.js layout resets */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', -apple-system, sans-serif;
+  background-color: var(--ui-color-bg-primary);
+  color: var(--ui-color-text-primary);
+}
+
+.next-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.05) 0%, transparent 100%);
+}
+
+.next-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.next-logo {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+.next-tagline {
+  color: var(--ui-color-text-secondary);
+  font-size: 1rem;
+}
+
+.next-card {
+  width: 100%;
+  max-width: 440px;
+  box-shadow: var(--ui-shadow-lg);
+  border: 1px solid var(--ui-color-border-primary);
+  background-color: var(--ui-color-bg-secondary);
+}
+
+.next-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ui-color-text-muted);
+}

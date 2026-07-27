@@ -1,0 +1,21 @@
+{
+  "name": "@evara-ui/nuxt-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@evara-ui/core": "workspace:*",
+    "@evara-ui/nuxt": "workspace:*",
+    "@evara-ui/styles": "workspace:*",
+    "@evara-ui/vue": "workspace:*",
+    "nuxt": "^4.5.0",
+    "vue": "^3.5.40"
+  }
+}

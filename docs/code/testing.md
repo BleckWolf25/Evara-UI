@@ -1,6 +1,6 @@
 # Testing Guidelines
 
-This document outlines testing standards, patterns, and expectations for the Evara UI monorepo. Testing is not optional—it's critical for maintaining code quality across a multi-framework library used by thousands of developers.
+This document outlines testing standards, patterns, and expectations for the Evara UI monorepo. Testing is not optional, it's critical for maintaining code quality across a multi-framework library used by thousands of developers.
 
 ## Testing Philosophy
 
@@ -12,12 +12,12 @@ This document outlines testing standards, patterns, and expectations for the Eva
 
 ## Test Framework Stack
 
-| Tool | Purpose |
-|------|---------|
-| **Vitest** | Test runner (Vite-native, fast, ESM-first) |
-| **Vue Test Utils** | Vue component testing |
-| **React Testing Library** | React component testing |
-| **Vitest UI** | Visual test dashboard (optional) |
+| Tool                      | Purpose                                    |
+| ------------------------- | ------------------------------------------ |
+| **Vitest**                | Test runner (Vite-native, fast, ESM-first) |
+| **Vue Test Utils**        | Vue component testing                      |
+| **React Testing Library** | React component testing                    |
+| **Vitest UI**             | Visual test dashboard (optional)           |
 
 ## Running Tests
 
@@ -62,12 +62,12 @@ packages/vue/src/
 
 Minimum coverage thresholds (enforced in CI/CD):
 
-| Metric | Threshold | Rationale |
-|--------|-----------|-----------|
-| **Statements** | 80% | Most code paths covered |
-| **Branches** | 75% | Complex logic well-tested |
-| **Functions** | 80% | All public functions tested |
-| **Lines** | 80% | Overall code execution coverage |
+| Metric         | Threshold | Rationale                       |
+| -------------- | --------- | ------------------------------- |
+| **Statements** | 80%       | Most code paths covered         |
+| **Branches**   | 75%       | Complex logic well-tested       |
+| **Functions**  | 80%       | All public functions tested     |
+| **Lines**      | 80%       | Overall code execution coverage |
 
 Components in core libraries (Button, Input, etc.) should aim for **90%+** coverage.
 
@@ -80,7 +80,7 @@ describe('Button', () => {
   it('emits click event when clicked', async () => {
     // ARRANGE: Set up the test
     const wrapper = mount(Button, {
-      props: { variant: 'primary' }
+      props: { variant: 'primary' },
     });
 
     // ACT: Perform the action
@@ -117,21 +117,21 @@ describe('Button', () => {
     it('renders slot content', () => {
       const wrapper = mount(Button, {
         props,
-        slots: { default: 'Click me' }
+        slots: { default: 'Click me' },
       });
       expect(wrapper.text()).toBe('Click me');
     });
 
     it('applies correct CSS classes for variant', () => {
       const wrapper = mount(Button, {
-        props: { ...props, variant: 'danger' }
+        props: { ...props, variant: 'danger' },
       });
       expect(wrapper.find('button').classes()).toContain('ui-button--danger');
     });
 
     it('applies size class', () => {
       const wrapper = mount(Button, {
-        props: { ...props, size: 'lg' }
+        props: { ...props, size: 'lg' },
       });
       expect(wrapper.find('button').classes()).toContain('ui-button--lg');
     });
@@ -146,7 +146,7 @@ describe('Button', () => {
 
     it('does not emit click when disabled', async () => {
       const wrapper = mount(Button, {
-        props: { ...props, disabled: true }
+        props: { ...props, disabled: true },
       });
       await wrapper.find('button').trigger('click');
       expect(wrapper.emitted('click')).toBeUndefined();
@@ -154,7 +154,7 @@ describe('Button', () => {
 
     it('does not emit click when loading', async () => {
       const wrapper = mount(Button, {
-        props: { ...props, loading: true }
+        props: { ...props, loading: true },
       });
       await wrapper.find('button').trigger('click');
       expect(wrapper.emitted('click')).toBeUndefined();
@@ -164,21 +164,21 @@ describe('Button', () => {
   describe('States', () => {
     it('displays loading spinner when loading', () => {
       const wrapper = mount(Button, {
-        props: { ...props, loading: true }
+        props: { ...props, loading: true },
       });
       expect(wrapper.find('.ui-button__spinner').exists()).toBe(true);
     });
 
     it('disables button element when disabled', () => {
       const wrapper = mount(Button, {
-        props: { ...props, disabled: true }
+        props: { ...props, disabled: true },
       });
       expect(wrapper.find('button').attributes('disabled')).toBeDefined();
     });
 
     it('applies fullWidth class when fullWidth is true', () => {
       const wrapper = mount(Button, {
-        props: { ...props, fullWidth: true }
+        props: { ...props, fullWidth: true },
       });
       expect(wrapper.find('button').classes()).toContain('ui-button--full-width');
     });
@@ -187,14 +187,14 @@ describe('Button', () => {
   describe('ARIA Attributes', () => {
     it('sets aria-disabled when disabled', () => {
       const wrapper = mount(Button, {
-        props: { ...props, disabled: true }
+        props: { ...props, disabled: true },
       });
       expect(wrapper.find('button').attributes('aria-disabled')).toBe('true');
     });
 
     it('sets aria-busy when loading', () => {
       const wrapper = mount(Button, {
-        props: { ...props, loading: true }
+        props: { ...props, loading: true },
       });
       expect(wrapper.find('button').attributes('aria-busy')).toBe('true');
     });
@@ -206,7 +206,7 @@ describe('Button', () => {
 
     it('sets appropriate tabIndex', () => {
       const wrapper = mount(Button, {
-        props: { ...props, disabled: true }
+        props: { ...props, disabled: true },
       });
       expect(wrapper.find('button').attributes('tabindex')).toBe('-1');
     });
@@ -297,8 +297,9 @@ describe('Button Accessibility', () => {
     const button = wrapper.find('button');
 
     // Button should be focusable
-    expect(button.element === document.activeElement ||
-           button.attributes('tabindex') !== '-1').toBe(true);
+    expect(
+      button.element === document.activeElement || button.attributes('tabindex') !== '-1',
+    ).toBe(true);
   });
 
   it('supports keyboard interaction', async () => {
@@ -312,21 +313,21 @@ describe('Button Accessibility', () => {
 
   it('announces disabled state to screen readers', () => {
     const wrapper = mount(Button, {
-      props: { ...props, disabled: true }
+      props: { ...props, disabled: true },
     });
     expect(wrapper.find('button').attributes('aria-disabled')).toBe('true');
   });
 
   it('announces loading state to screen readers', () => {
     const wrapper = mount(Button, {
-      props: { ...props, loading: true }
+      props: { ...props, loading: true },
     });
     expect(wrapper.find('button').attributes('aria-busy')).toBe('true');
   });
 
   it('has descriptive text', () => {
     const wrapper = mount(Button, {
-      slots: { default: 'Submit Form' }
+      slots: { default: 'Submit Form' },
     });
     // Button text should be meaningful
     expect(wrapper.text()).not.toBe('Button');
@@ -397,7 +398,7 @@ describe('Button Integration', () => {
           <Button type="submit">Submit</Button>
         </form>
       `,
-      methods: { onSubmit }
+      methods: { onSubmit },
     });
 
     await wrapper.find('button').trigger('click');
@@ -406,7 +407,7 @@ describe('Button Integration', () => {
 
   it('responds to prop changes', async () => {
     const wrapper = mount(Button, {
-      props: { variant: 'primary' }
+      props: { variant: 'primary' },
     });
 
     expect(wrapper.find('button').classes()).toContain('ui-button--primary');
@@ -427,7 +428,7 @@ Snapshots are useful for markup but should not be the primary test:
 it('renders consistent markup', () => {
   const wrapper = mount(Button, {
     props: { variant: 'primary', size: 'md' },
-    slots: { default: 'Click me' }
+    slots: { default: 'Click me' },
   });
 
   expect(wrapper.html()).toMatchSnapshot();
@@ -494,9 +495,7 @@ it('is accessible as a button', () => {
 import { vi } from 'vitest';
 
 it('handles API errors gracefully', async () => {
-  const mockFetch = vi.spyOn(global, 'fetch').mockRejectedValue(
-    new Error('Network error')
-  );
+  const mockFetch = vi.spyOn(global, 'fetch').mockRejectedValue(new Error('Network error'));
 
   const wrapper = mount(MyComponent);
   await wrapper.vm.$nextTick();
@@ -564,8 +563,8 @@ it('renders slot content', () => {
     slots: {
       header: 'Card Header',
       default: 'Card Body',
-      footer: 'Card Footer'
-    }
+      footer: 'Card Footer',
+    },
   });
 
   expect(wrapper.text()).toContain('Card Header');
@@ -592,7 +591,7 @@ it('emits custom events', async () => {
 ```typescript
 it('responds to prop changes via watchers', async () => {
   const wrapper = mount(Component, {
-    props: { value: 'initial' }
+    props: { value: 'initial' },
   });
 
   await wrapper.setProps({ value: 'updated' });

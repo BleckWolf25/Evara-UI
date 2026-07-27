@@ -50,8 +50,7 @@ Contains all interfaces, types, and enums used by the component.
  *
  * @interface ButtonProps
  */
-export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   /**
    * Visual style variant of the button.
    * @default 'primary'
@@ -175,7 +174,7 @@ export interface ButtonState {
 
 #### React Button Implementation
 
-```typescript
+````typescript
 // packages/react/src/components/Button/Button.tsx
 
 import { forwardRef } from 'react';
@@ -257,7 +256,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 );
 
 Button.displayName = 'Button';
-```
+````
 
 #### Vue Button Implementation
 
@@ -321,11 +320,7 @@ const handleClick = (event: MouseEvent) => {
     v-bind="ariaAttributes"
     @click="handleClick"
   >
-    <span
-      v-if="loading"
-      class="ui-button__spinner"
-      aria-hidden="true"
-    />
+    <span v-if="loading" class="ui-button__spinner" aria-hidden="true" />
     <slot />
   </button>
 </template>
@@ -343,7 +338,7 @@ const handleClick = (event: MouseEvent) => {
 - **Import styles**: Always import CSS file
 - **Compose, don't duplicate**: Use core controllers
 
-### 3. `Component.constants.ts` (Required*)
+### 3. `Component.constants.ts` (Required\*)
 
 **Purpose**: Configuration, allowed values, and magic numbers.
 
@@ -358,12 +353,7 @@ Use when the component has enums, lists of allowed values, or configuration.
  * Valid button variants.
  * These must match design tokens in @evara/styles.
  */
-export const BUTTON_VARIANTS = [
-  'primary',
-  'secondary',
-  'ghost',
-  'danger',
-] as const;
+export const BUTTON_VARIANTS = ['primary', 'secondary', 'ghost', 'danger'] as const;
 
 export type ButtonVariant = (typeof BUTTON_VARIANTS)[number];
 
@@ -869,9 +859,7 @@ import './Button.css';
 ```typescript
 // File: Button.tsx
 // Component must use forwardRef for native element access
-export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  (props, ref) => { }
-);
+export const Button = forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {});
 Button.displayName = 'Button'; // For DevTools
 ```
 
@@ -893,11 +881,11 @@ Button.displayName = 'Button'; // For DevTools
 
 **When can you deviate?**
 
-- `Component.types.ts`: Never—types are required
-- `Component.tsx/.vue`: Never—implementation is required
+- `Component.types.ts`: Never, types are required
+- `Component.tsx/.vue`: Never, implementation is required
 - `Component.constants.ts`: Skip if component has no variants/enums
 - `Component.css`: Skip if component only uses design tokens
-- `Component.storybook.ts`: Never—documentation is required
-- `Component.test.tsx`: Never—tests are required
+- `Component.storybook.ts`: Never, documentation is required
+- `Component.test.tsx`: Never, tests are required
 
 All deviations must be justified in code comments.

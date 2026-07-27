@@ -106,7 +106,7 @@ evara-ui/
 ```json
 {
   "dependencies": {}
-  // Pure TypeScript—no external deps
+  // Pure TypeScript, no external deps
 }
 ```
 
@@ -115,7 +115,7 @@ evara-ui/
 ```json
 {
   "dependencies": {}
-  // Pure CSS—no build requirements
+  // Pure CSS, no build requirements
 }
 ```
 
@@ -208,10 +208,10 @@ The `@evara/core` package exports:
    ```typescript
    // packages/core/src/components/Button/Button.controller.ts
    export class ButtonController {
-     constructor(props: ButtonProps) { }
-     getAriaAttributes() { }
-     getClassNames() { }
-     handleClick(e: MouseEvent) { }
+     constructor(props: ButtonProps) {}
+     getAriaAttributes() {}
+     getClassNames() {}
+     handleClick(e: MouseEvent) {}
    }
    ```
 
@@ -285,11 +285,7 @@ const classes = computed(() => controller.getClassNames());
 </script>
 
 <template>
-  <button
-    :class="classes"
-    v-bind="ariaAttrs"
-    @click="$emit('click', $event)"
-  >
+  <button :class="classes" v-bind="ariaAttrs" @click="$emit('click', $event)">
     <slot />
   </button>
 </template>
@@ -410,9 +406,9 @@ packages/core/
 export default defineConfig({
   entry: ['src/index.ts'],
   format: ['esm', 'cjs'],
-  dts: true,              // Generate .d.ts
-  splitting: true,        // Code splitting
-  treeshake: true,        // Remove dead code
+  dts: true, // Generate .d.ts
+  splitting: true, // Code splitting
+  treeshake: true, // Remove dead code
   clean: true,
 });
 ```
@@ -460,10 +456,10 @@ All packages must support Server-Side Rendering for Nuxt/Next.js:
 
    ```typescript
    // ❌ WRONG
-   const id = `btn-${Math.random()}`;  // Different on server/client
+   const id = `btn-${Math.random()}`; // Different on server/client
 
    // ✅ CORRECT
-   const id = useId();  // Deterministic, same on server & client
+   const id = useId(); // Deterministic, same on server & client
    ```
 
 3. **Async during setup is fine**

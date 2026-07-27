@@ -1,0 +1,18 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Alert Component > Snapshots > matches snapshot 1`] = `
+<div>
+  <div
+    aria-atomic="true"
+    aria-live="polite"
+    class="ui-alert ui-alert--info"
+    role="alert"
+  >
+    <div
+      class="ui-alert__content"
+    >
+      Alert message
+    </div>
+  </div>
+</div>
+`;

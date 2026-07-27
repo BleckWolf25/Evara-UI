@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Form Component > Snapshots > matches snapshot 1`] = `
+<div>
+  <form
+    class="ui-form"
+  >
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+  </form>
+</div>
+`;

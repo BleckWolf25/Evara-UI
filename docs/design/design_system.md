@@ -42,12 +42,12 @@ All tokens are CSS variables with a consistent naming pattern:
 --ui-color-blue-500: #3b82f6;
 --ui-color-blue-600: #2563eb;
 
---ui-space-1: 0.25rem;   /* 4px */
---ui-space-2: 0.5rem;    /* 8px */
---ui-space-3: 0.75rem;   /* 12px */
---ui-space-4: 1rem;      /* 16px */
---ui-space-5: 1.5rem;    /* 24px */
---ui-space-6: 2rem;      /* 32px */
+--ui-space-1: 0.25rem; /* 4px */
+--ui-space-2: 0.5rem; /* 8px */
+--ui-space-3: 0.75rem; /* 12px */
+--ui-space-4: 1rem; /* 16px */
+--ui-space-5: 1.5rem; /* 24px */
+--ui-space-6: 2rem; /* 32px */
 
 --ui-font-size-xs: 0.75rem;
 --ui-font-size-sm: 0.875rem;
@@ -154,16 +154,16 @@ The modern design uses a carefully curated palette with intentional hierarchy:
 Used for backgrounds, borders, and secondary text.
 
 ```css
---ui-color-neutral-50: #f9fafb;    /* Lightest background */
---ui-color-neutral-100: #f3f4f6;   /* Light background */
---ui-color-neutral-200: #e5e7eb;   /* Light border */
---ui-color-neutral-300: #d1d5db;   /* Border */
---ui-color-neutral-400: #9ca3af;   /* Tertiary text */
---ui-color-neutral-500: #6b7280;   /* Secondary placeholder */
---ui-color-neutral-600: #4b5563;   /* Secondary text */
---ui-color-neutral-700: #374151;   /* Primary text alternative */
---ui-color-neutral-800: #1f2937;   /* Dark text */
---ui-color-neutral-900: #111827;   /* Darkest text */
+--ui-color-neutral-50: #f9fafb; /* Lightest background */
+--ui-color-neutral-100: #f3f4f6; /* Light background */
+--ui-color-neutral-200: #e5e7eb; /* Light border */
+--ui-color-neutral-300: #d1d5db; /* Border */
+--ui-color-neutral-400: #9ca3af; /* Tertiary text */
+--ui-color-neutral-500: #6b7280; /* Secondary placeholder */
+--ui-color-neutral-600: #4b5563; /* Secondary text */
+--ui-color-neutral-700: #374151; /* Primary text alternative */
+--ui-color-neutral-800: #1f2937; /* Dark text */
+--ui-color-neutral-900: #111827; /* Darkest text */
 ```
 
 #### Primary Blue (Core Brand Color)
@@ -174,38 +174,38 @@ Used for backgrounds, borders, and secondary text.
 --ui-color-blue-200: #bfdbfe;
 --ui-color-blue-300: #93c5fd;
 --ui-color-blue-400: #60a5fa;
---ui-color-blue-500: #3b82f6;    /* Primary action */
---ui-color-blue-600: #2563eb;    /* Primary hover */
---ui-color-blue-700: #1d4ed8;    /* Primary active */
+--ui-color-blue-500: #3b82f6; /* Primary action */
+--ui-color-blue-600: #2563eb; /* Primary hover */
+--ui-color-blue-700: #1d4ed8; /* Primary active */
 ```
 
 #### Status Colors
 
 ```css
---ui-color-success: #10b981;      /* Positive/success actions */
---ui-color-warning: #f59e0b;      /* Caution/warning states */
---ui-color-danger: #ef4444;       /* Destructive/error actions */
---ui-color-info: #0ea5e9;         /* Informational messages */
+--ui-color-success: #10b981; /* Positive/success actions */
+--ui-color-warning: #f59e0b; /* Caution/warning states */
+--ui-color-danger: #ef4444; /* Destructive/error actions */
+--ui-color-info: #0ea5e9; /* Informational messages */
 ```
 
 ### Color Usage Guidelines
 
 ```css
 /* BACKGROUNDS */
---ui-color-bg-primary: var(--ui-color-neutral-50);    /* Page bg */
---ui-color-bg-secondary: white;                        /* Cards, modals */
---ui-color-bg-hover: var(--ui-color-neutral-100);     /* Hover states */
+--ui-color-bg-primary: var(--ui-color-neutral-50); /* Page bg */
+--ui-color-bg-secondary: white; /* Cards, modals */
+--ui-color-bg-hover: var(--ui-color-neutral-100); /* Hover states */
 
 /* TEXT */
---ui-color-text-primary: var(--ui-color-neutral-900);     /* Main text */
---ui-color-text-secondary: var(--ui-color-neutral-600);   /* Secondary text */
---ui-color-text-muted: var(--ui-color-neutral-500);       /* Placeholders */
---ui-color-text-disabled: var(--ui-color-neutral-400);    /* Disabled text */
+--ui-color-text-primary: var(--ui-color-neutral-900); /* Main text */
+--ui-color-text-secondary: var(--ui-color-neutral-600); /* Secondary text */
+--ui-color-text-muted: var(--ui-color-neutral-500); /* Placeholders */
+--ui-color-text-disabled: var(--ui-color-neutral-400); /* Disabled text */
 
 /* BORDERS */
---ui-color-border-primary: var(--ui-color-neutral-200);   /* Subtle borders */
+--ui-color-border-primary: var(--ui-color-neutral-200); /* Subtle borders */
 --ui-color-border-secondary: var(--ui-color-neutral-300); /* Stronger borders */
---ui-color-border-focus: var(--ui-color-primary);         /* Focus rings */
+--ui-color-border-focus: var(--ui-color-primary); /* Focus rings */
 
 /* INTERACTIVE */
 --ui-color-action-primary: var(--ui-color-blue-500);
@@ -220,33 +220,33 @@ The spacing system uses a 4px base unit (rem-based for accessibility):
 
 ```css
 /* Base unit = 0.25rem (4px) */
---ui-space-1: 0.25rem;   /* 4px  - Extra tight */
---ui-space-2: 0.5rem;    /* 8px  - Tight */
---ui-space-3: 0.75rem;   /* 12px - Compact */
---ui-space-4: 1rem;      /* 16px - Base/comfortable */
---ui-space-5: 1.5rem;    /* 24px - Loose */
---ui-space-6: 2rem;      /* 32px - Very loose */
---ui-space-8: 2.5rem;    /* 40px - Extra loose */
---ui-space-10: 3rem;     /* 48px - Very extra loose */
---ui-space-12: 4rem;     /* 64px - Massive */
+--ui-space-1: 0.25rem; /* 4px  - Extra tight */
+--ui-space-2: 0.5rem; /* 8px  - Tight */
+--ui-space-3: 0.75rem; /* 12px - Compact */
+--ui-space-4: 1rem; /* 16px - Base/comfortable */
+--ui-space-5: 1.5rem; /* 24px - Loose */
+--ui-space-6: 2rem; /* 32px - Very loose */
+--ui-space-8: 2.5rem; /* 40px - Extra loose */
+--ui-space-10: 3rem; /* 48px - Very extra loose */
+--ui-space-12: 4rem; /* 64px - Massive */
 ```
 
 ### Component Spacing Examples
 
 ```css
 /* Button padding (based on size) */
---ui-button-padding-sm: 0.5rem 0.75rem;    /* space-2 space-3 */
---ui-button-padding-md: 0.75rem 1rem;      /* space-3 space-4 */
---ui-button-padding-lg: 1rem 1.5rem;       /* space-4 space-5 */
+--ui-button-padding-sm: 0.5rem 0.75rem; /* space-2 space-3 */
+--ui-button-padding-md: 0.75rem 1rem; /* space-3 space-4 */
+--ui-button-padding-lg: 1rem 1.5rem; /* space-4 space-5 */
 
 /* Input padding */
---ui-input-padding: 0.5rem 0.75rem;        /* space-2 space-3 */
+--ui-input-padding: 0.5rem 0.75rem; /* space-2 space-3 */
 
 /* Card padding */
---ui-card-padding: 1.5rem;                 /* space-5 */
+--ui-card-padding: 1.5rem; /* space-5 */
 
 /* Modal content padding */
---ui-modal-padding: 2rem;                  /* space-6 */
+--ui-modal-padding: 2rem; /* space-6 */
 
 /* Gap between elements */
 --ui-gap-sm: 0.5rem;
@@ -260,17 +260,19 @@ Modern, clear typography with intentional hierarchy:
 
 ```css
 /* Font family */
---ui-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
---ui-font-family-mono: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas, "Courier New", monospace;
+--ui-font-family:
+  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+--ui-font-family-mono:
+  'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
 
 /* Font sizes */
---ui-font-size-xs: 0.75rem;     /* 12px - Small labels */
---ui-font-size-sm: 0.875rem;    /* 14px - Secondary text */
---ui-font-size-base: 1rem;      /* 16px - Body text */
---ui-font-size-lg: 1.125rem;    /* 18px - Larger body */
---ui-font-size-xl: 1.25rem;     /* 20px - Section headers */
---ui-font-size-2xl: 1.5rem;     /* 24px - Page headers */
---ui-font-size-3xl: 1.875rem;   /* 30px - Major headers */
+--ui-font-size-xs: 0.75rem; /* 12px - Small labels */
+--ui-font-size-sm: 0.875rem; /* 14px - Secondary text */
+--ui-font-size-base: 1rem; /* 16px - Body text */
+--ui-font-size-lg: 1.125rem; /* 18px - Larger body */
+--ui-font-size-xl: 1.25rem; /* 20px - Section headers */
+--ui-font-size-2xl: 1.5rem; /* 24px - Page headers */
+--ui-font-size-3xl: 1.875rem; /* 30px - Major headers */
 
 /* Font weights */
 --ui-font-weight-normal: 400;
@@ -297,9 +299,18 @@ body {
 }
 
 /* Headings */
-h1 { font-size: var(--ui-font-size-3xl); font-weight: var(--ui-font-weight-bold); }
-h2 { font-size: var(--ui-font-size-2xl); font-weight: var(--ui-font-weight-semibold); }
-h3 { font-size: var(--ui-font-size-xl); font-weight: var(--ui-font-weight-semibold); }
+h1 {
+  font-size: var(--ui-font-size-3xl);
+  font-weight: var(--ui-font-weight-bold);
+}
+h2 {
+  font-size: var(--ui-font-size-2xl);
+  font-weight: var(--ui-font-weight-semibold);
+}
+h3 {
+  font-size: var(--ui-font-size-xl);
+  font-weight: var(--ui-font-weight-semibold);
+}
 
 /* Labels */
 label {
@@ -320,12 +331,12 @@ Consistent border radius with intentional hierarchy:
 
 ```css
 --ui-radius-none: 0;
---ui-radius-sm: 0.25rem;      /* 4px  - Subtle */
---ui-radius-base: 0.375rem;   /* 6px  - Default */
---ui-radius-md: 0.5rem;       /* 8px  - Common */
---ui-radius-lg: 0.75rem;      /* 12px - Large elements */
---ui-radius-xl: 1rem;         /* 16px - Extra large */
---ui-radius-full: 9999px;     /* Pills, circles */
+--ui-radius-sm: 0.25rem; /* 4px  - Subtle */
+--ui-radius-base: 0.375rem; /* 6px  - Default */
+--ui-radius-md: 0.5rem; /* 8px  - Common */
+--ui-radius-lg: 0.75rem; /* 12px - Large elements */
+--ui-radius-xl: 1rem; /* 16px - Extra large */
+--ui-radius-full: 9999px; /* Pills, circles */
 ```
 
 ### Component Radius Mapping
@@ -434,9 +445,9 @@ Ultra-clean, stripped-down design. Fewer shadows, neutral colors, larger padding
 ```css
 :root.evara-theme-minimal {
   --ui-color-primary: #1f2937;
-  --ui-radius-base: 0;            /* No rounding */
+  --ui-radius-base: 0; /* No rounding */
   --ui-shadow-base: 0 1px 0 rgba(0, 0, 0, 0.05);
-  --ui-button-padding-md: 1rem 1.25rem;  /* More padding */
+  --ui-button-padding-md: 1rem 1.25rem; /* More padding */
 }
 ```
 
@@ -446,7 +457,7 @@ Professional, structured design. Stronger borders, muted colors, higher formalit
 
 ```css
 :root.evara-theme-enterprise {
-  --ui-color-primary: #1e40af;    /* Darker blue */
+  --ui-color-primary: #1e40af; /* Darker blue */
   --ui-color-border-primary: var(--ui-color-neutral-400);
   --ui-button-font-weight: var(--ui-font-weight-bold);
   --ui-input-border-width: 1px;
@@ -509,14 +520,14 @@ Dark mode is fully supported through CSS variables:
 ```html
 <!-- Automatic (respects system preference) -->
 <html>
-
-<!-- Force dark mode -->
-<html class="evara-dark">
-
-<!-- Toggle -->
-<button @click="document.documentElement.classList.toggle('evara-dark')">
-  Toggle Dark Mode
-</button>
+  <!-- Force dark mode -->
+  <html class="evara-dark">
+    <!-- Toggle -->
+    <button @click="document.documentElement.classList.toggle('evara-dark')">
+      Toggle Dark Mode
+    </button>
+  </html>
+</html>
 ```
 
 ## Customization
@@ -538,7 +549,7 @@ Users can customize any token by overriding CSS variables:
 }
 ```
 
-**No rebuild required**—changes are applied at runtime.
+**No rebuild required**, changes are applied at runtime.
 
 ## Accessibility
 

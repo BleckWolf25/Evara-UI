@@ -9,7 +9,7 @@ We use a **clear separation of concerns**:
 - **ESLint**: Enforces code quality, correctness, and type safety
 - **Prettier**: Handles all formatting and stylistic concerns exclusively
 
-This means ESLint checks for bugs and mistakes, while Prettier handles how code looks. Never disable Prettier rules—adjust formatting preferences instead.
+This means ESLint checks for bugs and mistakes, while Prettier handles how code looks. Never disable Prettier rules, adjust formatting preferences instead.
 
 ## TypeScript Configuration
 
@@ -81,19 +81,19 @@ const ids: Array<string> = [];
 
 ### Type Safety Rules
 
-| Rule | Severity | Reason |
-|------|----------|--------|
-| `@typescript-eslint/no-explicit-any` | **Error** | `any` defeats type safety; use `unknown` with proper narrowing |
-| `@typescript-eslint/no-unused-vars` | **Error** | Unused variables indicate dead code or bugs; prefix with `_` to intentionally ignore |
-| `@typescript-eslint/require-await` | **Error** | `async` functions must actually use `await` |
-| `@typescript-eslint/no-floating-promises` | **Error** | Unhandled promises are silent bugs; always `.catch()` or `await` |
-| `@typescript-eslint/no-misused-promises` | **Error** | Prevents passing promises to non-async contexts |
+| Rule                                      | Severity  | Reason                                                                               |
+| ----------------------------------------- | --------- | ------------------------------------------------------------------------------------ |
+| `@typescript-eslint/no-explicit-any`      | **Error** | `any` defeats type safety; use `unknown` with proper narrowing                       |
+| `@typescript-eslint/no-unused-vars`       | **Error** | Unused variables indicate dead code or bugs; prefix with `_` to intentionally ignore |
+| `@typescript-eslint/require-await`        | **Error** | `async` functions must actually use `await`                                          |
+| `@typescript-eslint/no-floating-promises` | **Error** | Unhandled promises are silent bugs; always `.catch()` or `await`                     |
+| `@typescript-eslint/no-misused-promises`  | **Error** | Prevents passing promises to non-async contexts                                      |
 
 #### Examples
 
 ```typescript
 // ❌ NO: Using any
-function process(data: any) { }
+function process(data: any) {}
 
 // ✅ YES: Unknown with type guard
 function process(data: unknown) {
@@ -103,10 +103,10 @@ function process(data: unknown) {
 }
 
 // ❌ NO: Unused parameter
-function handleClick(event) { }
+function handleClick(event) {}
 
 // ✅ YES: Prefix unused with underscore
-function handleClick(_event: MouseEvent) { }
+function handleClick(_event: MouseEvent) {}
 
 // ❌ NO: Promise not awaited
 const data = fetchUser(); // Promise forgotten
@@ -155,10 +155,12 @@ for (const item of items) {
 }
 
 // ❌ NO: indexOf checks
-if (array.indexOf(value) !== -1) { }
+if (array.indexOf(value) !== -1) {
+}
 
 // ✅ YES: includes method
-if (array.includes(value)) { }
+if (array.includes(value)) {
+}
 
 // ❌ NO: substring/substr
 const part = str.substring(0, 5);
@@ -196,16 +198,16 @@ debugger; // Breaks execution in debug mode
 
 ### Formatting Rules
 
-| Setting | Value | Purpose |
-|---------|-------|---------|
-| Print width | 100 characters | Balance readability and IDE visibility |
-| Tab width | 2 spaces | Standard for JavaScript ecosystem |
-| Semicolons | Always | Avoid ASI (Automatic Semicolon Insertion) bugs |
-| Quotes | Single | Less escaping for apostrophes in English |
-| Trailing commas | All | Cleaner diffs, easier to add/remove items |
-| Arrow parens | Always | Consistency and clarity with single-param arrows |
-| Bracket spacing | True | `{ obj }` not `{obj}` |
-| Line endings | LF | Unix standard, consistent across OSes |
+| Setting         | Value          | Purpose                                          |
+| --------------- | -------------- | ------------------------------------------------ |
+| Print width     | 100 characters | Balance readability and IDE visibility           |
+| Tab width       | 2 spaces       | Standard for JavaScript ecosystem                |
+| Semicolons      | Always         | Avoid ASI (Automatic Semicolon Insertion) bugs   |
+| Quotes          | Single         | Less escaping for apostrophes in English         |
+| Trailing commas | All            | Cleaner diffs, easier to add/remove items        |
+| Arrow parens    | Always         | Consistency and clarity with single-param arrows |
+| Bracket spacing | True           | `{ obj }` not `{obj}`                            |
+| Line endings    | LF             | Unix standard, consistent across OSes            |
 
 ### Vue-Specific Formatting
 
@@ -213,12 +215,7 @@ Vue single-file components enforce one attribute per line for readability:
 
 ```vue
 <!-- ✅ CORRECT -->
-<Button
-  variant="primary"
-  size="lg"
-  disabled
-  @click="handleClick"
->
+<Button variant="primary" size="lg" disabled @click="handleClick">
   Click me
 </Button>
 
@@ -236,11 +233,11 @@ Only export components directly. Hooks must be named with `use` prefix:
 
 ```typescript
 // ✅ CORRECT
-export function Button() { }
-export function useButtonState() { }
+export function Button() {}
+export function useButtonState() {}
 
 // ❌ AVOID: Exporting non-hook functions as hooks
-export function buttonState() { }
+export function buttonState() {}
 ```
 
 ### React Hooks Rules
@@ -259,9 +256,9 @@ useEffect(() => {
 }, []);
 
 // ✅ CORRECT: React refresh only exports components
-export function App() { }
+export function App() {}
 
-const utils = () => { }; // Constants are ok
+const utils = () => {}; // Constants are ok
 ```
 
 ## Vue-Specific Rules
@@ -311,15 +308,15 @@ All tags should self-close when empty:
 // ✅ CORRECT
 const isLoading = true; // Boolean prefix with is/has/can
 const userCount = 5; // Plural for arrays/counts
-function handleClick() { } // Event handlers start with "handle"
-function useForm() { } // Custom hooks start with "use"
+function handleClick() {} // Event handlers start with "handle"
+function useForm() {} // Custom hooks start with "use"
 const MAX_RETRIES = 3; // Constants in UPPER_SNAKE_CASE
 
 // ❌ AVOID
 const loading = true; // Not clear it's a boolean
 const user = []; // Singular for arrays is confusing
-const onClickHandler = () => { }; // Redundant naming
-function form() { } // Doesn't indicate it's a hook
+const onClickHandler = () => {}; // Redundant naming
+function form() {} // Doesn't indicate it's a hook
 const maxRetries = 3; // Should be CONSTANT case
 ```
 
@@ -327,9 +324,12 @@ const maxRetries = 3; // Should be CONSTANT case
 
 ```css
 /* ✅ CORRECT: BEM-like naming, namespace */
-.ui-button { }
-.ui-button--primary { }
-.ui-button__icon { }
+.ui-button {
+}
+.ui-button--primary {
+}
+.ui-button__icon {
+}
 
 /* ✅ CORRECT: CSS variables with prefix and scope */
 :root {
@@ -339,9 +339,12 @@ const maxRetries = 3; // Should be CONSTANT case
 }
 
 /* ❌ AVOID: Generic or unprefixed classes */
-.button { }
-.primary { }
---color-primary { } /* No namespace */
+.button {
+}
+.primary {
+}
+--color-primary {
+} /* No namespace */
 ```
 
 ## Import Organization
@@ -375,7 +378,7 @@ import './styles.css';
 
 Document all exported functions and types:
 
-```typescript
+````typescript
 /**
  * Renders a flexible button component with multiple variants and states.
  *
@@ -393,12 +396,12 @@ Document all exported functions and types:
  * </Button>
  * ```
  */
-export function Button(props: ButtonProps) { }
-```
+export function Button(props: ButtonProps) {}
+````
 
 ### Inline Comments
 
-Use sparingly—the code should be self-explanatory:
+Use sparingly, the code should be self-explanatory:
 
 ```typescript
 // ✅ GOOD: Explains the "why"

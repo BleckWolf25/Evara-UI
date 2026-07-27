@@ -1,0 +1,26 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`DatePicker Component > Snapshots > matches snapshot 1`] = `
+<div>
+  <div
+    aria-disabled="false"
+    aria-placeholder="Select date..."
+    class="ui-date-picker ui-date-picker--md"
+    role="textbox"
+  >
+    <div
+      class="ui-date-picker__trigger"
+      tabindex="0"
+    >
+      <span>
+        Select date...
+      </span>
+      <span
+        class="ui-date-picker__calendar-icon"
+      >
+        📅
+      </span>
+    </div>
+  </div>
+</div>
+`;

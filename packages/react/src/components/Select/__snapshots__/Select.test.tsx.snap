@@ -1,0 +1,29 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Select Component > Snapshots > matches snapshot 1`] = `
+<div>
+  <div
+    aria-disabled="false"
+    aria-expanded="false"
+    aria-haspopup="listbox"
+    aria-multiselectable="false"
+    aria-placeholder="Select..."
+    class="ui-select ui-select--md"
+    role="combobox"
+  >
+    <div
+      class="ui-select__trigger"
+      tabindex="0"
+    >
+      <span>
+        Apple
+      </span>
+      <span
+        class="ui-select__arrow"
+      >
+        ▼
+      </span>
+    </div>
+  </div>
+</div>
+`;

@@ -3,23 +3,19 @@
  *
  * @version 1.0.0
  * @author BleckWolf25
- * @contributors
  * @license MIT
  *
+ * @summary Configures Prettier code formatting rules for the monorepo.
+ *
  * @description
- * Prettier configuration for monorepo project.
- * Define rules and integrates plugins for code consistency, readability
- * and compatibility with ESLint & TypeScript.
+ * Defines monorepo formatting rules including print width, single quotes, semi-colons,
+ * trailing commas, tab width, and framework overrides for Vue single file components.
  *
- * @since 2025-12-18
- * @updated 2025-12-19
- *
- * @see {@link https://prettier.io/docs/en/configuration.html | Prettier configuration }
+ * @since 10/06/2026
+ * @updated 27/07/2026
  */
 // ---------- CONFIGURATION
-/**
- * @type {import("prettier").Config}
- */
+/** @type {import("prettier").Config} */
 export default {
   semi: true,
   singleQuote: true,
@@ -30,6 +26,8 @@ export default {
   endOfLine: 'lf',
   arrowParens: 'always',
   bracketSpacing: true,
+
+  // File overrides
   overrides: [
     {
       files: '*.vue',
@@ -38,4 +36,4 @@ export default {
       },
     },
   ],
-};
+}

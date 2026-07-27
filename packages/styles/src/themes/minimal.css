@@ -1,0 +1,11 @@
+/**
+ * Minimal Theme
+ * Ultra-clean, stripped-down design
+ */
+
+:root.evara-theme-minimal {
+  --ui-color-primary: #1f2937;
+  --ui-color-primary-hover: #111827;
+  --ui-radius-base: 0;
+  --ui-shadow-base: 0 1px 0 rgba(0, 0, 0, 0.05);
+}

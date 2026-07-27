@@ -1,22 +1,3 @@
-# @file .gitignore
-#
-# @version 1.1.0
-# @author BleckWolf25
-# @license MIT
-#
-# @description
-# gitignore for Evara-UI monorepo.
-# Ignores dependencies, build artifacts, caches, logs, and IDE-specific files.
-#
-# @created 2025-12-18
-# @updated 2025-12-19
-#
-# @see {@link https://git-scm.com/docs/gitignore | gitignore documentation}
-# @see {@link https://github.com/github/gitignore | Standard .gitignore templates}
-#
-# ============================================================================
-# DEPENDENCIES & PACKAGE MANAGERS
-# ============================================================================
 # npm
 node_modules/
 package-lock.json
@@ -47,10 +28,6 @@ web_modules/
 # Bower
 bower_components/
 
-# ============================================================================
-# BUILD ARTIFACTS & DISTRIBUTIONS
-# ============================================================================
-
 # Dist directories
 dist/
 dist-*
@@ -69,10 +46,6 @@ out/
 # Package archives
 *.tgz
 *.tar.gz
-
-# ============================================================================
-# CACHES & TEMPORARY FILES
-# ============================================================================
 
 # Node.js
 .node_repl_history
@@ -108,17 +81,9 @@ vite.config.ts.timestamp-*
 # Precompiled headers
 .vscode/
 
-# ============================================================================
-# SVELTEKIT & FRAMEWORK CACHES
-# ============================================================================
-
 .svelte-kit/
 .vitepress/cache/
 .vitepress/dist/
-
-# ============================================================================
-# LOGS & CRASH DUMPS
-# ============================================================================
 
 # General logs
 logs/
@@ -133,10 +98,6 @@ pids/
 *.pid
 *.seed
 *.pid.lock
-
-# ============================================================================
-# TESTING & COVERAGE
-# ============================================================================
 
 # Coverage reports
 coverage/
@@ -153,10 +114,6 @@ e2e/playwright-traces/
 e2e/test-results/
 playwright-report/
 playwright-traces/
-
-# ============================================================================
-# IDE & EDITOR SPECIFIC
-# ============================================================================
 
 # VS Code
 .vscode/
@@ -189,10 +146,6 @@ playwright-traces/
 # Nano
 .swp
 
-# ============================================================================
-# ENVIRONMENT & CONFIGURATION
-# ============================================================================
-
 # Environment files
 .env
 .env.*
@@ -201,10 +154,6 @@ playwright-traces/
 # Local overrides
 .local/
 .config.local.*
-
-# ============================================================================
-# OS SPECIFIC
-# ============================================================================
 
 # macOS
 .DS_Store
@@ -226,10 +175,6 @@ $RECYCLE.BIN/
 # Linux
 .directory
 
-# ============================================================================
-# DEVELOPMENT TOOLS & EXTENSIONS
-# ============================================================================
-
 # Husky (Git Hooks)
 .husky/
 
@@ -245,10 +190,6 @@ agents/default.json
 
 # Changesets
 .changeset/CHANGELOG.md
-
-# ============================================================================
-# THIRD-PARTY SERVICES
-# ============================================================================
 
 # Firebase
 .firebase/
@@ -266,10 +207,6 @@ agents/default.json
 # FuseBox
 .fusebox/
 
-# ============================================================================
-# BUILD TOOL ARTIFACTS
-# ============================================================================
-
 # Grunt
 .grunt/
 
@@ -285,12 +222,3 @@ build/
 
 # Compiled binary addons
 build/Release/
-
-# ============================================================================
-# LOCK FILES (Optional - uncomment if preferred)
-# ============================================================================
-
-# Uncomment to ignore lock files (use with caution in monorepos)
-# pnpm-lock.yaml
-# yarn.lock
-# package-lock.json

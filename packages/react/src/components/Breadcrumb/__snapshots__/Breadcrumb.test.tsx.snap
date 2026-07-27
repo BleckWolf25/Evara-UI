@@ -1,0 +1,40 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Breadcrumb Component > Snapshots > matches snapshot 1`] = `
+<div>
+  <nav
+    aria-label="Breadcrumb"
+    class="ui-breadcrumb"
+    role="navigation"
+  >
+    <ol
+      class="ui-breadcrumb__list"
+    >
+      <li
+        class="ui-breadcrumb__item"
+      >
+        <a
+          class="ui-breadcrumb__link"
+          href="/"
+        >
+          Home
+        </a>
+        <span
+          class="ui-breadcrumb__separator"
+        >
+          /
+        </span>
+      </li>
+      <li
+        class="ui-breadcrumb__item ui-breadcrumb__item--current"
+      >
+        <span
+          class="ui-breadcrumb__current"
+        >
+          Library
+        </span>
+      </li>
+    </ol>
+  </nav>
+</div>
+`;

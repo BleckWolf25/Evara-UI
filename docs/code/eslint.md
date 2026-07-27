@@ -1,6 +1,6 @@
 # ESLint Rules & Code Quality Standards
 
-This document defines the **code quality and correctness rules** enforced by ESLint. ESLint catches bugs, prevents mistakes, and ensures type safety—it does NOT handle formatting (that's Prettier's job).
+This document defines the **code quality and correctness rules** enforced by ESLint. ESLint catches bugs, prevents mistakes, and ensures type safety, it does NOT handle formatting (that's Prettier's job).
 
 ## Philosophy
 
@@ -80,7 +80,8 @@ function process(data: unknown) {
 
 ```typescript
 // ❌ ERROR
-function processUser(user, address) {  // address not used
+function processUser(user, address) {
+  // address not used
   return user.name;
 }
 
@@ -120,7 +121,7 @@ const names = users
 ```typescript
 // ❌ ERROR
 async function getUserName(id: string) {
-  return `User ${id}`;  // Not async, don't mark as async
+  return `User ${id}`; // Not async, don't mark as async
 }
 
 // ✅ CORRECT (Option 1: Remove async if not needed)
@@ -149,7 +150,7 @@ async function getUserName(id: string) {
 ```typescript
 // ❌ ERROR (unhandled promise rejection)
 function loadData() {
-  fetchData();  // Promise created but not handled
+  fetchData(); // Promise created but not handled
   return 'Loading...';
 }
 
@@ -167,7 +168,7 @@ function loadData() {
 
 // ✅ CORRECT (Option 3: Fire-and-forget with void)
 function loadData() {
-  void fetchData();  // Intentional fire-and-forget
+  void fetchData(); // Intentional fire-and-forget
   return 'Loading...';
 }
 
@@ -200,7 +201,7 @@ if (await fetchData()) {
 // ❌ ERROR (setTimeout with async)
 setTimeout(async () => {
   await doWork();
-}, 1000);  // No way to catch errors from doWork()
+}, 1000); // No way to catch errors from doWork()
 
 // ✅ CORRECT
 setTimeout(async () => {
@@ -308,10 +309,10 @@ const callbacks: Callback<User>[] = [];
 
 ```typescript
 // ❌ WRONG (0 is falsy, becomes 10)
-const count = userInput || 10;  // If userInput is 0, result is 10
+const count = userInput || 10; // If userInput is 0, result is 10
 
 // ✅ CORRECT (only null/undefined becomes 10)
-const count = userInput ?? 10;  // If userInput is 0, result is 0
+const count = userInput ?? 10; // If userInput is 0, result is 0
 ```
 
 **When it matters**:
@@ -326,14 +327,14 @@ const port = process.env.PORT ?? 3000;
 // If PORT="0", stays 0 (correct)
 
 // False values to watch out for
-0 || 10      // = 10 (wrong!)
-0 ?? 10      // = 0 (correct)
+0 || 10; // = 10 (wrong!)
+0 ?? 10; // = 0 (correct)
 
-'' || 'default'     // = 'default' (wrong!)
-'' ?? 'default'     // = '' (correct)
+'' || 'default'; // = 'default' (wrong!)
+'' ?? 'default'; // = '' (correct)
 
-false || true       // = true (wrong!)
-false ?? true       // = false (correct)
+false || true; // = true (wrong!)
+false ?? true; // = false (correct)
 ```
 
 #### `@typescript-eslint/prefer-optional-chain`
@@ -496,7 +497,7 @@ console.log('button clicked'); // OK while working
 ```typescript
 // ❌ ERROR (would pause execution in debug mode)
 function handleClick() {
-  debugger;  // This breaks in DevTools
+  debugger; // This breaks in DevTools
   doWork();
 }
 
@@ -565,13 +566,13 @@ function Component() {
 ```typescript
 // ❌ ERROR (missing 'value' in deps)
 useEffect(() => {
-  console.log(value);  // value is a dependency!
-}, []);  // Missing dependency
+  console.log(value); // value is a dependency!
+}, []); // Missing dependency
 
 // ✅ CORRECT
 useEffect(() => {
   console.log(value);
-}, [value]);  // Properly listed
+}, [value]); // Properly listed
 
 // ✅ CORRECT (intentional empty deps for mount-only)
 useEffect(() => {
@@ -583,12 +584,17 @@ useEffect(() => {
 useEffect(() => {
   eventEmitter.on('change', handleChange);
   return () => eventEmitter.off('change', handleChange);
-}, [handleChange]);  // handleChange recreated every render!
+}, [handleChange]); // handleChange recreated every render!
 
 // ✅ CORRECT
-const handleChange = useCallback(() => {
-  // Handle change
-}, [/* actual deps */]);
+const handleChange = useCallback(
+  () => {
+    // Handle change
+  },
+  [
+    /* actual deps */
+  ],
+);
 
 useEffect(() => {
   eventEmitter.on('change', handleChange);
@@ -602,16 +608,20 @@ useEffect(() => {
 
 ```typescript
 // ❌ WARNING (exporting non-component)
-export const utils = { /* ... */ };
-export function MyComponent() { }
+export const utils = {
+  /* ... */
+};
+export function MyComponent() {}
 
 // ✅ CORRECT
 // Separate files for utilities and components
 // Or:
-function MyComponent() { }
+function MyComponent() {}
 export default MyComponent;
 
-export const utils = { /* ... */ };  // In different file
+export const utils = {
+  /* ... */
+}; // In different file
 ```
 
 **Why**: React Fast Refresh works best when files export only components.
@@ -738,14 +748,14 @@ Failed linting = failed PR = no merge.
 
 ```typescript
 // ❌ Error: Unexpected any
-function process(data: any) { }
+function process(data: any) {}
 
 // ✅ Fix
 // Option 1: Use proper type
 interface Data {
   name: string;
 }
-function process(data: Data) { }
+function process(data: Data) {}
 
 // Option 2: Use unknown with type guard
 function process(data: unknown) {
@@ -794,17 +804,17 @@ console.warn('important message');
 
 ## Summary Table
 
-| Rule | Type | Purpose | Fix |
-|------|------|---------|-----|
-| `no-explicit-any` | Error | Type safety | Use proper types or `unknown` |
-| `no-unused-vars` | Error | Remove dead code | Delete or prefix with `_` |
-| `require-await` | Error | Async intent | Remove `async` or add `await` |
-| `no-floating-promises` | Error | Handle rejections | Add `.catch()` or `await` |
-| `prefer-nullish-coalescing` | Error | Correct defaults | Use `??` instead of `\|\|` |
-| `prefer-optional-chain` | Error | Safer access | Use `?.` instead of `&&` |
-| `no-console` | Warn | Production safety | Use `warn`/`error` or remove |
-| `no-debugger` | Error | Don't break users | Remove `debugger` statements |
-| React hooks | Error | Hook safety | Only call at top level |
-| Vue naming | Off | Ergonomics | Single-word names allowed |
+| Rule                        | Type  | Purpose           | Fix                           |
+| --------------------------- | ----- | ----------------- | ----------------------------- |
+| `no-explicit-any`           | Error | Type safety       | Use proper types or `unknown` |
+| `no-unused-vars`            | Error | Remove dead code  | Delete or prefix with `_`     |
+| `require-await`             | Error | Async intent      | Remove `async` or add `await` |
+| `no-floating-promises`      | Error | Handle rejections | Add `.catch()` or `await`     |
+| `prefer-nullish-coalescing` | Error | Correct defaults  | Use `??` instead of `\|\|`    |
+| `prefer-optional-chain`     | Error | Safer access      | Use `?.` instead of `&&`      |
+| `no-console`                | Warn  | Production safety | Use `warn`/`error` or remove  |
+| `no-debugger`               | Error | Don't break users | Remove `debugger` statements  |
+| React hooks                 | Error | Hook safety       | Only call at top level        |
+| Vue naming                  | Off   | Ergonomics        | Single-word names allowed     |
 
-All errors block CI/CD. Fix them—don't ignore them.
+All errors block CI/CD. Fix them, don't ignore them.

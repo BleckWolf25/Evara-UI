@@ -1,51 +1,59 @@
-
 /**
  * @file eslint.config.ts
  *
  * @version 1.0.0
  * @author BleckWolf25
- * @contributors
  * @license MIT
  *
+ * @summary ESLint flat configuration for monorepo code quality and correctness rules.
+ *
  * @description
- * ESLint Flat Configuration for the project.
- * This file defines **code quality and correctness rules only**.
- * All formatting and stylistic concerns must be handled exclusively by Prettier.
+ * Defines monorepo ESLint rules across JavaScript, TypeScript, Vue 3, and React,
+ * configuring parser options, type-checking rules, global browser/node environments,
+ * and framework plugins for code correctness while delegating formatting to Prettier.
  *
- * @since 2025-12-18
- * @updated 2025-12-18
- *
- * - {@link https://prettier.io/docs/en/configuration.html | Prettier Documentation}
- * - {@link https://eslint.org/docs/latest/use/configure/ | ESLint Flat Config Documentation}
- * - {@link https://www.npmjs.com/package/@eslint/js | @eslint/js}
- * - {@link https://typescript-eslint.io/ | typescript-eslint}
- * - {@link https://www.npmjs.com/package/globals | globals}
- * - {@link https://eslint.vuejs.org/ | eslint-plugin-vue}
- * - {@link https://www.npmjs.com/package/eslint-plugin-react | eslint-plugin-react}
- * - {@link https://www.npmjs.com/package/eslint-plugin-react-hooks | eslint-plugin-react-hooks}
- * - {@link https://www.npmjs.com/package/eslint-plugin-react-refresh | eslint-plugin-react-refresh}
+ * @since 10/06/2026
+ * @updated 27/07/2026
  */
-/* eslint-disable @typescript-eslint/dot-notation */
 // ---------- IMPORTS
-import js from '@eslint/js';
-import globals from 'globals';
-import tseslint from 'typescript-eslint';
-import type { Config } from 'typescript-eslint';
-import pluginVue from 'eslint-plugin-vue';
-import pluginReact from 'eslint-plugin-react';
-import pluginReactHooks from 'eslint-plugin-react-hooks';
-import pluginReactRefresh from 'eslint-plugin-react-refresh';
-import parserVue from 'vue-eslint-parser';
+import js from '@eslint/js'
+import globals from 'globals'
+import tseslint from 'typescript-eslint'
+import type { Config } from 'typescript-eslint'
+import pluginVue from 'eslint-plugin-vue'
+import pluginReact from 'eslint-plugin-react'
+import pluginReactHooks from 'eslint-plugin-react-hooks'
+import pluginReactRefresh from 'eslint-plugin-react-refresh'
+import parserVue from 'vue-eslint-parser'
+
+import { fileURLToPath } from 'node:url'
+import { dirname } from 'node:path'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
 
 // ---------- CONFIGURATION
 export default [
-  // Global ignore patterns
+  // ---------- GLOBAL IGNORES
   {
-    ignores: ['dist', 'node_modules', '.output', '.nuxt', 'coverage'],
+    ignores: [
+      '**/dist/**',
+      '**/node_modules/**',
+      '**/.output/**',
+      '**/.nuxt/**',
+      '**/.next/**',
+      '**/.turbo/**',
+      '**/coverage/**',
+      '**/.nyc_output/**',
+      '**/public/**',
+      '**/generated/**',
+      '**/release/**',
+      '**/.vitepress/cache/**',
+      '**/.vitepress/dist/**',
+    ],
   },
 
-  // ---------- JAVASCRIPT
-  // Base JavaScript configuration
+  // ---------- JAVASCRIPT CONFIGURATION
   js.configs.recommended,
   {
     languageOptions: {
@@ -59,8 +67,7 @@ export default [
     },
   },
 
-  // ---------- TYPESCRIPT
-  // TypeScript configuration
+  // ---------- TYPESCRIPT CONFIGURATION
   ...tseslint.configs.strictTypeChecked.map((config) => ({
     ...config,
     files: ['**/*.ts', '**/*.tsx', '**/*.vue'],
@@ -75,16 +82,23 @@ export default [
         projectService: {
           allowDefaultProject: ['*.js', '*.mjs', '*.cjs'],
         },
-        tsconfigRootDir: import.meta.dirname,
+        tsconfigRootDir: __dirname,
       },
     },
   },
 
-  // ---------- VUE
-  // Vue configuration
+  // ---------- VUE CONFIGURATION
   ...pluginVue.configs['flat/recommended'],
   {
-    files: ['*.vue'],
+    files: ['**/*.vue', '**/*.ts', '**/*.tsx', '**/*.js'],
+    rules: {
+      'vue/multi-word-component-names': 'off',
+      'vue/no-reserved-component-names': 'off',
+      'vue/one-component-per-file': 'off',
+    },
+  },
+  {
+    files: ['**/*.vue'],
     languageOptions: {
       parser: parserVue,
       parserOptions: {
@@ -93,7 +107,6 @@ export default [
       },
     },
     rules: {
-      'vue/multi-word-component-names': 'off',
       'vue/html-self-closing': [
         'error',
         {
@@ -109,10 +122,9 @@ export default [
     },
   },
 
-  // ---------- REACT
-  // React configuration
+  // ---------- REACT CONFIGURATION
   {
-    files: ['**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'],
+    files: ['packages/react/**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}', 'examples/react-*/**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'],
     ...pluginReact.configs.flat['recommended'],
     ...pluginReact.configs.flat['jsx-runtime'],
     settings: {
@@ -122,51 +134,39 @@ export default [
     },
   },
   {
-    files: ['**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'],
+    files: ['packages/react/**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}', 'examples/react-*/**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'],
     plugins: {
       'react-hooks': pluginReactHooks,
       'react-refresh': pluginReactRefresh,
     },
     rules: {
       ...pluginReactHooks.configs.recommended.rules,
-      'react-refresh/only-export-components': [
-        'warn',
-        { allowConstantExport: true },
-      ],
+      'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
     },
   },
 
-  // ---------- IGNORED PATHS
-  // Additional ignored paths
-  {
-    ignores: [
-      '**/node_modules/**',
-      '**/dist/**',
-      '**/build/**',
-      '**/.next/**',
-      '**/.nuxt/**',
-      '**/.turbo/**',
-      '**/coverage/**',
-      '**/.nyc_output/**',
-      '**/public/**',
-      '**/generated/**',
-      '**/release/**',
-    ],
-  },
-
   // ---------- GENERAL RULES
-  // General project-wide rules
   {
     rules: {
       'no-console': ['warn', { allow: ['warn', 'error'] }],
       'no-debugger': 'error',
     },
   },
-  // TypeScript-specific rules
+  // ---------- TYPESCRIPT SPECIFIC RULES
   {
     files: ['**/*.ts', '**/*.tsx', '**/*.vue'],
     rules: {
       '@typescript-eslint/no-explicit-any': 'error',
+      '@typescript-eslint/no-empty-object-type': ['error', { allowInterfaces: 'always' }],
+      '@typescript-eslint/restrict-template-expressions': [
+        'error',
+        {
+          allowNumber: true,
+          allowBoolean: true,
+          allowAny: false,
+          allowNullish: false,
+        },
+      ],
       '@typescript-eslint/no-unused-vars': [
         'error',
         {
@@ -183,10 +183,7 @@ export default [
         },
       ],
       '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
-      '@typescript-eslint/no-misused-promises': [
-        'error',
-        { checksVoidReturn: false },
-      ],
+      '@typescript-eslint/no-misused-promises': ['error', { checksVoidReturn: false }],
       '@typescript-eslint/require-await': 'error',
       '@typescript-eslint/no-floating-promises': 'error',
       '@typescript-eslint/prefer-nullish-coalescing': 'error',
@@ -197,4 +194,21 @@ export default [
       '@typescript-eslint/prefer-string-starts-ends-with': 'error',
     },
   },
-] as Config[];
+
+  // ---------- DISABLE TYPE-CHECKED RULES FOR CONFIG FILES
+  {
+    files: [
+      '**/*.config.ts',
+      '**/*.config.js',
+      '**/*.config.mjs',
+      '**/*.config.cjs',
+      '**/tsup.config.ts',
+      '**/vitest.config.ts',
+      '**/vite.config.ts',
+      '**/vitest.setup.ts',
+      'eslint.config.ts',
+      'packages/docs/.vitepress/config.ts',
+    ],
+    ...tseslint.configs.disableTypeChecked,
+  },
+] as Config[]

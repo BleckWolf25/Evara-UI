@@ -61,7 +61,7 @@ body:
     id: logs
     attributes:
       label: 📜 Logs
-      description: Paste relevant browser console or server logs. Avoid screenshots—copy/paste text instead.
+      description: Paste relevant browser console or server logs. Avoid screenshots, copy/paste text instead.
       render: bash
 
   - type: textarea

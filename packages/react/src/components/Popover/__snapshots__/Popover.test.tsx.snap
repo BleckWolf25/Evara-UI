@@ -1,0 +1,18 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Popover Component > Snapshots > matches snapshot 1`] = `
+<div>
+  <span>
+    <button>
+      Toggle
+    </button>
+  </span>
+  <div
+    aria-modal="false"
+    class="ui-popover ui-popover--bottom"
+    role="dialog"
+  >
+    Popover content
+  </div>
+</div>
+`;

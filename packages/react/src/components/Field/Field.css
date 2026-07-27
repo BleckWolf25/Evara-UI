@@ -1,0 +1,35 @@
+.ui-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.ui-field__label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ui-color-text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.125rem;
+}
+
+.ui-field__label--required .ui-field__required-indicator {
+  color: var(--ui-color-text-danger);
+}
+
+.ui-field__helper-text {
+  font-size: 0.75rem;
+  color: var(--ui-color-text-secondary);
+  margin-top: 0.125rem;
+}
+
+.ui-field__error-text {
+  font-size: 0.75rem;
+  color: var(--ui-color-text-danger);
+  margin-top: 0.125rem;
+}
+
+.ui-field--disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}

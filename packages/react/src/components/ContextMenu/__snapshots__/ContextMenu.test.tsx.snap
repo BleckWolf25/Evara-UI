@@ -1,0 +1,19 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ContextMenu Component > Snapshots > matches snapshot 1`] = `
+<div>
+  <div
+    class="ui-context-menu"
+    role="menu"
+    style="position: fixed; left: 10px; top: 10px;"
+  >
+    <div
+      class="ui-context-menu__item"
+      role="menuitem"
+      tabindex="0"
+    >
+      Copy
+    </div>
+  </div>
+</div>
+`;

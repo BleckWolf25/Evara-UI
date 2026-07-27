@@ -4,7 +4,7 @@ Evara is an open-source, highly scalable UI library and design system. It provid
 Let's begin by setting up the core, it's shared stuff, not framework specific, so because of this, it's only typescript in the core.
 Read: @AGENTS.md and docs.
 
-The UI components and elements that my app will have:
+The UI components and elements that my UI Library have:
 
 - Alert Dialog
 - Alert
