@@ -1,139 +1,191 @@
 # Contributing to Evara UI
 
-First off, thank you for considering contributing to **Evara UI**! It's people like you who make Evara UI such a powerful library for the community.
+First off, thank you for taking the time to contribute! Contributions from the community help make the Evara UI library and design system more comprehensive, stable, and helpful for everyone.
 
-Evara UI is an enterprise-grade, highly scalable UI library and design system. Our goal is to provide modular, consistent, and testable components with built-in support for performance, SEO, and accessibility.
-
-Please take a moment to review this document to ensure a smooth contribution process.
-
-## Our Vision
-
-We aim for excellence in:
-
-- **Performance**: Lightweight and fast components.
-- **Accessibility**: Compliance with WCAG standards.
-- **Developer Experience**: Intuitive APIs and world-class documentation.
-- **Consistency**: A unified design language across frameworks (React, Vue, Nuxt).
+By participating in this project, you agree to abide by our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ---
 
-## Getting Started
+## Table of Contents
+
+- [Contributing to Evara UI](#contributing-to-evara-ui)
+  - [Table of Contents](#table-of-contents)
+  - [How Can I Contribute?](#how-can-i-contribute)
+    - [Reporting Bugs](#reporting-bugs)
+    - [Suggesting Enhancements](#suggesting-enhancements)
+    - [Documentation Improvements](#documentation-improvements)
+    - [Pull Requests](#pull-requests)
+  - [Development Setup](#development-setup)
+    - [Prerequisites](#prerequisites)
+    - [Setting Up Your Workspace](#setting-up-your-workspace)
+    - [Development Commands](#development-commands)
+  - [Style \& Code Guidelines](#style--code-guidelines)
+    - [TypeScript Coding Style](#typescript-coding-style)
+    - [Component Best Practices](#component-best-practices)
+    - [Commit Messages](#commit-messages)
+  - [Testing](#testing)
+    - [Writing Unit Tests](#writing-unit-tests)
+  - [Security Vulnerabilities](#security-vulnerabilities)
+
+---
+
+## How Can I Contribute?
+
+### Reporting Bugs
+
+We use structured GitHub Issue Forms to track bug reports. Before submitting a bug report, please:
+
+1. Check the existing issues to ensure it hasn't been reported or resolved already.
+2. Verify that it is reproducible on clean, un-customized workspace builds.
+3. Open a GitHub Issue and fill out the form completely, including:
+   - Project version
+   - OS information (Windows, macOS, Linux)
+   - Step-by-step instructions to reproduce the issue
+   - Screenshots or error stack traces if applicable
+
+### Suggesting Enhancements
+
+If you have ideas for new components, utility functions, or style declarations:
+
+1. Search the issues to verify your suggestion hasn't been discussed before.
+2. Open a Feature Request describing the functionality, the problem it solves, and how it might be implemented.
+
+### Documentation Improvements
+
+If you find inaccurate information, typos, or outdated content in documentation:
+
+Please open a Documentation Issue or submit a pull request with your improvements.
+
+### Pull Requests
+
+To submit code changes:
+
+1. **Fork** the repository and create your branch from `main` (e.g., `feature/your-feature-name` or `bugfix/issue-description`).
+2. Make your changes, keeping them focused. Avoid unrelated changes.
+3. Write clean, readable code following our guidelines.
+4. Ensure your changes compile, lint cleanly, and pass all tests locally.
+5. Submit a Pull Request (PR) with a clear description of the changes and references to any related issues.
+
+---
+
+## Development Setup
+
+This project is built with **TypeScript**, **PNPM**, and **Turborepo**.
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (>= 22.0.0)
-- [pnpm](https://pnpm.io/) (>= 10.0.0)
+- **Node.js** 22.0.0 or higher: Ensure you have Node.js installed.
+- **PNPM** 10.0.0 or higher: We use PNPM for package workspace dependency management.
+- **Git**: Installed and configured on your system.
 
-### Local Setup
+### Setting Up Your Workspace
 
-1. **Fork the repository** on GitHub.
-2. **Clone your fork** to your local machine:
-
-   ```bash
-   git clone https://github.com/your-username/Evara-UI.git
-   ```
-
-3. **Navigate to the directory**:
+1. **Clone the repository:**
 
    ```bash
+   git clone https://github.com/BleckWolf25/Evara-UI.git
    cd Evara-UI
    ```
 
-4. **Install dependencies**:
+2. **Install monorepo dependencies:**
 
    ```bash
    pnpm install
    ```
 
+### Development Commands
+
+Use the following PNPM commands in your project root:
+
+- **Start all showcases and documentation locally:**
+
+  ```bash
+  pnpm dev
+  ```
+
+- **Compile and package all workspaces:**
+
+  ```bash
+  pnpm build
+  ```
+
+- **Run all automated tests:**
+
+  ```bash
+  pnpm test
+  ```
+
+- **Run ESLint checks:**
+
+  ```bash
+  pnpm lint
+  ```
+
 ---
 
-## Project Structure
+## Style & Code Guidelines
 
-Evara UI is a monorepo managed with **Turborepo** and **pnpm workspaces**.
+### TypeScript Coding Style
 
-```zsh
-.
-├── packages
-│   ├── core      # Shared logic and primitives
-│   ├── react     # React-specific components
-│   ├── vue       # Vue-specific components
-│   ├── nuxt      # Nuxt.js integration modules
-│   ├── styles    # Global design tokens and CSS logic
-│   └── docs      # Documentation portal
-├── examples      # Framework-specific demo applications
-│   ├── react-demo
-│   ├── vue-demo
-│   ├── next-demo
-│   └── nuxt-demo
-└── scripts       # Build and maintenance scripts
+To keep the codebase uniform and easy to read:
+
+- **Indentation:** Use 2 spaces for indentation. Do not use tabs.
+- **Naming Conventions:**
+  - Classes, Interfaces, and Types: `PascalCase`
+  - Methods and Variables: `camelCase`
+  - Constants: `UPPER_SNAKE_CASE`
+- **Braces:** Use standard Egyptian brackets style:
+
+  ```typescript
+  export function exampleMethod() {
+    if (condition) {
+      // code
+    } else {
+      // code
+    }
+  }
+  ```
+
+- **Comments:** Add JSDoc-style comments to public component classes, helpers, and complex state machine handlers.
+
+### Component Best Practices
+
+- **Headless Controllers:** Keep state and accessibility logic inside `@evara-ui/core` headless controllers, completely detached from JSX views.
+- **Strict Typing:** Avoid `any` types. Provide explicit parameter and return typings, leveraging exact index signatures or mapped type constraints.
+- **Design Tokens:** Always utilize CSS variables from `@evara-ui/styles` inside stylesheets to ensure clean theme injection.
+
+### Commit Messages
+
+Use clear and descriptive commit messages. We recommend using prefix tags for commits, such as:
+
+- `feat: ...` for a new feature
+- `fix: ...` for a bug fix
+- `docs: ...` for documentation changes
+- `refactor: ...` for code style or internal design changes
+- `style: ...` for formatting fixes
+- `test: ...` for adding or updating tests
+- `chore: ...` for maintenance tasks
+
+Example:
+
+```text
+feat: add custom alert dialog polymorphic element support
 ```
 
 ---
 
-## Development Workflow
+## Testing
 
-### Task Execution
+This project uses **Vitest** for unit and integration testing and **Playwright** for end-to-end browser testing.
 
-We use `turbo` to manage tasks across the monorepo.
+### Writing Unit Tests
 
-- **Run all dev servers**: `pnpm dev`
-- **Build all packages**: `pnpm build`
-- **Run all tests**: `pnpm test`
-- **Lint the entire repo**: `pnpm lint`
-- **Typecheck the entire repo**: `pnpm typecheck`
-
-To run tasks for a specific package:
-
-```bash
-pnpm --filter=@evara/react dev
-```
-
-### Commit Convention
-
-We follow the [Conventional Commits](https://www.conventionalcommits.org/) specification. This helps us automate releases and maintain a clear project history.
-
-**Format**: `type(scope): description`
-
-**Types**:
-
-- `feat`: A new feature
-- `fix`: A bug fix
-- `docs`: Documentation changes
-- `style`: Changes that do not affect the meaning of the code (white-space, formatting, etc.)
-- `refactor`: A code change that neither fixes a bug nor adds a feature
-- `perf`: A code change that improves performance
-- `test`: Adding missing tests or correcting existing tests
-- `chore`: Changes to the build process or auxiliary tools
-
-_Example: `feat(react/button): add loading state Support`_
+- Place test files alongside their respective components with a `.test.ts` or `.test.tsx` suffix.
+- Test models, hook lifecycle events, and headless controller machines.
+- Ensure any test setup isolates mock render contexts to guarantee test idempotency.
 
 ---
 
-## Component Contribution Checklist
+## Security Vulnerabilities
 
-When contributing a new component or modifying an existing one, please ensure:
-
-1. **Framework Parity**: If it's a core component, aim to implement it for both React and Vue where applicable.
-2. **Styles**: Use the centralized `@evara/styles` tokens.
-3. **Tests**: Include unit tests (Vitest) and ensure they pass.
-4. **Documentation**: Update the relevant `.mdx` files in `packages/docs`.
-5. **Accessibility**: Test with screen readers and keyboard navigation.
-6. **Performance**: Avoid unnecessary re-renders or heavy dependencies.
-
----
-
-## Submitting a Pull Request
-
-1. **Create a feature branch**: `git checkout -b feat/your-feature-name`.
-2. **Commit your changes**: Follow the commit conventions.
-3. **Push to your fork**: `git push origin feat/your-feature-name`.
-4. **Open a PR**: Fill out the PR template (if available) with a clear description of your changes.
-5. **Review**: Be prepared to address feedback during the code review process.
-
-## Code of Conduct
-
-By participating in this project, you agree to abide by our Code of Conduct (see [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md) if present, otherwise follow standard professional etiquette).
-
----
-
-_Thank you for helping us build the future of UI!_
+Please do not report security vulnerabilities in public issues. Refer to our [Security Policy](SECURITY.md) for instructions on how to report security issues privately.

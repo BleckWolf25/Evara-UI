@@ -1,46 +1,35 @@
 # Security Policy
 
-We take the security of **Evara UI** seriously. We appreciate your efforts to responsibly disclose vulnerabilities, which helps us protect our users and maintain a secure ecosystem.
+Thank you for helping keep this project secure. As an open-source project, maintaining a safe environment for users is important, but resources are limited.
+Please review the policy below regarding supported versions and reporting vulnerabilities.
 
 ## Supported Versions
 
-We provide security updates for the current major version. Users on older versions are encouraged to upgrade to the latest stable release.
+Security updates and vulnerability patches are exclusively provided for the latest Long-Term Support (LTS) release.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 1.x     | :white_check_mark: |
-| < 1.0   | :x:                |
+| Version          | Supported | Notes                                                 |
+| ---------------- | --------- | ----------------------------------------------------- |
+| >**1.0.0** (LTS) | Yes       | Active support for security vulnerabilities.          |
+| < 1.0.0          | ❌ No     | Please upgrade to the latest LTS version immediately. |
 
-## Reporting a Vulnerability
-
-**Please do not report security vulnerabilities through public GitHub issues.**
-
-### Private Disclosure (Preferred)
-
-The best way to report a vulnerability is through [GitHub's Private Vulnerability Reporting](https://github.com/BleckWolf25/Evara-UI/security/advisories/new). This provides a secure channel for us to triage and fix the issue before it is made public.
-
-### Reporting Process
-
-1. Submit your report privately via the link above.
-2. Provide a clear description of the vulnerability, including steps to reproduce (PoC).
-3. We will acknowledge your report within **48-106 hours**.
-4. We will provide regular updates as we investigate and work on a fix.
-5. Once the fix is released, a Security Advisory will be published, and you will be credited for the discovery (unless you prefer to remain anonymous).
-
-## Vulnerability Handling
-
-Evara UI follows a standard disclosure timeline. We aim to address critical vulnerabilities within **7-14 business days**. We ask that you give us a reasonable amount of time to resolve the issue before any public disclosure.
-
-## Third-Party Dependencies
-
-If you find a vulnerability in one of our dependencies, we recommend reporting it to the respective maintainers. However, if the dependency vulnerability is exploitable through Evara UI, please let us know so we can prioritize an update or mitigation.
-
-## Security Best Practices
-
-- Always use the latest version of Evara UI.
-- Use `pnpm audit` regularly to check for known vulnerabilities in your project's dependency tree.
-- Ensure proper input sanitization when passing dynamic data to components.
+> ⚠️ **Important:** To report a valid security issue, your environment **must** be actively running on the latest release. Bugs or vulnerabilities found on older, modified, or deprecated branches will not be triaged.
 
 ---
 
-_Thank you for helping keep Evara UI secure!_
+## Reporting a Vulnerability
+
+If you discover a security vulnerability, please do not disclose it publicly via public GitHub Issues or Pull Requests.
+
+Please follow this process instead:
+
+1. **Verify:** Ensure the vulnerability is reproducible on a clean install of version >**1.0.0**.
+2. **Report:** Send a detailed report via email to **<joao.coutinho08@icloud.com>** or submit privately via [GitHub's Private Vulnerability Reporting](https://github.com/BleckWolf25/Evara-UI/security/advisories/new).
+3. **Include Details:**
+   - A clear description of the vulnerability.
+   - Steps to reproduce (or a Proof of Concept script/payload).
+   - The potential impact of the exploit.
+
+### Response Timeline
+
+You will receive an acknowledgment of your report within **[48-72 hours]**.
+If the vulnerability is verified as valid and within the scope of this project, a patch will be prepared and pushed to the main branch as a high priority.
