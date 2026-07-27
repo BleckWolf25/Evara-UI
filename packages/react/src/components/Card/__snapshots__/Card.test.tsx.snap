@@ -1,0 +1,25 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Card Component > Snapshots > matches snapshot 1`] = `
+<div>
+  <div
+    class="ui-card ui-card--default ui-card--elevation-md"
+  >
+    <div
+      class="ui-card__header"
+    >
+      Header
+    </div>
+    <div
+      class="ui-card__body"
+    >
+      Content
+    </div>
+    <div
+      class="ui-card__footer"
+    >
+      Footer
+    </div>
+  </div>
+</div>
+`;

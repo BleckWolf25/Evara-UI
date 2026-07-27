@@ -1,0 +1,12 @@
+/**
+ * Enterprise Theme
+ * Professional, structured design
+ */
+
+:root.evara-theme-enterprise {
+  --ui-color-primary: #1e40af;
+  --ui-color-primary-hover: #1e3a8a;
+  --ui-color-border-primary: #9ca3af;
+  --ui-button-font-weight: var(--ui-font-weight-bold);
+  --ui-input-border-width: 1px;
+}

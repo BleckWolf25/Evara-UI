@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Spinner Component > Snapshots > matches snapshot 1`] = `
+<div>
+  <div
+    aria-label="Loading..."
+    class="ui-spinner ui-spinner--md ui-spinner--default"
+    role="status"
+  />
+</div>
+`;

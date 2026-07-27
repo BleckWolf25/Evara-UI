@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "@evara-ui/nuxt",
+  "version": "1.0.0",
+  "description": "Nuxt 3 module for Evara UI design system",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=10.0.0"
+  },
+  "author": {
+    "name": "BleckWolf25",
+    "url": "https://bleckwolf25.vercel.app"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@nuxt/kit": "^3.0.0",
+    "nuxt": "^3.0.0",
+    "vue": ">=3.0.0"
+  },
+  "dependencies": {
+    "@evara-ui/core": "workspace:*",
+    "@evara-ui/styles": "workspace:*",
+    "@evara-ui/vue": "workspace:*"
+  },
+  "devDependencies": {
+    "@nuxt/kit": "^4.5.0",
+    "nuxt": "^4.5.0",
+    "vue": "^3.5.40"
+  }
+}

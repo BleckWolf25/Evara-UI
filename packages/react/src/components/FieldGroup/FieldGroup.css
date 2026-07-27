@@ -1,0 +1,10 @@
+.ui-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ui-field-group--disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}

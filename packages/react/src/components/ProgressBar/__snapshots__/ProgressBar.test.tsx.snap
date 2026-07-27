@@ -1,0 +1,19 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ProgressBar Component > Snapshots > matches snapshot 1`] = `
+<div>
+  <div
+    aria-valuemax="100"
+    aria-valuemin="0"
+    aria-valuenow="60"
+    aria-valuetext="60%"
+    class="ui-progress-bar ui-progress-bar--md ui-progress-bar--default"
+    role="progressbar"
+  >
+    <div
+      class="ui-progress-bar__fill"
+      style="width: 60%;"
+    />
+  </div>
+</div>
+`;

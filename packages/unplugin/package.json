@@ -1,0 +1,34 @@
+{
+  "name": "@evara-ui/unplugin",
+  "version": "1.0.0",
+  "description": "Zero-import automatic component & composable resolver for Evara UI across Vite, Webpack, Rspack, Vue, React, Next.js, and Nuxt",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "magic-string": "^0.30.10",
+    "unplugin": "^1.11.0"
+  },
+  "devDependencies": {
+    "@evara-ui/core": "workspace:*",
+    "@types/node": "^20.14.9",
+    "tsup": "^8.1.0",
+    "typescript": "^5.5.2",
+    "vitest": "^1.6.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

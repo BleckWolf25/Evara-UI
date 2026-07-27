@@ -1,0 +1,21 @@
+{
+  "name": "@evara-ui/docs",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "dependencies": {
+    "@evara-ui/core": "workspace:*",
+    "@evara-ui/react": "workspace:*",
+    "@evara-ui/styles": "workspace:*",
+    "@evara-ui/vue": "workspace:*"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.40"
+  }
+}

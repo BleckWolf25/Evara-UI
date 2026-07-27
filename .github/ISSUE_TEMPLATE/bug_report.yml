@@ -1,0 +1,93 @@
+name: "🐞 Bug Report"
+description: Report a reproducible issue with Evara-ui
+title: "[bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🐛 Bug Report
+        Thanks for taking the time to help improve **Evara-ui**!
+        Before submitting, please search **open and closed issues** to avoid duplicates.
+
+  - type: markdown
+    attributes:
+      value: |
+        ### Unsure if this is a bug? Please open a discussion instead:
+        👉 [Start a Discussion](https://github.com/BleckWolf25/Evara-UI/discussions/new?category=general)
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: 📖 Describe the bug
+      description: Provide a clear and concise description of the bug. If you plan to submit a PR, mention it here.
+      placeholder: "Example: The Button component does not apply hover styles when using dark mode."
+    validations:
+      required: true
+
+  - type: input
+    id: components-affected
+    attributes:
+      label: 🎯 Affected components
+      description: Which **Evara-ui** components are impacted?
+      placeholder: "ex. Button, Checkbox, Modal..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 🔄 Steps to reproduce
+      description: Step-by-step instructions to reproduce the issue.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Observe the error
+    validations:
+      required: true
+
+  - type: input
+    id: codesandbox-stackblitz
+    attributes:
+      label: "🔗 Minimal reproduction link: Provide a link to a CodeSandbox or StackBlitz with a minimal reproduction.
+        If not possible, link to a GitHub repo we can easily run.
+
+        ⚠️ Reports without a reproduction may be closed."
+      placeholder: "https://codesandbox.io/s/your-example"
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 📜 Logs
+      description: Paste relevant browser console or server logs. Avoid screenshots, copy/paste text instead.
+      render: bash
+
+  - type: textarea
+    id: system-info
+    attributes:
+      label: 💻 System Info
+      description: Provide details about your environment (OS, browser, Node.js, package manager, etc.).
+      render: bash
+      placeholder: |
+        System:
+          OS: macOS 14.2
+        Binaries:
+          Node: 18.x
+          npm: 9.x
+        Browsers:
+          Chrome 120, Safari 17
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: ✅ Before submitting
+      description: "Confirm you’ve done the following:"
+      options:
+        - label: I’ve searched the documentation
+          required: true
+        - label: I’ve checked for existing issues
+          required: true

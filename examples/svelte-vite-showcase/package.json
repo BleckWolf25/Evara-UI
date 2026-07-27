@@ -1,0 +1,24 @@
+{
+  "name": "@evara-ui/svelte-vite-showcase",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@evara-ui/core": "workspace:*",
+    "@evara-ui/styles": "workspace:*",
+    "@evara-ui/svelte": "workspace:*"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^3.1.1",
+    "@types/node": "^20.14.9",
+    "svelte": "^4.2.18",
+    "typescript": "^5.5.2",
+    "vite": "^5.3.1"
+  }
+}

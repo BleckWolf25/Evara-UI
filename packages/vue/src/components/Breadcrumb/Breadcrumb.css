@@ -1,0 +1,41 @@
+.ui-breadcrumb {
+  display: flex;
+  align-items: center;
+}
+
+.ui-breadcrumb__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 0.5rem;
+}
+
+.ui-breadcrumb__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.ui-breadcrumb__link {
+  color: var(--ui-color-primary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.ui-breadcrumb__link:hover {
+  color: var(--ui-color-primary-hover);
+  text-decoration: underline;
+}
+
+.ui-breadcrumb__current {
+  color: var(--ui-color-text-primary);
+  font-weight: 500;
+}
+
+.ui-breadcrumb__separator {
+  color: var(--ui-color-text-secondary);
+  user-select: none;
+}

@@ -1,0 +1,78 @@
+.ui-popover {
+  position: absolute;
+  z-index: 1000;
+  background-color: var(--ui-color-bg-primary);
+  border: 1px solid var(--ui-color-border-primary);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+}
+
+/* Position variants */
+.ui-popover--top {
+  bottom: calc(100% + 0.5rem);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ui-popover--bottom {
+  top: calc(100% + 0.5rem);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ui-popover--left {
+  right: calc(100% + 0.5rem);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ui-popover--right {
+  left: calc(100% + 0.5rem);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ui-popover--top-start {
+  bottom: calc(100% + 0.5rem);
+  left: 0;
+}
+
+.ui-popover--top-end {
+  bottom: calc(100% + 0.5rem);
+  right: 0;
+}
+
+.ui-popover--bottom-start {
+  top: calc(100% + 0.5rem);
+  left: 0;
+}
+
+.ui-popover--bottom-end {
+  top: calc(100% + 0.5rem);
+  right: 0;
+}
+
+.ui-popover--left-start {
+  right: calc(100% + 0.5rem);
+  top: 0;
+}
+
+.ui-popover--left-end {
+  right: calc(100% + 0.5rem);
+  bottom: 0;
+}
+
+.ui-popover--right-start {
+  left: calc(100% + 0.5rem);
+  top: 0;
+}
+
+.ui-popover--right-end {
+  left: calc(100% + 0.5rem);
+  bottom: 0;
+}
+
+.ui-popover__content {
+  padding: 1rem;
+}

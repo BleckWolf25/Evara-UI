@@ -1,0 +1,28 @@
+/**
+ * Dark Theme
+ * Dark mode color overrides
+ */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ui-color-bg-primary: #111827;
+    --ui-color-bg-secondary: #1f2937;
+    --ui-color-text-primary: #f9fafb;
+    --ui-color-text-secondary: #d1d5db;
+    --ui-color-text-muted: #9ca3af;
+    --ui-color-text-disabled: #6b7280;
+    --ui-color-border-primary: #374151;
+    --ui-color-border-secondary: #4b5563;
+  }
+}
+
+:root.evara-dark {
+  --ui-color-bg-primary: #111827;
+  --ui-color-bg-secondary: #1f2937;
+  --ui-color-text-primary: #f9fafb;
+  --ui-color-text-secondary: #d1d5db;
+  --ui-color-text-muted: #9ca3af;
+  --ui-color-text-disabled: #6b7280;
+  --ui-color-border-primary: #374151;
+  --ui-color-border-secondary: #4b5563;
+}

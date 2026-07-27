@@ -1,0 +1,66 @@
+/**
+ * Color Tokens
+ * Global and semantic color system for Evara UI
+ */
+
+:root {
+  /* Neutrals (Grays) */
+  --ui-color-neutral-50: #f9fafb;
+  --ui-color-neutral-100: #f3f4f6;
+  --ui-color-neutral-200: #e5e7eb;
+  --ui-color-neutral-300: #d1d5db;
+  --ui-color-neutral-400: #9ca3af;
+  --ui-color-neutral-500: #6b7280;
+  --ui-color-neutral-600: #4b5563;
+  --ui-color-neutral-700: #374151;
+  --ui-color-neutral-800: #1f2937;
+  --ui-color-neutral-900: #111827;
+
+  /* Primary Blue */
+  --ui-color-blue-50: #eff6ff;
+  --ui-color-blue-100: #dbeafe;
+  --ui-color-blue-200: #bfdbfe;
+  --ui-color-blue-300: #93c5fd;
+  --ui-color-blue-400: #60a5fa;
+  --ui-color-blue-500: #3b82f6;
+  --ui-color-blue-600: #2563eb;
+  --ui-color-blue-700: #1d4ed8;
+
+  /* Status Colors */
+  --ui-color-success: #10b981;
+  --ui-color-success-hover: #059669;
+  --ui-color-warning: #f59e0b;
+  --ui-color-warning-hover: #d97706;
+  --ui-color-danger: #ef4444;
+  --ui-color-danger-hover: #dc2626;
+  --ui-color-info: #0ea5e9;
+  --ui-color-info-hover: #0284c7;
+
+  /* Semantic Colors */
+  --ui-color-primary: var(--ui-color-blue-500);
+  --ui-color-primary-hover: var(--ui-color-blue-600);
+  --ui-color-secondary: var(--ui-color-neutral-600);
+  --ui-color-secondary-hover: var(--ui-color-neutral-700);
+
+  /* Background Colors */
+  --ui-color-bg-primary: var(--ui-color-neutral-50);
+  --ui-color-bg-secondary: white;
+  --ui-color-bg-hover: var(--ui-color-neutral-100);
+
+  /* Text Colors */
+  --ui-color-text-primary: var(--ui-color-neutral-900);
+  --ui-color-text-secondary: var(--ui-color-neutral-600);
+  --ui-color-text-muted: var(--ui-color-neutral-500);
+  --ui-color-text-disabled: var(--ui-color-neutral-400);
+
+  /* Border Colors */
+  --ui-color-border-primary: var(--ui-color-neutral-200);
+  --ui-color-border-secondary: var(--ui-color-neutral-300);
+  --ui-color-border-focus: var(--ui-color-primary);
+
+  /* Interactive Colors */
+  --ui-color-action-primary: var(--ui-color-primary);
+  --ui-color-action-primary-hover: var(--ui-color-primary-hover);
+  --ui-color-action-secondary: var(--ui-color-secondary);
+  --ui-color-action-secondary-hover: var(--ui-color-secondary-hover);
+}

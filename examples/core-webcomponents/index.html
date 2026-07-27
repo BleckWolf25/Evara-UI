@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Evara UI - Native HTML Custom Elements Demo</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Evara UI - Native HTML Web Components Demo</h1>
+        <p>
+          Pure HTML API powered by Custom Elements from <code>@evara-ui/core</code>. Zero JS component imports per page required!
+        </p>
+      </header>
+
+      <!-- Buttons & Badges -->
+      <section class="demo-section">
+        <h2>1. HTML Buttons & Badges (&lt;evara-button&gt;, &lt;evara-badge&gt;)</h2>
+        <div class="component-wrapper" style="display: flex; gap: 12px; align-items: center;">
+          <evara-button variant="primary">Primary Button</evara-button>
+          <evara-button variant="secondary">Secondary</evara-button>
+          <evara-button variant="danger">Delete</evara-button>
+          <evara-badge color="success">Active</evara-badge>
+          <evara-badge color="warning">Pending</evara-badge>
+          <evara-badge color="danger">Error</evara-badge>
+        </div>
+      </section>
+
+      <!-- Cards & Alerts -->
+      <section class="demo-section">
+        <h2>2. HTML Card & Alert (&lt;evara-card&gt;, &lt;evara-alert&gt;)</h2>
+        <div class="component-wrapper">
+          <evara-card variant="outlined" elevation="md">
+            <h3>Custom Element Card</h3>
+            <p>This layout is built entirely in HTML using native custom elements.</p>
+            <evara-alert variant="success" title="Success!">
+              Web components render seamlessly with shadow DOM encapsulation.
+            </evara-alert>
+          </evara-card>
+        </div>
+      </section>
+
+      <!-- Progress & Spinners -->
+      <section class="demo-section">
+        <h2>3. HTML Progress & Spinners (&lt;evara-progress-bar&gt;, &lt;evara-spinner&gt;, &lt;evara-avatar&gt;)</h2>
+        <div class="component-wrapper" style="display: flex; flex-direction: column; gap: 16px;">
+          <div style="display: flex; gap: 16px; align-items: center;">
+            <evara-avatar initials="EV" status="online"></evara-avatar>
+            <evara-spinner size="md"></evara-spinner>
+          </div>
+          <evara-progress-bar value="65"></evara-progress-bar>
+        </div>
+      </section>
+
+      <!-- Slider Custom Element -->
+      <section class="demo-section">
+        <h2>4. HTML Slider Element (&lt;evara-slider&gt;)</h2>
+        <div class="component-wrapper">
+          <evara-slider min="10" max="90" value="40" step="5"></evara-slider>
+        </div>
+      </section>
+
+      <!-- OTP Input Custom Element -->
+      <section class="demo-section">
+        <h2>5. HTML OTP Input Element (&lt;evara-otp-input&gt;)</h2>
+        <div class="component-wrapper">
+          <evara-otp-input length="6" size="md"></evara-otp-input>
+        </div>
+      </section>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

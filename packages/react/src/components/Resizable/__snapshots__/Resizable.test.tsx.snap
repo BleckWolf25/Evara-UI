@@ -1,0 +1,20 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Resizable Component > Snapshots > matches snapshot 1`] = `
+<div>
+  <div
+    aria-label="Resizable"
+    class="ui-resizable"
+    role="region"
+    style="width: 300px; height: 200px; position: relative;"
+  >
+    <div>
+      Resizable content
+    </div>
+    <div
+      class="ui-resizable__handle ui-resizable__handle--se"
+      style="cursor: se-resize;"
+    />
+  </div>
+</div>
+`;

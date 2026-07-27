@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Evara UI, Core Vanilla HTML Example</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Evara UI, Headless Core Demo</h1>
+        <p>
+          This page uses pure <code>@evara-ui/core</code> controllers to manage state and ARIA
+          accessibility for standard HTML elements, styled with custom Vanilla CSS.
+        </p>
+      </header>
+
+      <!-- Slider Component -->
+      <section class="demo-section">
+        <h2>1. Slider Controller Example</h2>
+        <p>
+          This slider uses <code>SliderController</code> to translate mouse clicks, drag movements,
+          and arrow key interactions into clean percentage updates and correct accessibility
+          attributes.
+        </p>
+
+        <div class="slider-wrapper">
+          <div class="slider-label-row">
+            <span>Volume level</span>
+            <span id="slider-value-display">50%</span>
+          </div>
+
+          <div id="my-slider" class="ui-slider">
+            <div class="ui-slider__track">
+              <div id="my-slider-range" class="ui-slider__range"></div>
+            </div>
+            <div id="my-slider-thumb" class="ui-slider__thumb" tabindex="0"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dialog Component -->
+      <section class="demo-section">
+        <h2>2. Dialog Controller Example</h2>
+        <p>
+          The dialog below uses <code>DialogController</code> to Trap Focus when opened, close on
+          backdrop/Escape clicks, and restore focus to the trigger button upon closing.
+        </p>
+
+        <button id="open-dialog-btn" class="ui-btn ui-btn--primary">Open Modal Dialog</button>
+
+        <div id="my-dialog-overlay" class="ui-dialog-overlay">
+          <div id="my-dialog" class="ui-dialog">
+            <div class="ui-dialog__header">
+              <h3 class="ui-dialog__title">Headless Modal Dialog</h3>
+              <button id="close-dialog-x" class="ui-dialog__close-btn" aria-label="Close dialog">
+                ×
+              </button>
+            </div>
+            <div class="ui-dialog__body">
+              <p>
+                Keyboard focus is now trapped inside this dialog. Press <kbd>Tab</kbd> to cycle
+                between the elements below, or <kbd>Esc</kbd> to close.
+              </p>
+              <div class="dialog-form">
+                <label for="dialog-input">Enter Project Name</label>
+                <input id="dialog-input" type="text" placeholder="Evara Showcase..." />
+              </div>
+            </div>
+            <div class="ui-dialog__footer">
+              <button id="cancel-dialog-btn" class="ui-btn ui-btn--outline">Cancel</button>
+              <button id="save-dialog-btn" class="ui-btn ui-btn--primary">Save Changes</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

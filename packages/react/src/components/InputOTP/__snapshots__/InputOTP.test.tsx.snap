@@ -1,0 +1,49 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`InputOTP Component > Snapshots > matches snapshot 1`] = `
+<div>
+  <div
+    aria-label="One-time password, 4 digits"
+    class="ui-input-otp ui-input-otp--md"
+    role="group"
+  >
+    <input
+      aria-current="true"
+      aria-label="Digit 1"
+      class="ui-input-otp__input ui-input-otp__input--0"
+      inputmode="numeric"
+      maxlength="1"
+      pattern="[0-9]*"
+      type="text"
+      value=""
+    />
+    <input
+      aria-label="Digit 2"
+      class="ui-input-otp__input ui-input-otp__input--1"
+      inputmode="numeric"
+      maxlength="1"
+      pattern="[0-9]*"
+      type="text"
+      value=""
+    />
+    <input
+      aria-label="Digit 3"
+      class="ui-input-otp__input ui-input-otp__input--2"
+      inputmode="numeric"
+      maxlength="1"
+      pattern="[0-9]*"
+      type="text"
+      value=""
+    />
+    <input
+      aria-label="Digit 4"
+      class="ui-input-otp__input ui-input-otp__input--3"
+      inputmode="numeric"
+      maxlength="1"
+      pattern="[0-9]*"
+      type="text"
+      value=""
+    />
+  </div>
+</div>
+`;

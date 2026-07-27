@@ -1,0 +1,17 @@
+/**
+ * Motion Tokens
+ * Durations and easing functions for animations
+ */
+
+:root {
+  /* Durations */
+  --ui-duration-fast: 150ms;
+  --ui-duration-base: 200ms;
+  --ui-duration-slow: 300ms;
+
+  /* Easing functions */
+  --ui-easing-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ui-easing-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ui-easing-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ui-easing-linear: linear;
+}

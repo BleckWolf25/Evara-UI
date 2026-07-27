@@ -1,0 +1,81 @@
+.ui-button-group {
+  display: flex;
+  gap: 0;
+}
+
+/* Orientation variants */
+.ui-button-group--horizontal {
+  flex-direction: row;
+}
+
+.ui-button-group--vertical {
+  flex-direction: column;
+}
+
+/* Button styling within group */
+.ui-button-group > * {
+  border-radius: 0;
+}
+
+.ui-button-group--horizontal > *:first-child {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.ui-button-group--horizontal > *:last-child {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.ui-button-group--horizontal > *:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+
+.ui-button-group--vertical > *:first-child {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.ui-button-group--vertical > *:last-child {
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.ui-button-group--vertical > *:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+
+/* Remove borders between buttons */
+.ui-button-group--horizontal > *:not(:first-child) {
+  border-left: none;
+}
+
+.ui-button-group--vertical > *:not(:first-child) {
+  border-top: none;
+}
+
+/* Size variants for consistent sizing */
+.ui-button-group--xs > * {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.ui-button-group--sm > * {
+  font-size: 0.875rem;
+  padding: 0.375rem 0.75rem;
+}
+
+.ui-button-group--md > * {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.ui-button-group--lg > * {
+  font-size: 1.125rem;
+  padding: 0.625rem 1.25rem;
+}
+
+.ui-button-group--xl > * {
+  font-size: 1.25rem;
+  padding: 0.75rem 1.5rem;
+}

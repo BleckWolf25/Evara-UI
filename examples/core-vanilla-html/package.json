@@ -1,0 +1,17 @@
+{
+  "name": "@evara-ui/core-vanilla-html",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@evara-ui/core": "workspace:*"
+  },
+  "devDependencies": {
+    "vite": "^8.1.5"
+  }
+}

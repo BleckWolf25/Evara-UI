@@ -1,0 +1,26 @@
+.ui-separator {
+  border: none;
+  background-color: var(--ui-color-border-primary);
+}
+
+.ui-separator--horizontal {
+  width: 100%;
+  height: 1px;
+}
+
+.ui-separator--vertical {
+  width: 1px;
+  height: 100%;
+}
+
+.ui-separator--default {
+  background-color: var(--ui-color-border-primary);
+}
+
+.ui-separator--primary {
+  background-color: var(--ui-color-primary);
+}
+
+.ui-separator--secondary {
+  background-color: var(--ui-color-text-secondary);
+}

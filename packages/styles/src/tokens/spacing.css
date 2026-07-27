@@ -1,0 +1,22 @@
+/**
+ * Spacing Tokens
+ * 4px base unit spacing scale
+ */
+
+:root {
+  /* Base unit = 0.25rem (4px) */
+  --ui-space-1: 0.25rem;   /* 4px  - Extra tight */
+  --ui-space-2: 0.5rem;    /* 8px  - Tight */
+  --ui-space-3: 0.75rem;   /* 12px - Compact */
+  --ui-space-4: 1rem;      /* 16px - Base/comfortable */
+  --ui-space-5: 1.5rem;    /* 24px - Loose */
+  --ui-space-6: 2rem;      /* 32px - Very loose */
+  --ui-space-8: 2.5rem;    /* 40px - Extra loose */
+  --ui-space-10: 3rem;     /* 48px - Very extra loose */
+  --ui-space-12: 4rem;     /* 64px - Massive */
+
+  /* Component-specific spacing */
+  --ui-gap-sm: var(--ui-space-2);
+  --ui-gap-md: var(--ui-space-4);
+  --ui-gap-lg: var(--ui-space-5);
+}

@@ -1,0 +1,28 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Checkbox Component > Snapshots > matches snapshot 1`] = `
+<div>
+  <label
+    class="ui-checkbox-label-wrapper"
+  >
+    <div
+      class="ui-checkbox-container"
+    >
+      <input
+        aria-checked="false"
+        class="ui-checkbox-input"
+        role="checkbox"
+        type="checkbox"
+      />
+      <span
+        class="ui-checkbox-indicator"
+      />
+    </div>
+    <span
+      class="ui-checkbox-label-text"
+    >
+      Accept Terms
+    </span>
+  </label>
+</div>
+`;

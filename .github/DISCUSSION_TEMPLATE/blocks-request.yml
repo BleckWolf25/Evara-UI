@@ -1,0 +1,50 @@
+title: "[Block Request]: "
+labels: ["Blocks Request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🧱 Block Request Form
+        Thanks for taking the time to suggest a new block!
+        Before submitting, please search **open and closed requests** to avoid duplicates.
+
+        Provide as much detail as possible so we can understand and evaluate your idea.
+
+  - type: textarea
+    id: block-description
+    attributes:
+      label: 📖 Description
+      description: Clearly describe the block you’re requesting. What problem does it solve? Who would use it?
+      placeholder: "Example: A dashboard block for an e-commerce website showing sales, orders, and customers..."
+    validations:
+      required: true
+
+  - type: input
+    id: block-example-url
+    attributes:
+      label: 🔗 Example URL
+      description: Link to an example or inspiration for the block (if available).
+      placeholder: "https://example.com"
+    validations:
+      required: false
+
+  - type: textarea
+    id: block-features
+    attributes:
+      label: ✨ Key Features
+      description: List the main features or elements the block should include.
+      placeholder: "- Sales chart\n- Orders table\n- Customer list"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: block-priority
+    attributes:
+      label: ⚡ Priority
+      description: How important is this block to your workflow?
+      options:
+        - Low
+        - Medium
+        - High
+    validations:
+      required: false

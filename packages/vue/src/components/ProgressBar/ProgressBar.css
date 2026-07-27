@@ -1,0 +1,62 @@
+.ui-progress-bar {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--ui-color-bg-secondary);
+  border-radius: 9999px;
+}
+
+.ui-progress-bar__fill {
+  height: 100%;
+  background-color: var(--ui-color-primary);
+  border-radius: 9999px;
+  transition: width 0.3s ease;
+}
+
+/* Size variants */
+.ui-progress-bar--sm {
+  height: 0.5rem;
+}
+
+.ui-progress-bar--md {
+  height: 0.75rem;
+}
+
+.ui-progress-bar--lg {
+  height: 1rem;
+}
+
+.ui-progress-bar--xl {
+  height: 1.25rem;
+}
+
+/* Color variants */
+.ui-progress-bar--default .ui-progress-bar__fill {
+  background-color: var(--ui-color-primary);
+}
+
+.ui-progress-bar--success .ui-progress-bar__fill {
+  background-color: #22c55e;
+}
+
+.ui-progress-bar--warning .ui-progress-bar__fill {
+  background-color: #f59e0b;
+}
+
+.ui-progress-bar--error .ui-progress-bar__fill {
+  background-color: #ef4444;
+}
+
+/* Indeterminate animation */
+.ui-progress-bar--indeterminate .ui-progress-bar__fill {
+  width: 100% !important;
+  animation: indeterminate 1.5s ease-in-out infinite;
+}
+
+@keyframes indeterminate {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

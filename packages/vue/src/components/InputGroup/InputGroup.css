@@ -1,0 +1,41 @@
+.ui-input-group {
+  display: flex;
+  align-items: stretch;
+}
+
+.ui-input-group > *:not(:first-child):not(:last-child) {
+  border-radius: 0;
+  border-left: none;
+}
+
+.ui-input-group > *:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.ui-input-group > *:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: none;
+}
+
+.ui-input-group--disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Size variants */
+.ui-input-group--sm > * {
+  font-size: 0.875rem;
+  padding: 0.375rem 0.75rem;
+}
+
+.ui-input-group--md > * {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.ui-input-group--lg > * {
+  font-size: 1.125rem;
+  padding: 0.75rem 1.5rem;
+}

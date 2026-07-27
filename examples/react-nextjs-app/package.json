@@ -1,0 +1,25 @@
+{
+  "name": "@evara-ui/react-nextjs-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint app"
+  },
+  "dependencies": {
+    "@evara-ui/core": "workspace:*",
+    "@evara-ui/react": "workspace:*",
+    "@evara-ui/styles": "workspace:*",
+    "next": "^14.2.35",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.1",
+    "typescript": "^5.9.3"
+  }
+}

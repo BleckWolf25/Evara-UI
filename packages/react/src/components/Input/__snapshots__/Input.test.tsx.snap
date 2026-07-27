@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Input Component > Snapshots > matches snapshot 1`] = `
+<div>
+  <div
+    class="ui-input-container ui-input-container--default ui-input-container--md"
+  >
+    <input
+      class="ui-input"
+      placeholder="Enter text..."
+      type="text"
+    />
+  </div>
+</div>
+`;
