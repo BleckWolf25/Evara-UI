@@ -5,7 +5,7 @@
  * @author BleckWolf25
  * @license MIT
  *
- * @summary Main entry point for @evara-ui/unplugin build resolvers.
+ * @summary Main entry point for @bleckwolf25/unplugin build resolvers.
  *
  * @description
  * Re-exports build-time component and composable resolvers for Vue (EvaraVueResolver),

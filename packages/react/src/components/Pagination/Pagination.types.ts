@@ -15,7 +15,7 @@
  */
 
 // ---------- IMPORTS
-import type { PaginationProps as CorePaginationProps } from '@evara-ui/core'
+import type { PaginationProps as CorePaginationProps } from '@bleckwolf25/core'
 
 // ---------- TYPES AND INTERFACES
 

@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { forwardRef, useEffect, useRef, useMemo, createContext, useContext, useState, useCallback } from 'react'
-import { DialogController } from '@evara-ui/core'
+import { DialogController } from '@bleckwolf25/core'
 import type { DialogProps } from './Dialog.types'
 import './Dialog.css'
 

@@ -15,7 +15,7 @@
  */
 // ---------- IMPORTS
 import { defineComponent, h, ref, type PropType } from 'vue'
-import { CalendarController } from '@evara-ui/core'
+import { CalendarController } from '@bleckwolf25/core'
 import './Calendar.css'
 
 // ---------- VUE CALENDAR COMPONENT

@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { forwardRef, useState, useEffect, useRef, useCallback, useMemo } from 'react'
-import { CarouselController } from '@evara-ui/core'
+import { CarouselController } from '@bleckwolf25/core'
 import type { CarouselProps } from './Carousel.types'
 import './Carousel.css'
 

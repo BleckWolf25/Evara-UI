@@ -1,5 +1,5 @@
 {
-  "name": "@evara-ui/react-vite-showcase",
+  "name": "@bleckwolf25/react-vite-showcase",
   "version": "1.0.0",
   "type": "module",
   "private": true,
@@ -9,9 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@evara-ui/core": "workspace:*",
-    "@evara-ui/react": "workspace:*",
-    "@evara-ui/styles": "workspace:*",
+    "@bleckwolf25/core": "workspace:*",
+    "@bleckwolf25/react": "workspace:*",
+    "@bleckwolf25/styles": "workspace:*",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },

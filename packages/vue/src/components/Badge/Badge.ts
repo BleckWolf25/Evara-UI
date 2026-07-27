@@ -15,7 +15,7 @@
  */
 // ---------- IMPORTS
 import { defineComponent, h, type PropType } from 'vue'
-import { BadgeController } from '@evara-ui/core'
+import { BadgeController } from '@bleckwolf25/core'
 import type { BadgeProps } from './Badge.types'
 import './Badge.css'
 

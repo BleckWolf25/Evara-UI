@@ -24,5 +24,5 @@ export default defineConfig({
   splitting: true,
   treeshake: true,
   clean: true,
-  external: ['react', 'react-dom', '@evara-ui/core']
+  external: ['react', 'react-dom', '@bleckwolf25/core']
 })

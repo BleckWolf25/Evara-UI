@@ -14,7 +14,7 @@
  * @updated 27/07/2026
  */
 // ---------- IMPORTS
-import type { AlertProps as CoreAlertProps } from '@evara-ui/core'
+import type { AlertProps as CoreAlertProps } from '@bleckwolf25/core'
 
 // ---------- VUE ALERT PROPS INTERFACE
 export interface AlertProps extends CoreAlertProps {

@@ -15,7 +15,7 @@
  */
 // ---------- IMPORTS
 import { defineComponent, h, ref, type PropType } from 'vue'
-import { AlertController } from '@evara-ui/core'
+import { AlertController } from '@bleckwolf25/core'
 import type { AlertProps } from './Alert.types'
 import './Alert.css'
 

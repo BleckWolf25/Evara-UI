@@ -1,5 +1,5 @@
 {
-  "name": "@evara-ui/unplugin",
+  "name": "@bleckwolf25/unplugin",
   "version": "1.0.0",
   "description": "Zero-import automatic component & composable resolver for Evara UI across Vite, Webpack, Rspack, Vue, React, Next.js, and Nuxt",
   "main": "./dist/index.cjs",
@@ -22,7 +22,7 @@
     "unplugin": "^1.11.0"
   },
   "devDependencies": {
-    "@evara-ui/core": "workspace:*",
+    "@bleckwolf25/core": "workspace:*",
     "@types/node": "^20.14.9",
     "tsup": "^8.1.0",
     "typescript": "^5.5.2",

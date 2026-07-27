@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { defineComponent, h, ref, watch, onMounted, onBeforeUnmount, provide, inject, type PropType } from 'vue'
-import { PopoverController } from '@evara-ui/core'
+import { PopoverController } from '@bleckwolf25/core'
 import type { PopoverProps } from './Popover.types'
 import './Popover.css'
 

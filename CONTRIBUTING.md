@@ -150,9 +150,9 @@ To keep the codebase uniform and easy to read:
 
 ### Component Best Practices
 
-- **Headless Controllers:** Keep state and accessibility logic inside `@evara-ui/core` headless controllers, completely detached from JSX views.
+- **Headless Controllers:** Keep state and accessibility logic inside `@bleckwolf25/core` headless controllers, completely detached from JSX views.
 - **Strict Typing:** Avoid `any` types. Provide explicit parameter and return typings, leveraging exact index signatures or mapped type constraints.
-- **Design Tokens:** Always utilize CSS variables from `@evara-ui/styles` inside stylesheets to ensure clean theme injection.
+- **Design Tokens:** Always utilize CSS variables from `@bleckwolf25/styles` inside stylesheets to ensure clean theme injection.
 
 ### Commit Messages
 

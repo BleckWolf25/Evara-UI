@@ -15,7 +15,7 @@
  */
 
 // ---------- IMPORTS
-import type { ContextMenuProps as CoreContextMenuProps } from '@evara-ui/core'
+import type { ContextMenuProps as CoreContextMenuProps } from '@bleckwolf25/core'
 
 // ---------- TYPES AND INTERFACES
 

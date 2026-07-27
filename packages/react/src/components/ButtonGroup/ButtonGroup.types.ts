@@ -15,7 +15,7 @@
  */
 
 // ---------- IMPORTS
-import type { ButtonGroupProps as CoreButtonGroupProps } from '@evara-ui/core'
+import type { ButtonGroupProps as CoreButtonGroupProps } from '@bleckwolf25/core'
 
 // ---------- TYPES AND INTERFACES
 

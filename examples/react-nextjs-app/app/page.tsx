@@ -24,7 +24,7 @@ import {
   InputOTP,
   Dialog,
   Badge,
-} from '@evara-ui/react'
+} from '@bleckwolf25/react'
 
 export default function Home() {
   const [email, setEmail] = useState('')

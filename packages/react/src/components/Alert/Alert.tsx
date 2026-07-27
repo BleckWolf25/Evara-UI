@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { forwardRef, useState } from 'react'
-import { AlertController } from '@evara-ui/core'
+import { AlertController } from '@bleckwolf25/core'
 import type { AlertProps } from './Alert.types'
 import './Alert.css'
 

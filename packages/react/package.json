@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package",
-  "name": "@evara-ui/react",
+  "name": "@bleckwolf25/react",
   "version": "1.0.0",
   "description": "React components for Evara UI",
   "type": "module",
@@ -55,6 +55,6 @@
     "react-dom": "^19.2.8"
   },
   "dependencies": {
-    "@evara-ui/core": "workspace:*"
+    "@bleckwolf25/core": "workspace:*"
   }
 }

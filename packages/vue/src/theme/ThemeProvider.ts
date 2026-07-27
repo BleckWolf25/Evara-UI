@@ -16,7 +16,7 @@
  */
 // ---------- IMPORTS
 import { defineComponent, ref, provide, inject, watch, onMounted, type PropType, type Ref } from 'vue'
-import { generateCssVariables, lightThemeTokens, darkThemeTokens, type ThemeTokens } from '@evara-ui/core'
+import { generateCssVariables, lightThemeTokens, darkThemeTokens, type ThemeTokens } from '@bleckwolf25/core'
 
 // ---------- INJECTION SYMBOL CONSTANT
 const ThemeSymbol = Symbol('EvaraTheme')

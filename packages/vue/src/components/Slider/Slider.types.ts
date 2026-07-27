@@ -15,7 +15,7 @@
  */
 
 // ---------- IMPORTS
-import type { SliderProps as CoreSliderProps } from '@evara-ui/core'
+import type { SliderProps as CoreSliderProps } from '@bleckwolf25/core'
 
 // ---------- TYPES AND INTERFACES
 

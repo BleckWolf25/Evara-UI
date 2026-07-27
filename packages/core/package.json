@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package",
-  "name": "@evara-ui/core",
+  "name": "@bleckwolf25/core",
   "version": "1.0.0",
   "description": "Core utilities and types for Evara UI",
   "type": "module",

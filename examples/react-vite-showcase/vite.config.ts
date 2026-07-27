@@ -23,9 +23,9 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@evara-ui/react/dist/index.css': resolve(__dirname, '../../packages/react/dist/index.css'),
-      '@evara-ui/core': resolve(__dirname, '../../packages/core/src'),
-      '@evara-ui/react': resolve(__dirname, '../../packages/react/src'),
+      '@bleckwolf25/react/dist/index.css': resolve(__dirname, '../../packages/react/dist/index.css'),
+      '@bleckwolf25/core': resolve(__dirname, '../../packages/core/src'),
+      '@bleckwolf25/react': resolve(__dirname, '../../packages/react/src'),
     },
   },
 })

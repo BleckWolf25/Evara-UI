@@ -15,7 +15,7 @@
  */
 
 // ---------- IMPORTS
-import type { SelectProps as CoreSelectProps, SelectOption } from '@evara-ui/core'
+import type { SelectProps as CoreSelectProps, SelectOption } from '@bleckwolf25/core'
 
 // ---------- TYPES AND INTERFACES
 

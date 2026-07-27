@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { forwardRef } from 'react'
-import { InputGroupController } from '@evara-ui/core'
+import { InputGroupController } from '@bleckwolf25/core'
 import type { InputGroupProps } from './InputGroup.types'
 import './InputGroup.css'
 

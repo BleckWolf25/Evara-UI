@@ -1,5 +1,5 @@
 {
-  "name": "@evara-ui/e2e",
+  "name": "@bleckwolf25/e2e",
   "version": "1.0.0",
   "description": "Playwright End-to-End visual and interaction test suite for Evara UI framework showcases",
   "private": true,

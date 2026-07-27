@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package",
-  "name": "@evara-ui/vue",
+  "name": "@bleckwolf25/vue",
   "version": "1.0.0",
   "description": "Vue 3 components for Evara UI",
   "type": "module",
@@ -52,6 +52,6 @@
     "vue": "^3.5.40"
   },
   "dependencies": {
-    "@evara-ui/core": "workspace:*"
+    "@bleckwolf25/core": "workspace:*"
   }
 }

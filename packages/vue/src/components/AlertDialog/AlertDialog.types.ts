@@ -14,7 +14,7 @@
  * @updated 27/07/2026
  */
 // ---------- IMPORTS
-import type { AlertDialogProps as CoreAlertDialogProps } from '@evara-ui/core'
+import type { AlertDialogProps as CoreAlertDialogProps } from '@bleckwolf25/core'
 
 // ---------- VUE ALERT DIALOG PROPS INTERFACE
 export interface AlertDialogProps extends CoreAlertDialogProps {

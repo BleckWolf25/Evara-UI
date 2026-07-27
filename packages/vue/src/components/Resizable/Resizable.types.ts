@@ -15,7 +15,7 @@
  */
 
 // ---------- IMPORTS
-import type { ResizableProps as CoreResizableProps, ResizeHandle } from '@evara-ui/core'
+import type { ResizableProps as CoreResizableProps, ResizeHandle } from '@bleckwolf25/core'
 
 // ---------- TYPES AND INTERFACES
 

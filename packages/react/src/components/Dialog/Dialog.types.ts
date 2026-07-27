@@ -15,7 +15,7 @@
  */
 
 // ---------- IMPORTS
-import type { DialogProps as CoreDialogProps } from '@evara-ui/core'
+import type { DialogProps as CoreDialogProps } from '@bleckwolf25/core'
 
 // ---------- TYPES AND INTERFACES
 

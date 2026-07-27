@@ -15,7 +15,7 @@
  */
 
 // ---------- IMPORTS
-import type { CarouselProps as CoreCarouselProps } from '@evara-ui/core'
+import type { CarouselProps as CoreCarouselProps } from '@bleckwolf25/core'
 
 // ---------- TYPES AND INTERFACES
 

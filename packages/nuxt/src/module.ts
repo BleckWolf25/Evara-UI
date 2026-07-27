@@ -28,7 +28,7 @@ export interface ModuleOptions {
 // ---------- NUXT MODULE FACTORY
 const module = defineNuxtModule<ModuleOptions>({
   meta: {
-    name: '@evara-ui/nuxt',
+    name: '@bleckwolf25/nuxt',
     configKey: 'evaraUi',
     compatibility: {
       nuxt: '>=3.0.0',
@@ -41,7 +41,7 @@ const module = defineNuxtModule<ModuleOptions>({
   setup(options, nuxt) {
     // ---------- CSS STYLE INJECTION
     if (options.injectStyles) {
-      nuxt.options.css.push('@evara-ui/styles')
+      nuxt.options.css.push('@bleckwolf25/styles')
     }
 
     // ---------- AUTO-IMPORTED COMPONENT REGISTRATION
@@ -104,7 +104,7 @@ const module = defineNuxtModule<ModuleOptions>({
       addComponent({
         name: `${options.prefix ?? ''}${name}`,
         export: name,
-        filePath: '@evara-ui/vue',
+        filePath: '@bleckwolf25/vue',
       })
     }
 
@@ -115,7 +115,7 @@ const module = defineNuxtModule<ModuleOptions>({
       addImports({
         name,
         as: name,
-        from: '@evara-ui/vue',
+        from: '@bleckwolf25/vue',
       })
     }
   },

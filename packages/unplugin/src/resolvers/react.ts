@@ -22,7 +22,7 @@ import MagicString from 'magic-string'
 
 // ---------- REACT PLUGIN OPTIONS INTERFACE
 export interface EvaraReactPluginOptions {
-  /** Import path override (default: '@evara-ui/react') */
+  /** Import path override (default: '@bleckwolf25/react') */
   importPath?: string
   /** Include file extensions regex */
   include?: RegExp
@@ -80,7 +80,7 @@ const EVARA_REACT_COMPONENTS = new Set([
 
 // ---------- REACT UNPLUGIN FACTORY
 export const EvaraReactUnplugin = createUnplugin((options: EvaraReactPluginOptions) => {
-  const importPath = options.importPath ?? '@evara-ui/react'
+  const importPath = options.importPath ?? '@bleckwolf25/react'
   const filter = options.include ?? /\.[jt]sx?$/
 
   return {

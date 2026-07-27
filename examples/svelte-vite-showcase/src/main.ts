@@ -15,7 +15,7 @@
  */
 
 // ---------- IMPORTS
-import '@evara-ui/styles/dist/index.css'
+import '@bleckwolf25/styles/dist/index.css'
 import App from './App.svelte'
 
 const target = document.getElementById('app')

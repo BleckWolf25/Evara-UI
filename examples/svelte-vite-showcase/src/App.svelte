@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 <script lang="ts">
-  import { useTheme, useForm, createButtonProps, createCardProps, createDialogProps } from '@evara-ui/svelte'
+  import { useTheme, useForm, createButtonProps, createCardProps, createDialogProps } from '@bleckwolf25/svelte'
 
   const theme = useTheme({ defaultTheme: 'light' })
 
@@ -72,7 +72,7 @@
           <button class="ui-dialog__close-button" on:click={toggleDialog}>✕</button>
         </div>
         <div class="ui-dialog__body">
-          <p>This modal dialog is powered by @evara-ui/svelte and @evara-ui/core.</p>
+          <p>This modal dialog is powered by @bleckwolf25/svelte and @bleckwolf25/core.</p>
         </div>
         <div class="ui-dialog__footer">
           <button class="ui-button ui-button--secondary" on:click={toggleDialog}>Close</button>

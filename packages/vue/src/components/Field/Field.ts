@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { defineComponent, h, inject, computed } from 'vue'
-import { FieldController } from '@evara-ui/core'
+import { FieldController } from '@bleckwolf25/core'
 import { FieldGroupKey } from '../FieldGroup/FieldGroup'
 import './Field.css'
 

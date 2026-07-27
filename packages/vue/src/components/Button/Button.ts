@@ -15,7 +15,7 @@
  */
 // ---------- IMPORTS
 import { defineComponent, h, type Component, type PropType } from 'vue'
-import { ButtonController } from '@evara-ui/core'
+import { ButtonController } from '@bleckwolf25/core'
 import type { ButtonProps } from './Button.types'
 import './Button.css'
 

@@ -15,7 +15,7 @@
  */
 
 // ---------- IMPORTS
-import type { SkeletonProps as CoreSkeletonProps } from '@evara-ui/core'
+import type { SkeletonProps as CoreSkeletonProps } from '@bleckwolf25/core'
 import type { HTMLAttributes } from 'react'
 
 // ---------- TYPES AND INTERFACES

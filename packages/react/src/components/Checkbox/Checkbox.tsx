@@ -17,7 +17,7 @@
 
 // ---------- IMPORTS
 import { forwardRef, useEffect, useRef, useImperativeHandle, useState } from 'react'
-import { CheckboxController } from '@evara-ui/core'
+import { CheckboxController } from '@bleckwolf25/core'
 import type { CheckboxProps } from './Checkbox.types'
 import './Checkbox.css'
 

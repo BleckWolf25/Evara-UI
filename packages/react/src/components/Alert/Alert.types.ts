@@ -15,7 +15,7 @@
  */
 
 // ---------- IMPORTS
-import type { AlertProps as CoreAlertProps } from '@evara-ui/core'
+import type { AlertProps as CoreAlertProps } from '@bleckwolf25/core'
 
 // ---------- TYPES AND INTERFACES
 

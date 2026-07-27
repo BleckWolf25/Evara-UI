@@ -15,7 +15,7 @@
  */
 
 // ---------- IMPORTS
-import type { ButtonProps as CoreButtonProps } from '@evara-ui/core'
+import type { ButtonProps as CoreButtonProps } from '@bleckwolf25/core'
 import type { ButtonHTMLAttributes } from 'vue'
 
 // ---------- VUE BUTTON PROPS INTERFACE

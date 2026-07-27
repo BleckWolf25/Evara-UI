@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package",
-  "name": "@evara-ui/nuxt",
+  "name": "@bleckwolf25/nuxt",
   "version": "1.0.0",
   "description": "Nuxt 3 module for Evara UI design system",
   "type": "module",
@@ -42,9 +42,9 @@
     "vue": ">=3.0.0"
   },
   "dependencies": {
-    "@evara-ui/core": "workspace:*",
-    "@evara-ui/styles": "workspace:*",
-    "@evara-ui/vue": "workspace:*"
+    "@bleckwolf25/core": "workspace:*",
+    "@bleckwolf25/styles": "workspace:*",
+    "@bleckwolf25/vue": "workspace:*"
   },
   "devDependencies": {
     "@nuxt/kit": "^4.5.0",

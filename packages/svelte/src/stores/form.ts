@@ -17,7 +17,7 @@
 
 // ---------- IMPORTS
 import { writable, derived } from 'svelte/store'
-import { FormController, type FormControllerOptions, type FormErrors, type FormTouched } from '@evara-ui/core'
+import { FormController, type FormControllerOptions, type FormErrors, type FormTouched } from '@bleckwolf25/core'
 
 // ---------- FUNCTIONS
 

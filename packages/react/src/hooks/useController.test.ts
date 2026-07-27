@@ -22,7 +22,7 @@ import {
   DialogController,
   SliderController,
   PaginationController,
-} from '@evara-ui/core'
+} from '@bleckwolf25/core'
 import {
   useController,
   useDialogController,

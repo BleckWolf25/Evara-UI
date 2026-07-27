@@ -36,7 +36,7 @@ import {
   Pagination,
   Input,
   ProgressBar
-} from '@evara-ui/vue'
+} from '@bleckwolf25/vue'
 
 const isDialogOpen = ref(false)
 const sliderValue = ref(65)

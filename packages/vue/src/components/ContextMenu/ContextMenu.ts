@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { defineComponent, h, ref, onMounted, onBeforeUnmount, type PropType } from 'vue'
-import { ContextMenuController } from '@evara-ui/core'
+import { ContextMenuController } from '@bleckwolf25/core'
 import type { ContextMenuProps } from './ContextMenu.types'
 import './ContextMenu.css'
 

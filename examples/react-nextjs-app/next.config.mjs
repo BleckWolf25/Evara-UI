@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 const nextConfig = {
-  transpilePackages: ['@evara-ui/react', '@evara-ui/core', '@evara-ui/styles'],
+  transpilePackages: ['@bleckwolf25/react', '@bleckwolf25/core', '@bleckwolf25/styles'],
   outputFileTracing: false,
   eslint: {
     ignoreDuringBuilds: true,

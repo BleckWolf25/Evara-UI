@@ -5,7 +5,7 @@
  * @author BleckWolf25
  * @license MIT
  *
- * @summary Main component export index for the @evara-ui/react package.
+ * @summary Main component export index for the @bleckwolf25/react package.
  *
  * @description
  * Re-exports all React components and their corresponding TypeScript type interfaces.

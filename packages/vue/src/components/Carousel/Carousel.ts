@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { defineComponent, h, ref, onBeforeUnmount, type VNodeChild } from 'vue'
-import { CarouselController } from '@evara-ui/core'
+import { CarouselController } from '@bleckwolf25/core'
 import './Carousel.css'
 
 // ---------- COMPONENTS

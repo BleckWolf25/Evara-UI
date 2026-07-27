@@ -22,7 +22,7 @@
 export interface EvaraVueResolverOptions {
   /** Custom prefix for component names (e.g., 'Evara' -> <EvaraButton>) */
   prefix?: string
-  /** Import path override (default: '@evara-ui/vue') */
+  /** Import path override (default: '@bleckwolf25/vue') */
   importPath?: string
 }
 
@@ -88,7 +88,7 @@ const EVARA_VUE_COMPONENTS = new Set([
 // ---------- VUE RESOLVER FACTORY
 export function EvaraVueResolver(options: EvaraVueResolverOptions = {}) {
   const prefix = options.prefix ?? ''
-  const importPath = options.importPath ?? '@evara-ui/vue'
+  const importPath = options.importPath ?? '@bleckwolf25/vue'
 
   return {
     type: 'component' as const,

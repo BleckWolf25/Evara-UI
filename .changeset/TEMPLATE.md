@@ -14,8 +14,8 @@ Changesets are stored in `.changeset/` as markdown files with frontmatter:
 
 ```markdown
 ---
-"@evara-ui/core": minor
-"@evara-ui/react": patch
+"@bleckwolf25/core": minor
+"@bleckwolf25/react": patch
 ---
 
 Brief description of the changes. This will appear in the CHANGELOG.
@@ -31,9 +31,9 @@ Brief description of the changes. This will appear in the CHANGELOG.
 
 ```markdown
 ---
-"@evara-ui/core": minor
-"@evara-ui/react": minor
-"@evara-ui/vue": minor
+"@bleckwolf25/core": minor
+"@bleckwolf25/react": minor
+"@bleckwolf25/vue": minor
 ---
 
 Add new `Avatar` component with support for images, initials, and custom fallback slots.

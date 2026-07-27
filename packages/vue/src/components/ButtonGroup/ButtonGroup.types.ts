@@ -14,7 +14,7 @@
  * @updated 27/07/2026
  */
 // ---------- IMPORTS
-import type { ButtonGroupProps as CoreButtonGroupProps } from '@evara-ui/core'
+import type { ButtonGroupProps as CoreButtonGroupProps } from '@bleckwolf25/core'
 
 // ---------- VUE BUTTON GROUP PROPS INTERFACE
 export type ButtonGroupProps = CoreButtonGroupProps

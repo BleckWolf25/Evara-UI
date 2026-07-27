@@ -7,7 +7,7 @@ Evara UI includes a theme engine that dynamically generates and updates root CSS
 Wrap your application root with `<ThemeProvider>` to enable theme switching and token customization.
 
 ```tsx
-import { ThemeProvider, useTheme, Button } from '@evara-ui/react'
+import { ThemeProvider, useTheme, Button } from '@bleckwolf25/react'
 
 function ModeSwitcher() {
   const { theme, toggleTheme } = useTheme()

@@ -15,7 +15,7 @@
  */
 
 // ---------- IMPORTS
-import type { PopoverProps as CorePopoverProps } from '@evara-ui/core'
+import type { PopoverProps as CorePopoverProps } from '@bleckwolf25/core'
 
 // ---------- TYPES AND INTERFACES
 

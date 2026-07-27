@@ -1,9 +1,9 @@
 ---
-"@evara-ui/core": patch
-"@evara-ui/styles": patch
-"@evara-ui/react": patch
-"@evara-ui/vue": patch
-"@evara-ui/nuxt": patch
+"@bleckwolf25/core": patch
+"@bleckwolf25/styles": patch
+"@bleckwolf25/react": patch
+"@bleckwolf25/vue": patch
+"@bleckwolf25/nuxt": patch
 ---
 
 Initial 1.0.0 release of Evara UI design system with core controllers, React & Vue 3 component suites, and Nuxt 3 module.

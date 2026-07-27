@@ -17,7 +17,7 @@
 
 // ---------- IMPORTS
 import { forwardRef } from 'react'
-import { ButtonController } from '@evara-ui/core'
+import { ButtonController } from '@bleckwolf25/core'
 import type { ButtonProps } from './Button.types'
 import './Button.css'
 

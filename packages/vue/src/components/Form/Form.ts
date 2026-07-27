@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { defineComponent, h, provide, inject, ref, onUnmounted, type PropType, type Ref, type VNodeChild } from 'vue'
-import { FormController, FormFieldController, type FormErrors } from '@evara-ui/core'
+import { FormController, FormFieldController, type FormErrors } from '@bleckwolf25/core'
 import './Form.css'
 
 // ---------- TYPES AND SYMBOLS

@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import type { HTMLAttributes, ReactNode } from 'react'
-import type { BadgePosition } from '@evara-ui/core'
+import type { BadgePosition } from '@bleckwolf25/core'
 
 // ---------- TYPES AND INTERFACES
 

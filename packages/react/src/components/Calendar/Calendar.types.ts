@@ -15,7 +15,7 @@
  */
 
 // ---------- IMPORTS
-import type { CalendarProps as CoreCalendarProps } from '@evara-ui/core'
+import type { CalendarProps as CoreCalendarProps } from '@bleckwolf25/core'
 
 // ---------- TYPES AND INTERFACES
 

@@ -1,5 +1,5 @@
 {
-  "name": "@evara-ui/vue-vite-showcase",
+  "name": "@bleckwolf25/vue-vite-showcase",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -10,9 +10,9 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
-    "@evara-ui/core": "workspace:*",
-    "@evara-ui/styles": "workspace:*",
-    "@evara-ui/vue": "workspace:*",
+    "@bleckwolf25/core": "workspace:*",
+    "@bleckwolf25/styles": "workspace:*",
+    "@bleckwolf25/vue": "workspace:*",
     "vue": "^3.5.40"
   },
   "devDependencies": {

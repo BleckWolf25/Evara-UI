@@ -1,11 +1,11 @@
 # Svelte Integration & Store Guide
 
-Evara UI provides full Svelte 4 & 5 support through `@evara-ui/svelte`, offering reactive stores, component helpers, and compound primitives built on `@evara-ui/core`.
+Evara UI provides full Svelte 4 & 5 support through `@bleckwolf25/svelte`, offering reactive stores, component helpers, and compound primitives built on `@bleckwolf25/core`.
 
 ## Installation
 
 ```bash
-pnpm add @evara-ui/svelte @evara-ui/styles
+pnpm add @bleckwolf25/svelte @bleckwolf25/styles
 ```
 
 ---
@@ -16,8 +16,8 @@ Use `createThemeStore` or `useTheme` for reactive light/dark theme switching:
 
 ```svelte
 <script lang="ts">
-  import { useTheme } from '@evara-ui/svelte'
-  import '@evara-ui/styles/dist/index.css'
+  import { useTheme } from '@bleckwolf25/svelte'
+  import '@bleckwolf25/styles/dist/index.css'
 
   const theme = useTheme({ defaultTheme: 'light' })
 </script>
@@ -35,7 +35,7 @@ Use `createThemeStore` or `useTheme` for reactive light/dark theme switching:
 
 ```svelte
 <script lang="ts">
-  import { useForm } from '@evara-ui/svelte'
+  import { useForm } from '@bleckwolf25/svelte'
 
   const form = useForm({
     initialValues: { email: '' },
@@ -71,7 +71,7 @@ Use `createThemeStore` or `useTheme` for reactive light/dark theme switching:
 
 ---
 
-## 3. Zero-Import Resolver (`@evara-ui/unplugin`)
+## 3. Zero-Import Resolver (`@bleckwolf25/unplugin`)
 
 To enable zero-import component resolution in your Svelte Vite project, add `EvaraSvelteResolver` to `vite.config.ts`:
 
@@ -79,7 +79,7 @@ To enable zero-import component resolution in your Svelte Vite project, add `Eva
 import { defineConfig } from 'vite'
 import { svelte } from '@sveltejs/vite-plugin-svelte'
 import Components from 'unplugin-vue-components/vite'
-import { EvaraSvelteResolver } from '@evara-ui/unplugin'
+import { EvaraSvelteResolver } from '@bleckwolf25/unplugin'
 
 export default defineConfig({
   plugins: [

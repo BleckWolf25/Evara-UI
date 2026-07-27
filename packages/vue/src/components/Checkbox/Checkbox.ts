@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { defineComponent, h, ref, watch, type PropType } from 'vue'
-import { CheckboxController } from '@evara-ui/core'
+import { CheckboxController } from '@bleckwolf25/core'
 import './Checkbox.css'
 
 // ---------- COMPONENTS

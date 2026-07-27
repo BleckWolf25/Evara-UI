@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { forwardRef } from 'react'
-import { PaginationController } from '@evara-ui/core'
+import { PaginationController } from '@bleckwolf25/core'
 import type { PaginationProps } from './Pagination.types'
 import './Pagination.css'
 

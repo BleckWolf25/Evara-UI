@@ -15,9 +15,9 @@ hero:
 
 features:
   - title: 🚀 Multi-Framework Core
-    details: Powered by framework-agnostic headless controllers in `@evara-ui/core`.
+    details: Powered by framework-agnostic headless controllers in `@bleckwolf25/core`.
   - title: 🎨 Tokenized Styling
-    details: Complete semantic color, typography, spacing, and dark mode themes in `@evara-ui/styles`.
+    details: Complete semantic color, typography, spacing, and dark mode themes in `@bleckwolf25/styles`.
   - title: ⚡ Nuxt 3 & React SSR Ready
     details: First-class Server Side Rendering support with zero hydration mismatch and auto-imports.
 ---

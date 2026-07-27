@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { forwardRef } from 'react'
-import { SpinnerController } from '@evara-ui/core'
+import { SpinnerController } from '@bleckwolf25/core'
 import type { SpinnerProps } from './Spinner.types'
 import './Spinner.css'
 

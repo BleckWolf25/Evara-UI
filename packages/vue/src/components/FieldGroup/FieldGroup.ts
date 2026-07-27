@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { defineComponent, h, provide, computed, type InjectionKey, type ComputedRef } from 'vue'
-import { FieldGroupController } from '@evara-ui/core'
+import { FieldGroupController } from '@bleckwolf25/core'
 import './FieldGroup.css'
 
 // ---------- TYPES AND INTERFACES

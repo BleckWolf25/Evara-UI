@@ -15,7 +15,7 @@
  */
 
 // ---------- IMPORTS
-import type { InputOTPProps as CoreInputOTPProps } from '@evara-ui/core'
+import type { InputOTPProps as CoreInputOTPProps } from '@bleckwolf25/core'
 
 // ---------- TYPES AND INTERFACES
 

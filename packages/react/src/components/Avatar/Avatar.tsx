@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { forwardRef } from 'react'
-import { AvatarController } from '@evara-ui/core'
+import { AvatarController } from '@bleckwolf25/core'
 import type { AvatarProps } from './Avatar.types'
 import './Avatar.css'
 

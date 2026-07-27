@@ -15,7 +15,7 @@
  */
 
 // ---------- IMPORTS
-import type { FieldGroupProps as CoreFieldGroupProps } from '@evara-ui/core'
+import type { FieldGroupProps as CoreFieldGroupProps } from '@bleckwolf25/core'
 
 // ---------- TYPES AND INTERFACES
 

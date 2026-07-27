@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { forwardRef, useState, useRef, useCallback, useMemo } from 'react'
-import { SliderController } from '@evara-ui/core'
+import { SliderController } from '@bleckwolf25/core'
 import type { SliderProps } from './Slider.types'
 import './Slider.css'
 

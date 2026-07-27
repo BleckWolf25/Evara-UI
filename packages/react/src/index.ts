@@ -5,7 +5,7 @@
  * @author BleckWolf25
  * @license MIT
  *
- * @summary Main entry point for the @evara-ui/react package.
+ * @summary Main entry point for the @bleckwolf25/react package.
  *
  * @description
  * Re-exports all React components, custom React state hooks, and the ThemeProvider context

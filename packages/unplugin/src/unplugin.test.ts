@@ -5,7 +5,7 @@
  * @author BleckWolf25
  * @license MIT
  *
- * @summary Unit test suite for @evara-ui/unplugin resolvers and transform plugins.
+ * @summary Unit test suite for @bleckwolf25/unplugin resolvers and transform plugins.
  *
  * @description
  * Validates EvaraVueResolver name matching, prefix handling, EvaraAutoImportResolver framework outputs,
@@ -22,15 +22,15 @@ import { EvaraVueResolver, EvaraAutoImportResolver, EvaraReactUnplugin } from '.
 // ---------- TEST SUITES
 
 // ---------- UNPLUGIN RESOLVERS TEST SUITE
-describe('@evara-ui/unplugin Resolvers & Plugins', () => {
+describe('@bleckwolf25/unplugin Resolvers & Plugins', () => {
   // ---------- VUE RESOLVER DEFAULT MATCH TEST
-  it('EvaraVueResolver resolves Vue component names to @evara-ui/vue', () => {
+  it('EvaraVueResolver resolves Vue component names to @bleckwolf25/vue', () => {
     const resolver = EvaraVueResolver()
     const result = resolver.resolve('Button')
 
     expect(result).toEqual({
       name: 'Button',
-      from: '@evara-ui/vue',
+      from: '@bleckwolf25/vue',
     })
   })
 
@@ -42,7 +42,7 @@ describe('@evara-ui/unplugin Resolvers & Plugins', () => {
 
     expect(matched).toEqual({
       name: 'Card',
-      from: '@evara-ui/vue',
+      from: '@bleckwolf25/vue',
     })
     expect(unmatched).toBeNull()
   })
@@ -50,11 +50,11 @@ describe('@evara-ui/unplugin Resolvers & Plugins', () => {
   // ---------- AUTO-IMPORT COMPOSABLE LIST TEST
   it('EvaraAutoImportResolver returns composables list', () => {
     const vueImports = EvaraAutoImportResolver({ framework: 'vue' })
-    expect(vueImports['@evara-ui/vue']).toContain('useForm')
-    expect(vueImports['@evara-ui/vue']).toContain('useTheme')
+    expect(vueImports['@bleckwolf25/vue']).toContain('useForm')
+    expect(vueImports['@bleckwolf25/vue']).toContain('useTheme')
 
     const reactImports = EvaraAutoImportResolver({ framework: 'react' })
-    expect(reactImports['@evara-ui/react']).toContain('useForm')
+    expect(reactImports['@bleckwolf25/react']).toContain('useForm')
   })
 
   // ---------- REACT UNPLUGIN AST TRANSFORM TEST
@@ -67,6 +67,6 @@ describe('@evara-ui/unplugin Resolvers & Plugins', () => {
       }
     `
     const transformResult = pluginObj.transform(code, 'App.tsx')
-    expect(transformResult.code).toContain("import { Button } from '@evara-ui/react';")
+    expect(transformResult.code).toContain("import { Button } from '@bleckwolf25/react';")
   })
 })
