@@ -18,7 +18,7 @@ The `Button` component triggers an action, event, or navigation. Supports polymo
 ## Polymorphic `as` Prop Example
 
 ```tsx
-import { Button } from '@evara-ui/react'
+import { Button } from '@bleckwolf25/react'
 
 // Rendered as native HTML anchor element
 <Button as="a" href="/dashboard" variant="outline">

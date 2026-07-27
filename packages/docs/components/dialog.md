@@ -20,7 +20,7 @@ The `Dialog` component displays accessible modal dialog windows over the main vi
 ## Radix-Style Compound Composition
 
 ```tsx
-import { Dialog, Button } from '@evara-ui/react'
+import { Dialog, Button } from '@bleckwolf25/react'
 
 export function ModalDemo() {
   const [open, setOpen] = useState(false)

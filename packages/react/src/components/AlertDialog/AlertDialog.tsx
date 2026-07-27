@@ -17,7 +17,7 @@
 
 // ---------- IMPORTS
 import { forwardRef, useEffect, useRef, useCallback } from 'react'
-import { AlertDialogController } from '@evara-ui/core'
+import { AlertDialogController } from '@bleckwolf25/core'
 import type { AlertDialogProps } from './AlertDialog.types'
 import './AlertDialog.css'
 

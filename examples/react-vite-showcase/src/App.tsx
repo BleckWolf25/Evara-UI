@@ -51,7 +51,7 @@ import {
   Carousel,
   Resizable,
   Slider,
-} from '@evara-ui/react'
+} from '@bleckwolf25/react'
 
 function ThemeToggle() {
   const { theme, toggleTheme } = useTheme() as { theme: string; toggleTheme: () => void }

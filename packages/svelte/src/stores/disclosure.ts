@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { writable } from 'svelte/store'
-import type { DialogProps } from '@evara-ui/core'
+import type { DialogProps } from '@bleckwolf25/core'
 
 // ---------- FUNCTIONS
 

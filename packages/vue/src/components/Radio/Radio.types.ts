@@ -18,7 +18,7 @@
 import type {
   RadioProps as CoreRadioProps,
   RadioGroupProps as CoreRadioGroupProps,
-} from '@evara-ui/core'
+} from '@bleckwolf25/core'
 
 // ---------- TYPES AND INTERFACES
 

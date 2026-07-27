@@ -23,7 +23,7 @@ import {
   lightThemeTokens,
   darkThemeTokens,
   generateCssVariables,
-} from '@evara-ui/core'
+} from '@bleckwolf25/core'
 
 // ---------- INTERFACES AND TYPES
 

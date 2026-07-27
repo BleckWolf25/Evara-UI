@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { forwardRef, useState, useRef, useEffect } from 'react'
-import { DatePickerController, type DateRange } from '@evara-ui/core'
+import { DatePickerController, type DateRange } from '@bleckwolf25/core'
 import type { DatePickerProps } from './DatePicker.types'
 import './DatePicker.css'
 

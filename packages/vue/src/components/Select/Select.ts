@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { defineComponent, h, ref, onMounted, onBeforeUnmount, type PropType } from 'vue'
-import { SelectController, type SelectOption } from '@evara-ui/core'
+import { SelectController, type SelectOption } from '@bleckwolf25/core'
 import type { SelectProps } from './Select.types'
 import './Select.css'
 

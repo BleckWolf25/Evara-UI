@@ -16,8 +16,8 @@
 
 // ---------- IMPORTS
 import { forwardRef, useState, useRef, useCallback, useMemo } from 'react'
-import { ResizableController } from '@evara-ui/core'
-import type { ResizeHandle } from '@evara-ui/core'
+import { ResizableController } from '@bleckwolf25/core'
+import type { ResizeHandle } from '@bleckwolf25/core'
 import type { ResizableProps } from './Resizable.types'
 import './Resizable.css'
 

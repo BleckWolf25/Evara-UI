@@ -24,5 +24,5 @@ export default defineConfig({
   splitting: true,
   treeshake: true,
   clean: true,
-  external: ['vue', '@evara-ui/core']
+  external: ['vue', '@bleckwolf25/core']
 })

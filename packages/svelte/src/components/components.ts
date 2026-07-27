@@ -35,7 +35,7 @@ import {
   type PopoverProps,
   FormFieldController,
   type FieldControllerOptions,
-} from '@evara-ui/core'
+} from '@bleckwolf25/core'
 
 // ---------- FUNCTIONS
 

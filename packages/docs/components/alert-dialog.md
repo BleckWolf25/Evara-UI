@@ -12,7 +12,7 @@ The Alert Dialog component interrupts the user with an important confirmation me
 ## Code Example
 
 ```tsx
-import { AlertDialog, Button } from '@evara-ui/react'
+import { AlertDialog, Button } from '@bleckwolf25/react'
 
 export default function Demo() {
   return (

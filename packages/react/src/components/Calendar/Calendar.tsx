@@ -17,7 +17,7 @@
 
 // ---------- IMPORTS
 import { forwardRef, useState } from 'react'
-import { CalendarController } from '@evara-ui/core'
+import { CalendarController } from '@bleckwolf25/core'
 import type { CalendarProps } from './Calendar.types'
 import './Calendar.css'
 

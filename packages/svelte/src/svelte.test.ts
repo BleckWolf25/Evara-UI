@@ -5,7 +5,7 @@
  * @author BleckWolf25
  * @license MIT
  *
- * @summary Unit test suite for @evara-ui/svelte stores and prop builders.
+ * @summary Unit test suite for @bleckwolf25/svelte stores and prop builders.
  *
  * @description
  * Validates theme store transitions, form store validation, disclosure open/close states,
@@ -22,7 +22,7 @@ import { createThemeStore, createFormStore, useDisclosure, createButtonProps, cr
 // ---------- TEST SUITES
 
 // ---------- SVELTE STORES AND HELPERS TEST SUITE
-describe('@evara-ui/svelte Stores & Helpers', () => {
+describe('@bleckwolf25/svelte Stores & Helpers', () => {
   // ---------- THEME STORE TRANSITION TEST
   it('createThemeStore initializes with light theme and toggles to dark', () => {
     const theme = createThemeStore({ defaultTheme: 'light' })

@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { forwardRef, useContext } from 'react'
-import { RadioController } from '@evara-ui/core'
+import { RadioController } from '@bleckwolf25/core'
 import { RadioGroupContext } from './RadioGroupContext'
 import type { RadioProps } from './Radio.types'
 import './Radio.css'

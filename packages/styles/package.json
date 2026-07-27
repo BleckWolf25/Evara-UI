@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package",
-  "name": "@evara-ui/styles",
+  "name": "@bleckwolf25/styles",
   "version": "1.0.0",
   "description": "Design tokens and styles for Evara UI",
   "type": "module",

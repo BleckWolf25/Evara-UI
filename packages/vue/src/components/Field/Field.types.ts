@@ -15,7 +15,7 @@
  */
 
 // ---------- IMPORTS
-import type { FieldProps as CoreFieldProps } from '@evara-ui/core'
+import type { FieldProps as CoreFieldProps } from '@bleckwolf25/core'
 
 // ---------- TYPES AND INTERFACES
 

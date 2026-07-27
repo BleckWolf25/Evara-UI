@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { defineComponent, h, type PropType } from 'vue'
-import { CardController } from '@evara-ui/core'
+import { CardController } from '@bleckwolf25/core'
 import type { CardProps } from './Card.types'
 import './Card.css'
 

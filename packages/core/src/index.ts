@@ -5,7 +5,7 @@
  * @author BleckWolf25
  * @license MIT
  *
- * @summary Main entry point for the @evara-ui/core package.
+ * @summary Main entry point for the @bleckwolf25/core package.
  *
  * @description
  * Re-exports core types, utility functions, constants, headless component controllers,

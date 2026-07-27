@@ -15,7 +15,7 @@
  */
 
 // ---------- IMPORTS
-import type { AlertDialogProps as CoreAlertDialogProps } from '@evara-ui/core'
+import type { AlertDialogProps as CoreAlertDialogProps } from '@bleckwolf25/core'
 
 // ---------- TYPES AND INTERFACES
 

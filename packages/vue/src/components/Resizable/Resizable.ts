@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { defineComponent, h, ref, type PropType } from 'vue'
-import { ResizableController, type ResizeHandle } from '@evara-ui/core'
+import { ResizableController, type ResizeHandle } from '@bleckwolf25/core'
 import './Resizable.css'
 
 // ---------- COMPONENTS

@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { defineComponent, h, type PropType } from 'vue'
-import { InputGroupController } from '@evara-ui/core'
+import { InputGroupController } from '@bleckwolf25/core'
 import type { InputGroupProps } from './InputGroup.types'
 import './InputGroup.css'
 

@@ -9,7 +9,7 @@ Use `<ThemeProvider>` in React and Vue to manage theme state (`light`, `dark`, o
 ### React
 
 ```tsx
-import { ThemeProvider, useTheme, Button } from '@evara-ui/react'
+import { ThemeProvider, useTheme, Button } from '@bleckwolf25/react'
 
 function ModeToggle() {
   const { theme, toggleTheme } = useTheme()
@@ -33,7 +33,7 @@ export default function App() {
 
 ```vue
 <script setup>
-import { ThemeProvider, useTheme, Button } from '@evara-ui/vue'
+import { ThemeProvider, useTheme, Button } from '@bleckwolf25/vue'
 
 const { theme, toggleTheme } = useTheme()
 </script>

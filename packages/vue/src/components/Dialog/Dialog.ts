@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { defineComponent, h, ref, watch, onMounted, onBeforeUnmount, provide, inject, type InjectionKey } from 'vue'
-import { DialogController } from '@evara-ui/core'
+import { DialogController } from '@bleckwolf25/core'
 import './Dialog.css'
 
 // ---------- TYPES AND SYMBOLS

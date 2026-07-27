@@ -17,7 +17,7 @@
 
 // ---------- IMPORTS
 import { forwardRef, useEffect, useRef, useCallback } from 'react'
-import { ContextMenuController } from '@evara-ui/core'
+import { ContextMenuController } from '@bleckwolf25/core'
 import type { ContextMenuProps } from './ContextMenu.types'
 import './ContextMenu.css'
 

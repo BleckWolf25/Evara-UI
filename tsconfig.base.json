@@ -29,10 +29,10 @@
     "sourceMap": true,
     "composite": true,
     "paths": {
-      "@evara-ui/core": ["./packages/core/src"],
-      "@evara-ui/react": ["./packages/react/src"],
-      "@evara-ui/vue": ["./packages/vue/src"],
-      "@evara-ui/styles": ["./packages/styles/src"],
+      "@bleckwolf25/core": ["./packages/core/src"],
+      "@bleckwolf25/react": ["./packages/react/src"],
+      "@bleckwolf25/vue": ["./packages/vue/src"],
+      "@bleckwolf25/styles": ["./packages/styles/src"],
       "@/*": ["./src/*"]
     }
   }

@@ -15,7 +15,7 @@
  */
 // ---------- IMPORTS
 import { defineComponent, h, ref, watch, onMounted, onBeforeUnmount } from 'vue'
-import { AlertDialogController } from '@evara-ui/core'
+import { AlertDialogController } from '@bleckwolf25/core'
 import './AlertDialog.css'
 
 // ---------- VUE ALERT DIALOG COMPONENT

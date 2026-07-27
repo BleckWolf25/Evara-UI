@@ -14,7 +14,7 @@
  * @updated 27/07/2026
  */
 // ---------- IMPORTS
-import type { BreadcrumbProps as CoreBreadcrumbProps } from '@evara-ui/core'
+import type { BreadcrumbProps as CoreBreadcrumbProps } from '@bleckwolf25/core'
 
 // ---------- VUE BREADCRUMB PROPS INTERFACE
 export type BreadcrumbProps = CoreBreadcrumbProps

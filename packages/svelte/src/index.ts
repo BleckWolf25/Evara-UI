@@ -5,7 +5,7 @@
  * @author BleckWolf25
  * @license MIT
  *
- * @summary Main entry point for the @evara-ui/svelte package.
+ * @summary Main entry point for the @bleckwolf25/svelte package.
  *
  * @description
  * Re-exports Svelte reactive stores for themes, forms, disclosures, core controllers, and component prop helpers.

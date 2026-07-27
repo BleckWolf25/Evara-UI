@@ -15,7 +15,7 @@
  */
 
 // ---------- IMPORTS
-import type { CheckboxProps as CoreCheckboxProps } from '@evara-ui/core'
+import type { CheckboxProps as CoreCheckboxProps } from '@bleckwolf25/core'
 
 // ---------- TYPES AND INTERFACES
 

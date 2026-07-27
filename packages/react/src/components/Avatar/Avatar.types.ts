@@ -15,7 +15,7 @@
  */
 
 // ---------- IMPORTS
-import type { AvatarProps as CoreAvatarProps } from '@evara-ui/core'
+import type { AvatarProps as CoreAvatarProps } from '@bleckwolf25/core'
 
 // ---------- TYPES AND INTERFACES
 

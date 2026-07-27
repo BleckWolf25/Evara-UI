@@ -47,12 +47,12 @@ export function EvaraAutoImportResolver(options: EvaraAutoImportResolverOptions 
   // Resolve target package name based on selected framework option
   const pkg =
     options.framework === 'vue'
-      ? '@evara-ui/vue'
+      ? '@bleckwolf25/vue'
       : options.framework === 'react'
-        ? '@evara-ui/react'
+        ? '@bleckwolf25/react'
         : options.framework === 'svelte'
-          ? '@evara-ui/svelte'
-          : '@evara-ui/core'
+          ? '@bleckwolf25/svelte'
+          : '@bleckwolf25/core'
 
   return {
     [pkg]: EVARA_COMPOSABLES,

@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { defineComponent, h, ref, type PropType } from 'vue'
-import { SliderController } from '@evara-ui/core'
+import { SliderController } from '@bleckwolf25/core'
 import type { SliderProps } from './Slider.types'
 import './Slider.css'
 

@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import type { ButtonHTMLAttributes, ReactNode, ElementType } from 'react'
-import type { ButtonProps as CoreButtonProps } from '@evara-ui/core'
+import type { ButtonProps as CoreButtonProps } from '@bleckwolf25/core'
 
 // ---------- TYPES AND INTERFACES
 

@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { forwardRef } from 'react'
-import { BadgeController, type Color } from '@evara-ui/core'
+import { BadgeController, type Color } from '@bleckwolf25/core'
 import type { BadgeProps } from './Badge.types'
 import './Badge.css'
 

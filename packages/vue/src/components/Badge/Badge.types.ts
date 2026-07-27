@@ -15,7 +15,7 @@
  */
 
 // ---------- IMPORTS
-import type { BadgeProps as CoreBadgeProps } from '@evara-ui/core'
+import type { BadgeProps as CoreBadgeProps } from '@bleckwolf25/core'
 
 // ---------- VUE BADGE PROPS INTERFACE
 export type BadgeProps = CoreBadgeProps

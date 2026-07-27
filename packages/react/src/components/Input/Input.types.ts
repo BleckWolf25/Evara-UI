@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import type { InputHTMLAttributes, ReactNode } from 'react'
-import type { InputProps as CoreInputProps } from '@evara-ui/core'
+import type { InputProps as CoreInputProps } from '@bleckwolf25/core'
 
 // ---------- TYPES AND INTERFACES
 

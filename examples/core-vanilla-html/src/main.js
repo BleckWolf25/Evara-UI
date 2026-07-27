@@ -15,7 +15,7 @@
  */
 // ---------- IMPORTS
 import './style.css'
-import { SliderController, DialogController } from '@evara-ui/core'
+import { SliderController, DialogController } from '@bleckwolf25/core'
 
 // ==========================================
 // 1. Slider Setup

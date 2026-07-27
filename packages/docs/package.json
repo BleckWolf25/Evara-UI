@@ -1,5 +1,5 @@
 {
-  "name": "@evara-ui/docs",
+  "name": "@bleckwolf25/docs",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -9,10 +9,10 @@
     "preview": "vitepress preview"
   },
   "dependencies": {
-    "@evara-ui/core": "workspace:*",
-    "@evara-ui/react": "workspace:*",
-    "@evara-ui/styles": "workspace:*",
-    "@evara-ui/vue": "workspace:*"
+    "@bleckwolf25/core": "workspace:*",
+    "@bleckwolf25/react": "workspace:*",
+    "@bleckwolf25/styles": "workspace:*",
+    "@bleckwolf25/vue": "workspace:*"
   },
   "devDependencies": {
     "vitepress": "^1.6.4",

@@ -12,8 +12,8 @@ Register Evara UI once in your `main.ts`:
 
 ```ts
 import { createApp } from 'vue'
-import { EvaraUI } from '@evara-ui/vue'
-import '@evara-ui/styles/dist/index.css'
+import { EvaraUI } from '@bleckwolf25/vue'
+import '@bleckwolf25/styles/dist/index.css'
 import App from './App.vue'
 
 const app = createApp(App)
@@ -32,7 +32,7 @@ Now use any component directly in your Vue SFC files without imports:
 </template>
 ```
 
-### Option B: Build-Time Resolver (`@evara-ui/unplugin`)
+### Option B: Build-Time Resolver (`@bleckwolf25/unplugin`)
 
 Add `EvaraVueResolver` to `unplugin-vue-components` in `vite.config.ts`:
 
@@ -40,7 +40,7 @@ Add `EvaraVueResolver` to `unplugin-vue-components` in `vite.config.ts`:
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import Components from 'unplugin-vue-components/vite'
-import { EvaraVueResolver } from '@evara-ui/unplugin'
+import { EvaraVueResolver } from '@bleckwolf25/unplugin'
 
 export default defineConfig({
   plugins: [
@@ -56,11 +56,11 @@ export default defineConfig({
 
 ## 2. Nuxt 3 & 4
 
-Add `@evara-ui/nuxt` to your `nuxt.config.ts`:
+Add `@bleckwolf25/nuxt` to your `nuxt.config.ts`:
 
 ```ts
 export default defineNuxtConfig({
-  modules: ['@evara-ui/nuxt']
+  modules: ['@bleckwolf25/nuxt']
 })
 ```
 
@@ -75,7 +75,7 @@ Add `evaraReactVitePlugin` (or Webpack plugin) to your `vite.config.ts` or `next
 ```ts
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import { evaraReactVitePlugin } from '@evara-ui/unplugin'
+import { evaraReactVitePlugin } from '@bleckwolf25/unplugin'
 
 export default defineConfig({
   plugins: [
@@ -104,7 +104,7 @@ export default function Dashboard() {
 Register native Custom Elements ONCE in your client entry point:
 
 ```ts
-import { registerEvaraCustomElements } from '@evara-ui/core'
+import { registerEvaraCustomElements } from '@bleckwolf25/core'
 registerEvaraCustomElements()
 ```
 

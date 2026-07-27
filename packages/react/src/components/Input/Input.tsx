@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { forwardRef } from 'react'
-import { InputController } from '@evara-ui/core'
+import { InputController } from '@bleckwolf25/core'
 import type { InputProps } from './Input.types'
 import './Input.css'
 

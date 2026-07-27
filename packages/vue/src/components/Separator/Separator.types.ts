@@ -15,7 +15,7 @@
  */
 
 // ---------- IMPORTS
-import type { SeparatorProps as CoreSeparatorProps } from '@evara-ui/core'
+import type { SeparatorProps as CoreSeparatorProps } from '@bleckwolf25/core'
 
 // ---------- TYPES AND INTERFACES
 

@@ -21,7 +21,7 @@ import { resolve } from 'path'
 export default defineConfig({
   resolve: {
     alias: {
-      '@evara-ui/core': resolve(__dirname, '../../packages/core/src'),
+      '@bleckwolf25/core': resolve(__dirname, '../../packages/core/src'),
     },
   },
 })

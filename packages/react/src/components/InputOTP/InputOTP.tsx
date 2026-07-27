@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { forwardRef, useRef, useState, useEffect } from 'react'
-import { InputOTPController } from '@evara-ui/core'
+import { InputOTPController } from '@bleckwolf25/core'
 import type { InputOTPProps } from './InputOTP.types'
 import './InputOTP.css'
 

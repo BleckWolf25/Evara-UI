@@ -18,8 +18,8 @@
 import { createApp } from 'vue'
 // @ts-expect-error -- Vue component import without type definition
 import App from './App.vue'
-import EvaraUI from '@evara-ui/vue'
-import '@evara-ui/styles/dist/index.css'
+import EvaraUI from '@bleckwolf25/vue'
+import '@bleckwolf25/styles/dist/index.css'
 
 // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
 const app = createApp(App)

@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import type { ReactNode } from 'react'
-import type { FormController } from '@evara-ui/core'
+import type { FormController } from '@bleckwolf25/core'
 
 // ---------- TYPES AND INTERFACES
 

@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { defineComponent, h, type PropType } from 'vue'
-import { InputController } from '@evara-ui/core'
+import { InputController } from '@bleckwolf25/core'
 import type { InputProps } from './Input.types'
 import './Input.css'
 

@@ -14,7 +14,7 @@
  * @updated 27/07/2026
  */
 // ---------- IMPORTS
-import type { CalendarProps as CoreCalendarProps } from '@evara-ui/core'
+import type { CalendarProps as CoreCalendarProps } from '@bleckwolf25/core'
 
 // ---------- VUE CALENDAR PROPS INTERFACE
 export interface CalendarProps extends Omit<CoreCalendarProps, 'value' | 'defaultValue'> {

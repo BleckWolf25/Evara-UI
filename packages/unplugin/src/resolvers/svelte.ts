@@ -22,7 +22,7 @@
 export interface EvaraSvelteResolverOptions {
   /** Custom prefix for component names (e.g., 'Evara' -> <EvaraButton>) */
   prefix?: string
-  /** Import path override (default: '@evara-ui/svelte') */
+  /** Import path override (default: '@bleckwolf25/svelte') */
   importPath?: string
 }
 
@@ -88,7 +88,7 @@ const EVARA_SVELTE_COMPONENTS = new Set([
 // ---------- SVELTE RESOLVER FACTORY
 export function EvaraSvelteResolver(options: EvaraSvelteResolverOptions = {}) {
   const prefix = options.prefix ?? ''
-  const importPath = options.importPath ?? '@evara-ui/svelte'
+  const importPath = options.importPath ?? '@bleckwolf25/svelte'
 
   return {
     type: 'component' as const,

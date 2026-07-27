@@ -1,5 +1,5 @@
 {
-  "name": "@evara-ui/core-vanilla-html",
+  "name": "@bleckwolf25/core-vanilla-html",
   "version": "1.0.0",
   "type": "module",
   "private": true,
@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@evara-ui/core": "workspace:*"
+    "@bleckwolf25/core": "workspace:*"
   },
   "devDependencies": {
     "vite": "^8.1.5"

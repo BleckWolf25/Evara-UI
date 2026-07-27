@@ -9,23 +9,23 @@ Install the package corresponding to your framework:
 ::: code-group
 
 ```bash [React]
-pnpm add @evara-ui/react @evara-ui/styles
+pnpm add @bleckwolf25/react @bleckwolf25/styles
 ```
 
 ```bash [Vue 3]
-pnpm add @evara-ui/vue @evara-ui/styles
+pnpm add @bleckwolf25/vue @bleckwolf25/styles
 ```
 
 ```bash [Nuxt 3 & 4]
-pnpm add @evara-ui/nuxt
+pnpm add @bleckwolf25/nuxt
 ```
 
 ```bash [Svelte 4 & 5]
-pnpm add @evara-ui/svelte @evara-ui/styles
+pnpm add @bleckwolf25/svelte @bleckwolf25/styles
 ```
 
 ```bash [Web Components / HTML]
-pnpm add @evara-ui/core @evara-ui/styles
+pnpm add @bleckwolf25/core @bleckwolf25/styles
 ```
 
 :::
@@ -35,8 +35,8 @@ pnpm add @evara-ui/core @evara-ui/styles
 ### React
 
 ```tsx
-import { ThemeProvider, Button, Card } from '@evara-ui/react'
-import '@evara-ui/styles/dist/index.css'
+import { ThemeProvider, Button, Card } from '@bleckwolf25/react'
+import '@bleckwolf25/styles/dist/index.css'
 
 export default function App() {
   return (
@@ -53,8 +53,8 @@ export default function App() {
 
 ```ts
 import { createApp } from 'vue'
-import { EvaraUI } from '@evara-ui/vue'
-import '@evara-ui/styles/dist/index.css'
+import { EvaraUI } from '@bleckwolf25/vue'
+import '@bleckwolf25/styles/dist/index.css'
 import App from './App.vue'
 
 const app = createApp(App)
@@ -66,8 +66,8 @@ app.mount('#app')
 
 ```svelte
 <script lang="ts">
-  import { useTheme, createButtonProps, createCardProps } from '@evara-ui/svelte'
-  import '@evara-ui/styles/dist/index.css'
+  import { useTheme, createButtonProps, createCardProps } from '@bleckwolf25/svelte'
+  import '@bleckwolf25/styles/dist/index.css'
 
   const theme = useTheme({ defaultTheme: 'light' })
   const btn = createButtonProps({ variant: 'primary' })
@@ -85,14 +85,14 @@ app.mount('#app')
 
 ```ts
 export default defineNuxtConfig({
-  modules: ['@evara-ui/nuxt']
+  modules: ['@bleckwolf25/nuxt']
 })
 ```
 
 ### Web Components
 
 ```ts
-import { registerEvaraCustomElements } from '@evara-ui/core'
+import { registerEvaraCustomElements } from '@bleckwolf25/core'
 registerEvaraCustomElements()
 ```
 

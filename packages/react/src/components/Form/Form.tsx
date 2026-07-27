@@ -18,7 +18,7 @@
 // ---------- IMPORTS
 import type React from 'react';
 import { createContext, useContext, useId, useState, useEffect, cloneElement, isValidElement } from 'react'
-import { FormController, FormFieldController, type FormErrors } from '@evara-ui/core'
+import { FormController, FormFieldController, type FormErrors } from '@bleckwolf25/core'
 import type {
   FormProps,
   FormFieldProps,

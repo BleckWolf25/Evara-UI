@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { defineComponent, h, provide, computed, ref, type PropType } from 'vue'
-import { RadioGroupController } from '@evara-ui/core'
+import { RadioGroupController } from '@bleckwolf25/core'
 import { RadioGroupKey } from './RadioGroupContext'
 import './Radio.css'
 

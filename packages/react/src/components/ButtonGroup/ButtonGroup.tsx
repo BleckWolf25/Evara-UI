@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { forwardRef } from 'react'
-import { ButtonGroupController } from '@evara-ui/core'
+import { ButtonGroupController } from '@bleckwolf25/core'
 import type { ButtonGroupProps } from './ButtonGroup.types'
 import './ButtonGroup.css'
 

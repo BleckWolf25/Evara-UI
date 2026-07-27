@@ -44,17 +44,17 @@ export default defineConfig({
   // ---------- SHOWCASE DEV WEB SERVERS
   webServer: [
     {
-      command: 'pnpm --filter @evara-ui/react-vite-showcase dev --port 5173',
+      command: 'pnpm --filter @bleckwolf25/react-vite-showcase dev --port 5173',
       url: 'http://localhost:5173',
       reuseExistingServer: true,
     },
     {
-      command: 'pnpm --filter @evara-ui/vue-vite-showcase dev --port 5174',
+      command: 'pnpm --filter @bleckwolf25/vue-vite-showcase dev --port 5174',
       url: 'http://localhost:5174',
       reuseExistingServer: true,
     },
     {
-      command: 'pnpm --filter @evara-ui/svelte-vite-showcase dev --port 5175',
+      command: 'pnpm --filter @bleckwolf25/svelte-vite-showcase dev --port 5175',
       url: 'http://localhost:5175',
       reuseExistingServer: true,
     },

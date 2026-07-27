@@ -15,7 +15,7 @@
  */
 
 // ---------- IMPORTS
-import type { SpinnerProps as CoreSpinnerProps } from '@evara-ui/core'
+import type { SpinnerProps as CoreSpinnerProps } from '@bleckwolf25/core'
 
 // ---------- TYPES AND INTERFACES
 

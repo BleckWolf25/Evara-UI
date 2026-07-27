@@ -26,7 +26,7 @@ import {
   DialogController,
   SliderController,
   PaginationController,
-} from '@evara-ui/core'
+} from '@bleckwolf25/core'
 
 // ---------- TESTS
 describe('useController Composables', () => {

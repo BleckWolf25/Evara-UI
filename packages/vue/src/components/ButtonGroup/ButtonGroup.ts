@@ -15,7 +15,7 @@
  */
 // ---------- IMPORTS
 import { defineComponent, h, type PropType } from 'vue'
-import { ButtonGroupController } from '@evara-ui/core'
+import { ButtonGroupController } from '@bleckwolf25/core'
 import type { ButtonGroupProps } from './ButtonGroup.types'
 import './ButtonGroup.css'
 

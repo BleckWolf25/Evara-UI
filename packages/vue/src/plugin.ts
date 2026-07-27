@@ -91,7 +91,7 @@ export function EvaraResolver(options: { prefix?: string } = {}) {
       if (knownComponents.includes(componentName)) {
         return {
           name: componentName,
-          from: '@evara-ui/vue',
+          from: '@bleckwolf25/vue',
         }
       }
       return null

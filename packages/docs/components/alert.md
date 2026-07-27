@@ -15,7 +15,7 @@ The Alert component displays brief, important messages to attract user attention
 ::: code-group
 
 ```tsx [React]
-import { Alert } from '@evara-ui/react'
+import { Alert } from '@bleckwolf25/react'
 
 export default function Demo() {
   return (
@@ -28,7 +28,7 @@ export default function Demo() {
 
 ```vue [Vue 3]
 <script setup>
-import { Alert } from '@evara-ui/vue'
+import { Alert } from '@bleckwolf25/vue'
 </script>
 
 <template>

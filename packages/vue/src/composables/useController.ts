@@ -23,7 +23,7 @@ import {
   type DialogProps,
   type SliderProps,
   type PaginationProps,
-} from '@evara-ui/core'
+} from '@bleckwolf25/core'
 
 // ---------- CONTROLLER CONSTRUCTOR INTERFACE
 export type ControllerConstructor<T, P> = new (props: P) => T

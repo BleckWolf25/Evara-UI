@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { forwardRef } from 'react'
-import { BreadcrumbController } from '@evara-ui/core'
+import { BreadcrumbController } from '@bleckwolf25/core'
 import type { BreadcrumbProps } from './Breadcrumb.types'
 import './Breadcrumb.css'
 

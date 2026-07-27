@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { defineComponent, h, ref, onMounted, type PropType } from 'vue'
-import { InputOTPController } from '@evara-ui/core'
+import { InputOTPController } from '@bleckwolf25/core'
 import type { InputOTPProps } from './InputOTP.types'
 import './InputOTP.css'
 

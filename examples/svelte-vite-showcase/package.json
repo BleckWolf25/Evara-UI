@@ -1,5 +1,5 @@
 {
-  "name": "@evara-ui/svelte-vite-showcase",
+  "name": "@bleckwolf25/svelte-vite-showcase",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -10,9 +10,9 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@evara-ui/core": "workspace:*",
-    "@evara-ui/styles": "workspace:*",
-    "@evara-ui/svelte": "workspace:*"
+    "@bleckwolf25/core": "workspace:*",
+    "@bleckwolf25/styles": "workspace:*",
+    "@bleckwolf25/svelte": "workspace:*"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^3.1.1",

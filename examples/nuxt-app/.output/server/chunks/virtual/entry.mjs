@@ -3004,7 +3004,7 @@ var SliderController = class {
 * @author BleckWolf25
 * @license MIT
 *
-* @summary Main entry point for the @evara-ui/core package.
+* @summary Main entry point for the @bleckwolf25/core package.
 *
 * @description
 * Re-exports core types, utility functions, constants, headless component controllers,
@@ -6311,7 +6311,7 @@ var ThemeProvider = defineComponent({
 * @author BleckWolf25
 * @license MIT
 *
-* @summary Main entry point for the @evara-ui/vue package.
+* @summary Main entry point for the @bleckwolf25/vue package.
 *
 * @description
 * Re-exports all Vue components, composables, ThemeProvider component, and the global Vue plugin object EvaraUI.
@@ -6375,7 +6375,7 @@ var app_vue_vue_type_script_setup_true_lang_default = /*@__PURE__*/ defineCompon
 							}),
 							_: 1
 						}, _parent, _scopeId));
-						_push(`</h1><p style="${ssrRenderStyle({ "color": "#6b7280" })}"${_scopeId}> Zero-config component auto-imports &amp; SSR hydration with @evara-ui/nuxt. </p></header>`);
+						_push(`</h1><p style="${ssrRenderStyle({ "color": "#6b7280" })}"${_scopeId}> Zero-config component auto-imports &amp; SSR hydration with @bleckwolf25/nuxt. </p></header>`);
 						_push(ssrRenderComponent(_component_Alert, {
 							variant: "success",
 							"show-icon": "",
@@ -6835,7 +6835,7 @@ var app_vue_vue_type_script_setup_true_lang_default = /*@__PURE__*/ defineCompon
 						} }, [createTextVNode(" Nuxt 4 + Evara UI "), createVNode(_component_Badge, { color: "primary" }, {
 							default: withCtx(() => [createTextVNode(" SSR Powered ")]),
 							_: 1
-						})]), createVNode("p", { style: { "color": "#6b7280" } }, " Zero-config component auto-imports & SSR hydration with @evara-ui/nuxt. ")]),
+						})]), createVNode("p", { style: { "color": "#6b7280" } }, " Zero-config component auto-imports & SSR hydration with @bleckwolf25/nuxt. ")]),
 						createVNode(_component_Alert, {
 							variant: "success",
 							"show-icon": "",

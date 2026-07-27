@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { defineComponent, h, type PropType } from 'vue'
-import { SkeletonController } from '@evara-ui/core'
+import { SkeletonController } from '@bleckwolf25/core'
 import type { SkeletonProps } from './Skeleton.types'
 import './Skeleton.css'
 

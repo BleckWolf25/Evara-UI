@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { forwardRef, useState } from 'react'
-import { RadioGroupController } from '@evara-ui/core'
+import { RadioGroupController } from '@bleckwolf25/core'
 import { RadioGroupContext } from './RadioGroupContext'
 import type { RadioGroupProps } from './Radio.types'
 import './Radio.css'

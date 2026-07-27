@@ -24,5 +24,5 @@ export default defineConfig({
   clean: true,
   sourcemap: true,
   target: 'es2020',
-  external: ['@nuxt/kit', 'nuxt', 'vue', '@evara-ui/vue', '@evara-ui/core', '@evara-ui/styles'],
+  external: ['@nuxt/kit', 'nuxt', 'vue', '@bleckwolf25/vue', '@bleckwolf25/core', '@bleckwolf25/styles'],
 })

@@ -15,7 +15,7 @@
  */
 
 // ---------- IMPORTS
-import { SliderController, InputOTPController } from '@evara-ui/core'
+import { SliderController, InputOTPController } from '@bleckwolf25/core'
 
 // ==========================================
 // 1. <evara-slider> Web Component

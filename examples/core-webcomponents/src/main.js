@@ -17,7 +17,7 @@
 // ---------- IMPORTS
 import './style.css'
 import './components.js'
-import { registerEvaraCustomElements } from '@evara-ui/core'
+import { registerEvaraCustomElements } from '@bleckwolf25/core'
 
 // Register all native Web Components (<evara-button>, <evara-card>, <evara-badge>, etc.)
 registerEvaraCustomElements()

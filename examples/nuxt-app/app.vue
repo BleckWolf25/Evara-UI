@@ -17,7 +17,7 @@
 // ---------- IMPORTS
 <script setup lang="ts">
 // Components and composables like ThemeProvider, Form, FormField, FormItem, FormLabel, FormControl, FormMessage,
-// useForm, useTheme, useDisclosure are auto-imported via @evara-ui/nuxt module!
+// useForm, useTheme, useDisclosure are auto-imported via @bleckwolf25/nuxt module!
 
 /* eslint-disable @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call */
 // @ts-expect-error -- Nuxt auto-imports not resolved in standalone tsconfig
@@ -47,7 +47,7 @@ const { form } = useForm({
           </Badge>
         </h1>
         <p style="color: #6b7280;">
-          Zero-config component auto-imports & SSR hydration with @evara-ui/nuxt.
+          Zero-config component auto-imports & SSR hydration with @bleckwolf25/nuxt.
         </p>
       </header>
 

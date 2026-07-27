@@ -18,6 +18,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2026-07-24',
-  modules: ['@evara-ui/nuxt'],
+  modules: ['@bleckwolf25/nuxt'],
   devtools: { enabled: false }
 })

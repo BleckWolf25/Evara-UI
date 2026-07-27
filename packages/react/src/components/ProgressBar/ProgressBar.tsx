@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { forwardRef } from 'react'
-import { ProgressBarController } from '@evara-ui/core'
+import { ProgressBarController } from '@bleckwolf25/core'
 import type { ProgressBarProps } from './ProgressBar.types'
 import './ProgressBar.css'
 

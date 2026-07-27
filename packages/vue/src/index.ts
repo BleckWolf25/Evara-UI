@@ -5,7 +5,7 @@
  * @author BleckWolf25
  * @license MIT
  *
- * @summary Main entry point for the @evara-ui/vue package.
+ * @summary Main entry point for the @bleckwolf25/vue package.
  *
  * @description
  * Re-exports all Vue components, composables, ThemeProvider component, and the global Vue plugin object EvaraUI.

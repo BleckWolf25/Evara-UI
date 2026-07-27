@@ -1,14 +1,14 @@
 # HTML Custom Elements (Web Components)
 
-Evara UI includes native, framework-agnostic HTML Custom Elements powered by Shadow DOM encapsulation and `@evara-ui/core` headless controllers.
+Evara UI includes native, framework-agnostic HTML Custom Elements powered by Shadow DOM encapsulation and `@bleckwolf25/core` headless controllers.
 
 ## Registration
 
 To use Evara Web Components in vanilla HTML, Angular, Svelte, or PHP/Ruby applications, register them once globally:
 
 ```ts
-import { registerEvaraCustomElements } from '@evara-ui/core'
-import '@evara-ui/styles/dist/index.css'
+import { registerEvaraCustomElements } from '@bleckwolf25/core'
+import '@bleckwolf25/styles/dist/index.css'
 
 registerEvaraCustomElements()
 ```

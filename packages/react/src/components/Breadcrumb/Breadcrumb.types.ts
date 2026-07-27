@@ -15,7 +15,7 @@
  */
 
 // ---------- IMPORTS
-import type { BreadcrumbProps as CoreBreadcrumbProps } from '@evara-ui/core'
+import type { BreadcrumbProps as CoreBreadcrumbProps } from '@bleckwolf25/core'
 
 // ---------- TYPES AND INTERFACES
 

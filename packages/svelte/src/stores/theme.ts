@@ -17,7 +17,7 @@
 
 // ---------- IMPORTS
 import { writable } from 'svelte/store'
-import { generateCssVariables, type ThemeTokens } from '@evara-ui/core'
+import { generateCssVariables, type ThemeTokens } from '@bleckwolf25/core'
 
 // ---------- INTERFACES AND TYPES
 

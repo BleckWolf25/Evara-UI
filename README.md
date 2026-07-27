@@ -7,9 +7,9 @@
 Evara UI is a premium, open-source, highly scalable UI library. It provides modular, consistent, and testable components with built-in support for performance optimization, SEO, analytics, and backend-driven workflows.
 
 - **Polymorphic Components** - Build rich, accessible interfaces with components that render as any native HTML element or custom component.
-- **Framework Agnostic Core** - Driven by headless state controllers (`@evara-ui/core`) keeping business logic completely decoupled from view code.
+- **Framework Agnostic Core** - Driven by headless state controllers (`@bleckwolf25/core`) keeping business logic completely decoupled from view code.
 - **Cross-Framework Support** - First-class wrappers and integrations for React, Vue, Svelte, and native Web Components.
-- **Unified Design System** - Centralized vanilla CSS design tokens, custom themes, and utility declarations (`@evara-ui/styles`).
+- **Unified Design System** - Centralized vanilla CSS design tokens, custom themes, and utility declarations (`@bleckwolf25/styles`).
 - **Flexible Form Primitives** - Highly robust, schema-agnostic form and field validation controller adapters.
 - **Radix/Shadcn Compatibility** - Primitives that slide directly into existing Tailwind or CSS design templates.
 - **Production Bundled** - Fully tree-shakable packages compiled with `tsup` containing optimized ESM, CJS, and DTS output.

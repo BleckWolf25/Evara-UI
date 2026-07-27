@@ -1,6 +1,6 @@
 # Form & Validation System
 
-Evara UI provides an accessible, headless Form & Field validation system powered by `FormController` and `FormFieldController` in `@evara-ui/core`.
+Evara UI provides an accessible, headless Form & Field validation system powered by `FormController` and `FormFieldController` in `@bleckwolf25/core`.
 
 ## Features
 
@@ -14,7 +14,7 @@ Evara UI provides an accessible, headless Form & Field validation system powered
 ## React Usage
 
 ```tsx
-import { Form, FormField, FormItem, FormLabel, FormControl, FormDescription, FormMessage, useForm, Button, Input } from '@evara-ui/react'
+import { Form, FormField, FormItem, FormLabel, FormControl, FormDescription, FormMessage, useForm, Button, Input } from '@bleckwolf25/react'
 
 export function UserRegistrationForm() {
   const form = useForm({
@@ -75,7 +75,7 @@ export function UserRegistrationForm() {
 </template>
 
 <script setup>
-import { Form, FormField, FormItem, FormLabel, FormControl, FormDescription, FormMessage, useForm } from '@evara-ui/vue'
+import { Form, FormField, FormItem, FormLabel, FormControl, FormDescription, FormMessage, useForm } from '@bleckwolf25/vue'
 
 const { form } = useForm({
   initialValues: { username: '' },

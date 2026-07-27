@@ -15,7 +15,7 @@
  */
 
 // ---------- IMPORTS
-import type { DatePickerProps as CoreDatePickerProps } from '@evara-ui/core'
+import type { DatePickerProps as CoreDatePickerProps } from '@bleckwolf25/core'
 
 // ---------- TYPES AND INTERFACES
 

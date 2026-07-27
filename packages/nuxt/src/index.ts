@@ -5,7 +5,7 @@
  * @author BleckWolf25
  * @license MIT
  *
- * @summary Main entry point for the @evara-ui/nuxt package.
+ * @summary Main entry point for the @bleckwolf25/nuxt package.
  *
  * @description
  * Re-exports default Nuxt module definition and ModuleOptions interface for Nuxt 3 integration.

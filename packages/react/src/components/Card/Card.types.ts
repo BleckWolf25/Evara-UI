@@ -15,7 +15,7 @@
  */
 
 // ---------- IMPORTS
-import type { CardProps as CoreCardProps } from '@evara-ui/core'
+import type { CardProps as CoreCardProps } from '@bleckwolf25/core'
 
 // ---------- TYPES AND INTERFACES
 

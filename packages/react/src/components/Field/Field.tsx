@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { forwardRef } from 'react'
-import { FieldController } from '@evara-ui/core'
+import { FieldController } from '@bleckwolf25/core'
 import type { FieldProps } from './Field.types'
 import './Field.css'
 

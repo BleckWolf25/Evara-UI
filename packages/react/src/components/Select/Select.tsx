@@ -16,8 +16,8 @@
 
 // ---------- IMPORTS
 import { forwardRef, useState, useRef, useEffect } from 'react'
-import { SelectController } from '@evara-ui/core'
-import type { SelectOption } from '@evara-ui/core'
+import { SelectController } from '@bleckwolf25/core'
+import type { SelectOption } from '@bleckwolf25/core'
 import type { SelectProps } from './Select.types'
 import './Select.css'
 

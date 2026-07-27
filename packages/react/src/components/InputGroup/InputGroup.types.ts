@@ -15,7 +15,7 @@
  */
 
 // ---------- IMPORTS
-import type { InputGroupProps as CoreInputGroupProps } from '@evara-ui/core'
+import type { InputGroupProps as CoreInputGroupProps } from '@bleckwolf25/core'
 
 // ---------- TYPES AND INTERFACES
 

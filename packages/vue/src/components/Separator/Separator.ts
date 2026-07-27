@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { defineComponent, h, type PropType } from 'vue'
-import { SeparatorController } from '@evara-ui/core'
+import { SeparatorController } from '@bleckwolf25/core'
 import type { SeparatorProps } from './Separator.types'
 import './Separator.css'
 

@@ -16,7 +16,7 @@
 
 // ---------- IMPORTS
 import { defineComponent, h, type PropType } from 'vue'
-import { SpinnerController } from '@evara-ui/core'
+import { SpinnerController } from '@bleckwolf25/core'
 import type { SpinnerProps } from './Spinner.types'
 import './Spinner.css'
 

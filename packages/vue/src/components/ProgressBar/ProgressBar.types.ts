@@ -15,7 +15,7 @@
  */
 
 // ---------- IMPORTS
-import type { ProgressBarProps as CoreProgressBarProps } from '@evara-ui/core'
+import type { ProgressBarProps as CoreProgressBarProps } from '@bleckwolf25/core'
 
 // ---------- TYPES AND INTERFACES
 
