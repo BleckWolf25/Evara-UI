@@ -4,7 +4,9 @@
   "version": "1.0.0",
   "description": "Design tokens and styles for Evara UI",
   "type": "module",
-  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "engines": {
     "node": ">=22.0.0",

@@ -4,7 +4,9 @@
   "version": "1.0.0",
   "description": "React components for Evara UI",
   "type": "module",
-  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
   "sideEffects": [
     "**/*.css"
   ],

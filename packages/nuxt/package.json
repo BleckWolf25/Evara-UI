@@ -4,7 +4,9 @@
   "version": "1.0.0",
   "description": "Nuxt 3 module for Evara UI design system",
   "type": "module",
-  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
   "sideEffects": false,
   "license": "MIT",
   "engines": {
