@@ -1,6 +1,6 @@
 {
   "name": "@bleckwolf25/unplugin",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Zero-import automatic component & composable resolver for Evara UI across Vite, Webpack, Rspack, Vue, React, Next.js, and Nuxt",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",

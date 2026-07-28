@@ -8,4 +8,4 @@
 '@bleckwolf25/vue': major
 ---
 
-Release
+add docs and fix dependent issues
