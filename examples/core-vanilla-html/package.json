@@ -12,6 +12,6 @@
     "@bleckwolf25/core": "workspace:*"
   },
   "devDependencies": {
-    "vite": "^8.1.5"
+    "vite": "^6.4.3"
   }
 }
