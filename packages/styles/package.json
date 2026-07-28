@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/package",
   "name": "@bleckwolf25/styles",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Design tokens and styles for Evara UI",
   "type": "module",
   "publishConfig": {
@@ -28,7 +28,9 @@
     "./themes/*": "./dist/themes/*.css",
     "./base/*": "./dist/base/*.css"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "node scripts/build-css.js",
     "dev": "node scripts/build-css.js --watch",
