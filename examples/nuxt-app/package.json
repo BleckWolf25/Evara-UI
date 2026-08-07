@@ -15,7 +15,7 @@
     "@bleckwolf25/nuxt": "workspace:*",
     "@bleckwolf25/styles": "workspace:*",
     "@bleckwolf25/vue": "workspace:*",
-    "nuxt": "^4.5.0",
+    "nuxt": "^4.5.1",
     "vue": "^3.5.40"
   }
 }
